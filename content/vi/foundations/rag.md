@@ -17,7 +17,7 @@ Thu thập tài liệu → parse → chia thành chunks → tạo embeddings →
 xuất → augmentation → generation.
 
 | Bước | Vai trò |
-|------|---------|
+| ------ | --------- |
 | Parse | Đọc và trích xuất nội dung từ PDF, Word, HTML hoặc các nguồn khác |
 | Chunking | Chia tài liệu thành các đoạn nhỏ để việc truy xuất chính xác hơn |
 | Embedding | Chuyển văn bản thành vector số thể hiện ý nghĩa ngữ nghĩa |

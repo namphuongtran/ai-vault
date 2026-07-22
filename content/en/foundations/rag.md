@@ -17,7 +17,7 @@ Collect documents → parse → chunk → embed → store in a vector store → 
 generate.
 
 | Step | Role |
-|------|------|
+| ------ | ------ |
 | Parse | Read and extract content from PDF, Word, HTML, or other sources |
 | Chunking | Split documents into small passages for more precise retrieval |
 | Embedding | Convert text into numeric vectors that capture semantic meaning |

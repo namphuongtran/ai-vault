@@ -12,7 +12,7 @@ soát đầu ra của foundation model — không cần huấn luyện lại.
 ## Cấu trúc một prompt tốt
 
 | Thành phần | Vai trò |
-|------------|---------|
+| ------------ | --------- |
 | Role | Xác định vai trò của mô hình |
 | Task | Mô tả nhiệm vụ cần thực hiện |
 | Context | Cung cấp thông tin nền cần thiết |

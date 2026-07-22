@@ -12,7 +12,7 @@ want. It's the most direct lever over model behavior — no retraining required.
 ## Anatomy of a good prompt
 
 | Component | Purpose |
-|-----------|---------|
+| ----------- | --------- |
 | Role | Who the model should act as |
 | Task | What to do |
 | Context | Background information needed |
