@@ -10,11 +10,15 @@
     "serve": "npm run _hugo-dev -- --minify serve",
     "start": "npm run serve",
     "build": "npm run _hugo -- --minify",
-    "clean": "rm -Rf public/* resources .hugo_build.lock"
+    "clean": "rm -Rf public/* resources .hugo_build.lock",
+    "lint:md": "markdownlint-cli2",
+    "lint:md:fix": "markdownlint-cli2 --fix",
+    "check": "npm run lint:md && npm run build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "hugo-extended": "0.164.0",
+    "markdownlint-cli2": "^0.18.1",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0"
   }

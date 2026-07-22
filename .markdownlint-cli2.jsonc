@@ -1,0 +1,30 @@
+{
+  // Markdown lint rules for the vault's content.
+  // Full rule reference: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+  "config": {
+    "default": true,
+
+    // Prose is soft-wrapped at ~95 chars; don't enforce a hard line length.
+    "MD013": false,
+
+    // ASCII tree/diagram code fences legitimately have no language.
+    "MD040": false,
+
+    // Content pages start with YAML front matter + an H2 (title comes from
+    // front matter), so the first line is intentionally not an H1.
+    "MD041": false
+  },
+
+  // Files to lint.
+  "globs": [
+    "**/*.md"
+  ],
+
+  // Never lint generated output, dependencies, or the Hugo module cache.
+  "ignores": [
+    "node_modules/**",
+    "public/**",
+    "resources/**",
+    "themes/**"
+  ]
+}

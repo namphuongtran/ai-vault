@@ -4,8 +4,6 @@ description: A personal knowledge vault for AI study.
 type: docs
 ---
 
-# AI Vault
-
 A personal knowledge vault for everything I'm learning about Artificial Intelligence —
 notes, references, and mental models, organized as a learning path from foundations to
 advanced topics.

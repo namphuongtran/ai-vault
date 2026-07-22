@@ -4,8 +4,6 @@ description: Kho kiến thức cá nhân để học về AI.
 type: docs
 ---
 
-# AI Vault
-
 Kho kiến thức cá nhân cho mọi thứ mình đang học về Trí tuệ nhân tạo — ghi chú, tài liệu tham
 khảo và các mô hình tư duy, được sắp xếp thành một lộ trình học từ nền tảng đến nâng cao.
 
