@@ -41,14 +41,14 @@ weight: 1
 # Language configuration — English is primary; add a block per extra language.
 languages:
   en:
-    languageName: English
+    label: English
     contentDir: "content/en"
     weight: 1
     params:
       title: AI Vault
       description: A personal knowledge vault for AI study.
   vi:
-    languageName: "Tiếng Việt"
+    label: "Tiếng Việt"
     contentDir: "content/vi"
     weight: 2
     params:
@@ -68,7 +68,6 @@ params:
   github_repo: "https://github.com/namphuongtran/ai-vault"
 
   # Offline (Lunr.js) search — no external service required.
-  algolia_docsearch: false
   offlineSearch: true
   offlineSearchSummaryLength: 200
   offlineSearchMaxResults: 25
@@ -82,7 +81,7 @@ params:
     breadcrumb_disable: false
     sidebar_search_disable: false
     navbar_logo: true
-    footer_about_disable: false
+    footer_about_enable: true
     feedback:
       enable: false
     readingtime:
