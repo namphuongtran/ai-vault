@@ -1,0 +1,61 @@
+name: Link Check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # every Monday 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    name: Check links (built site)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Go (for the Docsy Hugo module)
+        uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npx hugo --minify --gc
+
+      - name: Check links with lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Check every built HTML page. --root-dir resolves absolute
+          # ("/foo/") links against the local build instead of the network.
+          args: >-
+            --no-progress
+            --root-dir "$(pwd)/public"
+            --accept 200..=299,429
+            --max-retries 3
+            --exclude-loopback
+            "./public/**/*.html"
+          fail: false
+          output: ./lychee/out.md
+
+      - name: Open an issue on broken links (scheduled runs only)
+        if: env.lychee_exit_code != 0 && github.event_name == 'schedule'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "🔗 Broken links detected"
+          content-filepath: ./lychee/out.md
+          labels: broken-links
