@@ -2,40 +2,53 @@
 
 > A personal knowledge vault for everything I'm learning about Artificial Intelligence.
 
-This repository is my study hub — a place to collect, organize, and revisit notes,
-papers, experiments, and references as I work through AI topics. It's meant to grow
-over time into a searchable, well-structured second brain for AI.
+A bilingual documentation site (English / Tiếng Việt) built with **Hugo** and the
+**[Docsy](https://www.docsy.dev/)** theme. Content is organized as a learning path from
+foundations to advanced topics. English is the primary language; a Vietnamese translation
+is available from the language switcher in the navbar.
 
-## 📚 What lives here
+## 📚 Content
 
-- **Notes** — distilled summaries of concepts, courses, and books
-- **Papers** — annotated research papers and key takeaways
-- **Cheatsheets** — quick references for tools, math, and frameworks
-- **Experiments** — small code snippets and prototypes to test ideas
-- **Resources** — curated links to courses, blogs, and tutorials
+- **Foundations (Stage 0)** — foundation models, generative AI, prompt engineering, RAG,
+  agents, guardrails, model evaluation, and responsible AI.
 
-## 🗂️ Suggested structure
+More stages will be added over time.
+
+## 🌐 Languages
+
+Each language lives in its own content tree:
+
+```
+content/
+├── en/   # English (primary, default)
+└── vi/   # Tiếng Việt
+```
+
+To add a language, create `content/<lang>/…` and add a block under `languages:` in
+`hugo.yaml`.
+
+## 🛠️ Local development
+
+Requires **Go** (for the Docsy Hugo module); Hugo is provided via npm.
+
+```bash
+npm install        # installs hugo-extended + build deps
+npm run serve      # http://localhost:1313
+npm run build      # production build into ./public
+```
+
+## 🗂️ Structure
 
 ```
 ai-vault/
-├── notes/          # Concept notes, organized by topic
-├── papers/         # Paper summaries & annotations
-├── cheatsheets/    # Quick-reference material
-├── experiments/    # Code experiments & prototypes
-└── resources/      # Links and external references
+├── hugo.yaml       # site + language + Docsy config
+├── go.mod          # Docsy pulled as a Hugo module
+├── package.json    # hugo-extended + build scripts
+└── content/
+    ├── en/
+    └── vi/
 ```
-
-## 🏷️ Topics covered
-
-Machine Learning · Deep Learning · Large Language Models · Neural Networks ·
-NLP · Computer Vision · Reinforcement Learning · MLOps · AI Tooling
-
-## 🔍 How I use it
-
-1. Capture — drop raw notes as I learn.
-2. Refine — clean up and cross-link related ideas.
-3. Review — revisit and reinforce over time.
 
 ## 📖 License
 
-Personal study material. Feel free to browse for inspiration.
+MIT — personal study material, shared for inspiration.

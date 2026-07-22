@@ -1,0 +1,21 @@
+{
+  "name": "ai-vault",
+  "version": "0.1.0",
+  "description": "A personal knowledge vault for AI study, built with Hugo + Docsy (English / Tiếng Việt).",
+  "author": "namphuongtran",
+  "license": "MIT",
+  "scripts": {
+    "_hugo": "hugo --cleanDestinationDir",
+    "_hugo-dev": "npm run _hugo -- -e dev -DFE",
+    "serve": "npm run _hugo-dev -- --minify serve",
+    "start": "npm run serve",
+    "build": "npm run _hugo -- --minify",
+    "clean": "rm -Rf public/* resources .hugo_build.lock"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "hugo-extended": "0.119.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0"
+  }
+}

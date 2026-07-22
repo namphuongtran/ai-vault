@@ -1,0 +1,107 @@
+baseURL: "/"
+title: "AI Vault"
+
+enableGitInfo: false
+enableRobotsTXT: true
+
+# Language settings
+contentDir: "content/en"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+enableMissingTranslationPlaceholders: true
+
+metaDataFormat: "yaml"
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+# Highlighting config
+pygmentsCodeFences: true
+pygmentsUseClasses: false
+pygmentsUseClassic: false
+pygmentsStyle: tango
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    style: "tango"
+
+# Weight used for sorting.
+weight: 1
+
+# Language configuration — English is primary; add a block per extra language.
+languages:
+  en:
+    languageName: English
+    contentDir: "content/en"
+    weight: 1
+    params:
+      title: AI Vault
+      description: A personal knowledge vault for AI study.
+  vi:
+    languageName: "Tiếng Việt"
+    contentDir: "content/vi"
+    weight: 2
+    params:
+      title: AI Vault
+      description: Kho kiến thức cá nhân để học về AI.
+
+outputs:
+  section:
+    - HTML
+    - RSS
+    - print
+
+params:
+  copyright: AI Vault
+  version: "0.1"
+
+  github_repo: "https://github.com/namphuongtran/ai-vault"
+
+  # Offline (Lunr.js) search — no external service required.
+  algolia_docsearch: false
+  offlineSearch: true
+  offlineSearchSummaryLength: 200
+  offlineSearchMaxResults: 25
+
+  prism_syntax_highlighting: false
+
+  ui:
+    sidebar_menu_compact: true
+    sidebar_menu_foldable: true
+    ul_show: 1
+    breadcrumb_disable: false
+    sidebar_search_disable: false
+    navbar_logo: true
+    footer_about_disable: false
+    feedback:
+      enable: false
+    readingtime:
+      enable: true
+
+  links:
+    developer:
+      - name: GitHub
+        url: "https://github.com/namphuongtran/ai-vault"
+        icon: fab fa-github
+        desc: Source of this knowledge vault
+
+# Hugo module configuration — Docsy theme pulled as a module.
+module:
+  hugoVersion:
+    extended: true
+    min: "0.110.0"
+  imports:
+    - path: "github.com/google/docsy"
+      disable: false
+    - path: "github.com/google/docsy/dependencies"
+      disable: false
