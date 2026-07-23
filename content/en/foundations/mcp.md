@@ -17,6 +17,14 @@ and reused by any MCP-compatible app.
 
 ## How it fits together
 
+```mermaid
+flowchart LR
+    M[Model] --> Host[MCP client or host]
+    Host --> S1[GitHub server]
+    Host --> S2[Database server]
+    Host --> S3[Filesystem server]
+```
+
 - **MCP server** — exposes capabilities (a GitHub server, a database server, a filesystem
   server, …).
 - **MCP client / host** — the app or agent that connects to servers and makes their

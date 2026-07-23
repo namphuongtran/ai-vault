@@ -16,6 +16,17 @@ key terms so the rest makes sense — no math required.
   models (LLMs) and other [foundation models]({{< relref "/foundations/foundation-models" >}})
   live here.
 
+```mermaid
+flowchart TB
+    subgraph AI[Artificial Intelligence]
+      subgraph ML[Machine Learning]
+        subgraph DL[Deep Learning]
+          GA[Generative AI - LLMs and foundation models]
+        end
+      end
+    end
+```
+
 ## What changed with foundation models
 
 They're pre-trained on huge data, general-purpose, and used through an API or a prompt. You

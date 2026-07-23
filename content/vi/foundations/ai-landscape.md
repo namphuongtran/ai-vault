@@ -16,6 +16,17 @@ các khái niệm cốt lõi để phần sau dễ hiểu — không cần toán
 - **Generative AI** — mô hình DL *tạo ra* nội dung (văn bản, hình ảnh, code). LLM và các
   [foundation model]({{< relref "/foundations/foundation-models" >}}) nằm ở đây.
 
+```mermaid
+flowchart TB
+    subgraph AI[Artificial Intelligence]
+      subgraph ML[Machine Learning]
+        subgraph DL[Deep Learning]
+          GA[Generative AI - LLMs and foundation models]
+        end
+      end
+    end
+```
+
 ## Foundation model đã thay đổi điều gì
 
 Chúng được huấn luyện trước trên dữ liệu khổng lồ, đa dụng, và dùng qua API hoặc prompt. Bạn

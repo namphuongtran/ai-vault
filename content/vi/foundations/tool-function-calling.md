@@ -21,6 +21,19 @@ chạy hàm** và đưa kết quả lại. Mô hình tiếp tục với kết qu
 3. Code của bạn thực thi tool và trả về **kết quả**.
 4. Mô hình dùng kết quả để trả lời — hoặc gọi tool khác. Lặp đến khi xong.
 
+```mermaid
+sequenceDiagram
+    participant App as Your app
+    participant Model
+    participant Tool
+    App->>Model: prompt + tool definitions
+    Model-->>App: tool call (name + args)
+    App->>Tool: execute
+    Tool-->>App: result
+    App->>Model: tool result
+    Model-->>App: final answer
+```
+
 Chu trình yêu cầu → gọi → kết quả → tiếp tục này chính là thứ mà một
 [agent]({{< relref "/foundations/agents" >}}) tự động hoá.
 

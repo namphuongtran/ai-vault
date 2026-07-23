@@ -21,6 +21,19 @@ with that result in hand.
 3. Your code executes the tool and returns the **result**.
 4. The model uses the result to answer — or calls another tool. Repeat until done.
 
+```mermaid
+sequenceDiagram
+    participant App as Your app
+    participant Model
+    participant Tool
+    App->>Model: prompt + tool definitions
+    Model-->>App: tool call (name + args)
+    App->>Tool: execute
+    Tool-->>App: result
+    App->>Model: tool result
+    Model-->>App: final answer
+```
+
 This request → call → result → continue cycle is exactly what an
 [agent]({{< relref "/foundations/agents" >}}) automates.
 
