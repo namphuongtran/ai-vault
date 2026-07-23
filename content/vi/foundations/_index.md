@@ -29,10 +29,14 @@ ML/DL, tập trung vào những gì bạn cần để xây một cách tự tin.
 7. **Inference parameters** — temperature, top-p/top-k, max tokens, stop.
 8. **Prompt engineering** — cách kiểm soát đầu ra của mô hình.
 9. **Context engineering** — quản lý những gì đưa vào context window.
-10. **RAG** — trả lời dựa trên dữ liệu bên ngoài (embeddings + vector store).
-11. **Tool & function calling** — nguyên thủy giúp mô hình hành động.
-12. **Agent** — mô hình lập kế hoạch và hành động bằng công cụ.
-13. **MCP** — chuẩn mở để kết nối tool và dữ liệu với mô hình.
-14. **Guardrail** — an toàn và kiểm soát quanh đầu vào/đầu ra.
-15. **Model evaluation** — cách đo chất lượng cho từng tác vụ.
-16. **Responsible AI** — công bằng, minh bạch và giám sát của con người.
+10. **Embeddings** — biến văn bản thành vector thể hiện ý nghĩa.
+11. **RAG** — trả lời dựa trên dữ liệu bên ngoài (embeddings + vector store).
+12. **Tool & function calling** — nguyên thủy giúp mô hình hành động.
+13. **Agentic AI** — mô hình tự dẫn dắt hành động; cái harness.
+14. **Agent** — mô hình lập kế hoạch và hành động bằng công cụ.
+15. **MCP** — chuẩn mở để kết nối tool và dữ liệu với mô hình.
+16. **Guardrail** — an toàn và kiểm soát quanh đầu vào/đầu ra.
+17. **AI security** — prompt injection, jailbreak, rò rỉ dữ liệu, và cách phòng thủ.
+18. **Model evaluation** — cách đo chất lượng cho từng tác vụ.
+19. **Observability** — trace, metric và eval trên production.
+20. **Responsible AI** — công bằng, minh bạch và giám sát của con người.

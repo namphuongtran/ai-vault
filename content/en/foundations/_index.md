@@ -30,10 +30,14 @@ internals, heavy on what you need to build confidently.
 7. **Inference parameters** — temperature, top-p/top-k, max tokens, stop.
 8. **Prompt engineering** — how to control a model's output.
 9. **Context engineering** — managing what goes into the context window.
-10. **RAG** — grounding answers in external data (embeddings + vector stores).
-11. **Tool & function calling** — the primitive that lets a model act.
-12. **Agents** — models that plan and take actions with tools.
-13. **MCP** — the open standard for connecting tools and data to models.
-14. **Guardrails** — safety and control around inputs and outputs.
-15. **Model evaluation** — how to measure quality for a given task.
-16. **Responsible AI** — fairness, transparency, and human oversight.
+10. **Embeddings** — turning text into vectors that capture meaning.
+11. **RAG** — grounding answers in external data (embeddings + vector stores).
+12. **Tool & function calling** — the primitive that lets a model act.
+13. **Agentic AI** — the paradigm where a model drives its own actions; the harness.
+14. **Agents** — models that plan and take actions with tools.
+15. **MCP** — the open standard for connecting tools and data to models.
+16. **Guardrails** — safety and control around inputs and outputs.
+17. **AI security** — prompt injection, jailbreaks, data leakage, and defenses.
+18. **Model evaluation** — how to measure quality for a given task.
+19. **Observability** — traces, metrics, and production evals.
+20. **Responsible AI** — fairness, transparency, and human oversight.

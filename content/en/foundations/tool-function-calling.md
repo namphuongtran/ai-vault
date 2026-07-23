@@ -1,6 +1,6 @@
 ---
 title: "Tool & Function Calling"
-weight: 11
+weight: 12
 description: The primitive under agents, skills, plugins, and MCP — letting a model call functions you define.
 ---
 
