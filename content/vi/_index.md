@@ -2,6 +2,10 @@
 title: AI Vault
 description: Kho kiến thức cá nhân để học về AI.
 type: docs
+cascade:
+  - _target:
+      path: /**
+    type: docs
 ---
 
 Kho kiến thức cá nhân cho mọi thứ mình đang học về Trí tuệ nhân tạo — ghi chú, tài liệu tham
