@@ -1,6 +1,6 @@
 ---
 title: "Generative AI"
-weight: 2
+weight: 3
 description: Models that generate new content — text, images, audio, or code.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "RAG (Retrieval-Augmented Generation)"
-weight: 4
+weight: 10
 description: Trả lời dựa trên dữ liệu bên ngoài thông qua embeddings và vector store.
 ---
 

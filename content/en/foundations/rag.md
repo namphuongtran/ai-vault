@@ -1,6 +1,6 @@
 ---
 title: "RAG (Retrieval-Augmented Generation)"
-weight: 4
+weight: 10
 description: Grounding a model's answers in external data via embeddings and a vector store.
 ---
 
