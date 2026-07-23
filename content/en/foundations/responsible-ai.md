@@ -1,6 +1,6 @@
 ---
 title: "Responsible AI"
-weight: 8
+weight: 16
 description: Fairness, transparency, privacy, and human oversight in AI systems.
 ---
 

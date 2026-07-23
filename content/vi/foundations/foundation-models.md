@@ -1,6 +1,6 @@
 ---
 title: "Foundation Model"
-weight: 1
+weight: 2
 description: Mô hình lớn, đa dụng, được huấn luyện trước trên dữ liệu rộng và điều chỉnh cho nhiều tác vụ.
 ---
 

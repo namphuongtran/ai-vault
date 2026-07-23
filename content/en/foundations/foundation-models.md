@@ -1,6 +1,6 @@
 ---
 title: "Foundation Models"
-weight: 1
+weight: 2
 description: Large, general-purpose models pre-trained on broad data and adapted to many tasks.
 ---
 
