@@ -2,6 +2,10 @@
 title: AI Vault
 description: A personal knowledge vault for AI study.
 type: docs
+cascade:
+  - _target:
+      path: /**
+    type: docs
 ---
 
 A personal knowledge vault for everything I'm learning about Artificial Intelligence —
