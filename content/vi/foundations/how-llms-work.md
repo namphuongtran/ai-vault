@@ -16,7 +16,17 @@ cả đầu vào **và** đầu ra của mô hình.
 ## Dự đoán token kế tiếp
 
 LLM làm đúng một việc: cho văn bản hiện có, dự đoán **token kế tiếp**, nối vào, rồi lặp lại.
-Chỉ vậy thôi. Đây là lý do:
+Chỉ vậy thôi.
+
+```mermaid
+flowchart LR
+    T[Text so far] --> M[LLM]
+    M --> N[Predict next token]
+    N --> A[Append token]
+    A --> T
+```
+
+Đây là lý do:
 
 - Đầu ra mang tính **xác suất** — cùng một prompt có thể cho câu trả lời khác nhau.
 - Mô hình có thể trôi chảy nhưng vẫn sai (nó dự đoán văn bản hợp lý, không phải sự thật đã kiểm chứng).

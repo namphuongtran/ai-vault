@@ -18,6 +18,14 @@ connector. MCP chuẩn hoá giao diện để một tích hợp được viết 
 
 ## Cách ghép lại với nhau
 
+```mermaid
+flowchart LR
+    M[Model] --> Host[MCP client or host]
+    Host --> S1[GitHub server]
+    Host --> S2[Database server]
+    Host --> S3[Filesystem server]
+```
+
 - **MCP server** — bày ra năng lực (server GitHub, server database, server filesystem, …).
 - **MCP client / host** — ứng dụng hoặc agent kết nối tới các server và đưa năng lực của chúng
   cho mô hình.

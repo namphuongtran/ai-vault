@@ -12,6 +12,19 @@ code, databases), observes the result, and repeats until the task is done.
 
 ## Core components
 
+```mermaid
+flowchart TB
+    subgraph Agent
+      LLM[LLM core]
+      P[Planning]
+      Mem[Memory]
+    end
+    LLM --- P
+    LLM --- Mem
+    LLM -->|calls| Tools[Tools]
+    LLM -->|reads| Know[Knowledge and RAG]
+```
+
 - **Planning** — break a goal into steps and decide what to do next.
 - **Tool use** — call external functions/APIs to act or fetch data.
 - **Memory** — keep track of context across steps (short-term and long-term).
@@ -21,6 +34,15 @@ code, databases), observes the result, and repeats until the task is done.
 
 - A plain **chat** call: one prompt in, one answer out.
 - An **agent**: a loop of *think → act → observe* that can use tools and take multiple steps.
+
+```mermaid
+flowchart LR
+    G[Goal] --> R[Reason]
+    R --> A[Act - call a tool]
+    A --> O[Observe result]
+    O --> R
+    O --> D[Answer when done]
+```
 
 ## When to use
 

@@ -16,6 +16,19 @@ huấn luyện.
 Thu thập tài liệu → parse → chia thành chunks → tạo embeddings → lưu vào vector store → truy
 xuất → augmentation → generation.
 
+```mermaid
+flowchart LR
+    D[Documents] --> P[Parse]
+    P --> C[Chunk]
+    C --> E[Embed]
+    E --> V[(Vector store)]
+    Q[User question] --> R[Retrieve]
+    V --> R
+    R --> A[Augment prompt]
+    A --> M[Foundation model]
+    M --> Ans[Answer]
+```
+
 | Bước | Vai trò |
 | ------ | --------- |
 | Parse | Đọc và trích xuất nội dung từ PDF, Word, HTML hoặc các nguồn khác |

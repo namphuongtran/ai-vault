@@ -17,6 +17,16 @@ Tiếp nối [Prompt engineering]({{< relref "/foundations/prompt-engineering" >
 - **Kết quả tool** — đầu ra từ [tool mà mô hình gọi]({{< relref "/foundations/tool-function-calling" >}}).
 - **Lịch sử / memory** — các lượt trước, hoặc dữ kiện mang qua nhiều phiên.
 
+```mermaid
+flowchart LR
+    SP[System prompt] --> CW[Context window]
+    EX[Instructions and examples] --> CW
+    RD[Retrieved data via RAG] --> CW
+    TR[Tool results] --> CW
+    H[History and memory] --> CW
+    CW --> M[Model]
+```
+
 ## Vấn đề cốt lõi: window là hữu hạn
 
 Mọi thứ ở trên cạnh tranh cùng một ngân sách token. Nhiều hơn không phải tốt hơn — context

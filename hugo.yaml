@@ -74,6 +74,10 @@ params:
 
   prism_syntax_highlighting: false
 
+  # Mermaid diagrams (```mermaid fenced code blocks render client-side).
+  mermaid:
+    enable: true
+
   ui:
     sidebar_menu_compact: true
     sidebar_menu_foldable: true

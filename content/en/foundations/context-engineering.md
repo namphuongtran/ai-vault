@@ -16,6 +16,16 @@ finite [context window](/foundations/how-llms-work/) — and what to leave out.
 - **Tool results** — output from [tools the model called]({{< relref "/foundations/tool-function-calling" >}}).
 - **History / memory** — prior turns, or facts carried across sessions.
 
+```mermaid
+flowchart LR
+    SP[System prompt] --> CW[Context window]
+    EX[Instructions and examples] --> CW
+    RD[Retrieved data via RAG] --> CW
+    TR[Tool results] --> CW
+    H[History and memory] --> CW
+    CW --> M[Model]
+```
+
 ## The core problem: the window is finite
 
 Everything above competes for the same token budget. More is not better — irrelevant context

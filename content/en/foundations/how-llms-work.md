@@ -15,7 +15,17 @@ counted and billed in tokens: your input **and** the model's output.
 ## Next-token prediction
 
 An LLM does one thing: given the text so far, predict the **next token**, append it, and
-repeat. That's it. This is why:
+repeat. That's it.
+
+```mermaid
+flowchart LR
+    T[Text so far] --> M[LLM]
+    M --> N[Predict next token]
+    N --> A[Append token]
+    A --> T
+```
+
+This is why:
 
 - Output is **probabilistic** — same prompt can give different answers.
 - Models can be fluent yet wrong (they predict plausible text, not verified truth).

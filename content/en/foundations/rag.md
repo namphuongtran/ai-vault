@@ -16,6 +16,19 @@ training.
 Collect documents → parse → chunk → embed → store in a vector store → retrieve → augment →
 generate.
 
+```mermaid
+flowchart LR
+    D[Documents] --> P[Parse]
+    P --> C[Chunk]
+    C --> E[Embed]
+    E --> V[(Vector store)]
+    Q[User question] --> R[Retrieve]
+    V --> R
+    R --> A[Augment prompt]
+    A --> M[Foundation model]
+    M --> Ans[Answer]
+```
+
 | Step | Role |
 | ------ | ------ |
 | Parse | Read and extract content from PDF, Word, HTML, or other sources |
