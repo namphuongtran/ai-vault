@@ -1,6 +1,6 @@
 ---
 title: "Agent"
-weight: 16
+weight: 22
 description: Foundation model lập kế hoạch và hành động bằng công cụ.
 ---
 

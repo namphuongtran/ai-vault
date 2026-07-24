@@ -1,7 +1,7 @@
 ---
 title: "The AI API"
 linkTitle: "The AI API"
-weight: 8
+weight: 12
 description: Cách thực sự gọi một model — messages và roles, request/response, streaming, và SDK.
 ---
 

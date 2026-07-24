@@ -1,6 +1,6 @@
 ---
 title: "How LLMs Work"
-weight: 5
+weight: 6
 description: Tokens, next-token prediction, and the context window — the mechanics you build on.
 ---
 

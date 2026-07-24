@@ -1,7 +1,7 @@
 ---
 title: "AI Security"
 linkTitle: "AI Security"
-weight: 19
+weight: 25
 description: Bề mặt tấn công riêng của AI — prompt injection, jailbreak, rò rỉ dữ liệu — và cách phòng thủ.
 ---
 

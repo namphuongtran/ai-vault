@@ -1,6 +1,6 @@
 ---
 title: "Model Evaluation"
-weight: 20
+weight: 26
 description: Cách đo chất lượng mô hình — chọn metric phù hợp với tác vụ.
 ---
 

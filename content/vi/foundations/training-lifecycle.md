@@ -1,7 +1,7 @@
 ---
 title: "How Models Are Trained"
 linkTitle: "How Models Are Trained"
-weight: 6
+weight: 8
 description: Góc nhìn mức nhận biết về pre-training, fine-tuning và alignment — và vì sao nó quan trọng với builder.
 ---
 
