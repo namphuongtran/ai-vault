@@ -30,7 +30,7 @@ flowchart LR
 3. [Agentic RAG]({{< relref "/building/agentic-rag" >}}) — truy xuất do agent dẫn dắt, không phải pipeline cố định.
 4. [The agent harness]({{< relref "/building/agent-harness" >}}) — vòng lặp, context, tools, memory, guardrail.
 5. [AI code structure]({{< relref "/building/ai-code-structure" >}}) — cách tổ chức codebase app AI.
-6. Tooling & frameworks — *sắp có*.
+6. [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) — SDK, framework, MCP, deployment.
 
 ## Yêu cầu trước
 
