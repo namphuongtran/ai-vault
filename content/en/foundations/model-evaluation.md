@@ -1,6 +1,6 @@
 ---
 title: "Model Evaluation"
-weight: 18
+weight: 20
 description: How to measure model quality — pick the metric that matches the task.
 ---
 

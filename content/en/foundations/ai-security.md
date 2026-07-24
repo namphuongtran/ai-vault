@@ -1,6 +1,6 @@
 ---
 title: "AI Security"
-weight: 17
+weight: 19
 description: The AI-specific attack surface — prompt injection, jailbreaks, data leakage — and how to defend.
 ---
 

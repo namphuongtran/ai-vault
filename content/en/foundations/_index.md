@@ -19,25 +19,64 @@ Written for **technical builders** — developers, AI/data engineers, DevSecOps,
 solution architects — who want to *use and apply* AI, not train models. Light on ML/DL
 internals, heavy on what you need to build confidently.
 
-## In this section
+## How to work through this
 
-1. **The AI landscape** — where GenAI fits; you build *with* models, not train them.
-2. **Foundation models** — large pre-trained, general-purpose models.
-3. **Generative AI** — models that create new content.
-4. **How LLMs work** — tokens, next-token prediction, the context window.
-5. **How models are trained** — pre-training → fine-tuning → alignment (awareness-level).
-6. **Choosing a model** — capability vs cost vs latency vs context.
-7. **Inference parameters** — temperature, top-p/top-k, max tokens, stop.
-8. **Prompt engineering** — how to control a model's output.
-9. **Context engineering** — managing what goes into the context window.
-10. **Embeddings** — turning text into vectors that capture meaning.
-11. **RAG** — grounding answers in external data (embeddings + vector stores).
-12. **Tool & function calling** — the primitive that lets a model act.
-13. **Agentic AI** — the paradigm where a model drives its own actions; the harness.
-14. **Agents** — models that plan and take actions with tools.
-15. **MCP** — the open standard for connecting tools and data to models.
-16. **Guardrails** — safety and control around inputs and outputs.
-17. **AI security** — prompt injection, jailbreaks, data leakage, and defenses.
-18. **Model evaluation** — how to measure quality for a given task.
-19. **Observability** — traces, metrics, and production evals.
-20. **Responsible AI** — fairness, transparency, and human oversight.
+Follow the five modules in order — each builds on the last, from *understanding* models to
+*operating* them in production. New here? Start with
+**[AI coding assistants]({{< relref "/foundations/ai-coding-assistants" >}})** — the tools you
+already use — then Module 1.
+
+```mermaid
+flowchart TB
+    Start[Start here - AI coding assistants] --> M1[Module 1 - Understand]
+    M1 --> M2[Module 2 - Work with a model]
+    M2 --> M3[Module 3 - Ground it in your data]
+    M3 --> M4[Module 4 - Make it act]
+    M4 --> M5[Module 5 - Operate and govern]
+```
+
+### Module 1 · Understand · *Beginner*
+
+*Goal: know what these models are and how they behave.*
+
+1. [The AI landscape]({{< relref "/foundations/ai-landscape" >}})
+2. [Foundation models]({{< relref "/foundations/foundation-models" >}})
+3. [Generative AI]({{< relref "/foundations/generative-ai" >}})
+4. [How LLMs work]({{< relref "/foundations/how-llms-work" >}})
+5. [How models are trained]({{< relref "/foundations/training-lifecycle" >}})
+
+### Module 2 · Work with a model · *Beginner*
+
+*Goal: talk to a model and control its output.*
+
+1. [Choosing a model]({{< relref "/foundations/choosing-a-model" >}})
+2. [The AI API]({{< relref "/foundations/the-ai-api" >}})
+3. [Inference parameters]({{< relref "/foundations/inference-parameters" >}})
+4. [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})
+5. [Context engineering]({{< relref "/foundations/context-engineering" >}})
+
+### Module 3 · Ground it in your data · *Intermediate*
+
+*Goal: make answers use your own, current data.*
+
+1. [Embeddings]({{< relref "/foundations/embeddings" >}})
+2. [RAG]({{< relref "/foundations/rag" >}})
+
+### Module 4 · Make it act · *Intermediate*
+
+*Goal: let the model use tools and run as an agent.*
+
+1. [Tool & function calling]({{< relref "/foundations/tool-function-calling" >}})
+2. [Agentic AI]({{< relref "/foundations/agentic-ai" >}})
+3. [Agents]({{< relref "/foundations/agents" >}})
+4. [MCP]({{< relref "/foundations/mcp" >}})
+
+### Module 5 · Operate & govern · *Intermediate*
+
+*Goal: ship it safely, measurably, and responsibly.*
+
+1. [Guardrails]({{< relref "/foundations/guardrails" >}})
+2. [AI security]({{< relref "/foundations/ai-security" >}})
+3. [Model evaluation]({{< relref "/foundations/model-evaluation" >}})
+4. [Observability]({{< relref "/foundations/observability" >}})
+5. [Responsible AI]({{< relref "/foundations/responsible-ai" >}})

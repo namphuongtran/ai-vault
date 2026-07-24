@@ -1,6 +1,6 @@
 ---
 title: "Guardrail"
-weight: 16
+weight: 18
 description: Cơ chế an toàn và kiểm soát quanh đầu vào và đầu ra của mô hình.
 ---
 

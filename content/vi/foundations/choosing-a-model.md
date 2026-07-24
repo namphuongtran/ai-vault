@@ -1,7 +1,7 @@
 ---
 title: "Choosing a Model"
 linkTitle: "Choosing a Model"
-weight: 6
+weight: 7
 description: Năng lực vs chi phí vs độ trễ vs context — cách chọn đúng mô hình cho tác vụ.
 ---
 

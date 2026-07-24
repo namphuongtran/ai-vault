@@ -1,6 +1,6 @@
 ---
 title: "Observability"
-weight: 19
+weight: 21
 description: Seeing what your AI system actually did — traces, metrics, and production evals.
 ---
 

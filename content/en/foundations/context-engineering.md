@@ -1,6 +1,6 @@
 ---
 title: "Context Engineering"
-weight: 9
+weight: 11
 description: Managing what goes into the context window — the discipline beneath prompting, RAG, and agents.
 ---
 
