@@ -72,3 +72,15 @@ tài liệu thay đổi. Với RAG, doanh nghiệp chỉ cần cập nhật ngu�
 multimodal. Và vài thứ bạn hay nghe (hybrid search, re-ranking) là *kỹ thuật* dùng bên trong
 một biến thể, không phải loại riêng. Xem [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}})
 để phân biệt cái nào với cái nào.
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — kiến thức mới, riêng tư, dẫn nguồn được mà không cần huấn luyện lại; giảm
+  hallucination; cập nhật bằng đồng bộ lại dữ liệu.
+- **Hạn chế** — chất lượng câu trả lời bị giới hạn bởi chất lượng truy xuất; thêm pipeline ingest,
+  vector store và độ trễ; cần tinh chỉnh chunking và đánh giá.
+
+## Nguồn
+
+- Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (2020) — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)
+- Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)

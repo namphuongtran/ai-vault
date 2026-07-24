@@ -75,3 +75,8 @@ model thấy; quản lý việc đó là [context engineering]({{< relref "/foun
 Bạn hiếm khi tự viết HTTP. Mỗi nhà cung cấp phát hành một **SDK** (thư viện) bọc các lời gọi này
 theo ngôn ngữ của bạn. Tên trường chính xác khác nhau theo nhà cung cấp — còn khái niệm (messages,
 roles, usage, streaming) thì không.
+
+## Nguồn
+
+- [Anthropic — Working with the Messages API](https://platform.claude.com/docs/en/build-with-claude/working-with-messages)
+- [OpenAI — Text generation](https://platform.openai.com/docs/guides/text)

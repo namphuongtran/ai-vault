@@ -56,3 +56,8 @@ thường chiếm phần lớn.
   trả về `usage` ở mỗi response.
 
 > Quy tắc: token rẻ nhất là token bạn không gửi. Đa số vấn đề chi phí thật ra là vấn đề context.
+
+## Nguồn
+
+- [Anthropic — Pricing](https://platform.claude.com/docs/en/about-claude/pricing)
+- [Anthropic — Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting)

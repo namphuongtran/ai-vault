@@ -43,3 +43,15 @@ flowchart LR
   phải lúc nào cũng tốt hơn.
 - **Chọn model** quan trọng — chọn cái phù hợp ngôn ngữ và lĩnh vực của bạn.
 - Embedding **rẻ** so với generation; embedding cả một kho tài liệu là chuyện thường.
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — biến ý nghĩa thành khoảng cách đo được; rẻ và tái dùng; nền của search,
+  clustering, classification.
+- **Hạn chế** — chất lượng phụ thuộc model và lĩnh vực; cố định lúc embed (re-embed khi dữ liệu
+  đổi); bỏ sót từ khoá chính xác — nên ghép keyword / hybrid search.
+
+## Nguồn
+
+- Reimers & Gurevych, *Sentence-BERT* (2019) — [arXiv:1908.10084](https://arxiv.org/abs/1908.10084)
+- [OpenAI — Embeddings](https://platform.openai.com/docs/guides/embeddings)

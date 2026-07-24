@@ -37,3 +37,8 @@ hình reasoning riêng). Effort càng cao → suy luận nội bộ càng nhiề
 
 Chọn giữa hai loại là quyết định [chọn model]({{< relref "/foundations/choosing-a-model" >}});
 núm effort là một trong các [inference parameters]({{< relref "/foundations/inference-parameters" >}}).
+
+## Nguồn
+
+- [Anthropic — Extended thinking](https://platform.claude.com/docs/en/build-with-claude/extended-thinking)
+- [Anthropic — Effort](https://platform.claude.com/docs/en/build-with-claude/effort)

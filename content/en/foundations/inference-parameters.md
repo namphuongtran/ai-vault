@@ -40,3 +40,8 @@ Some newer models are moving away from manual sampling knobs toward higher-level
 e.g. an **effort / reasoning** setting, or automatic ("adaptive") reasoning — and may reject
 `temperature`/`top_p`/`top_k`. Check your provider's current API before assuming the classic
 knobs are available.
+
+## Sources
+
+- [Anthropic — Working with the Messages API](https://platform.claude.com/docs/en/build-with-claude/working-with-messages)
+- [OpenAI — Text generation](https://platform.openai.com/docs/guides/text)

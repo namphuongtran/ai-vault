@@ -56,3 +56,8 @@ usually dominate.
 
 > Rule of thumb: the cheapest token is the one you don't send. Most cost problems are context
 > problems.
+
+## Sources
+
+- [Anthropic — Pricing](https://platform.claude.com/docs/en/about-claude/pricing)
+- [Anthropic — Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting)

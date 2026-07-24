@@ -50,3 +50,8 @@ For the question *"What's our refund window?"*:
 
 Most "the model got it wrong" problems are really context problems: it lacked the right
 information, or drowned in the wrong information. Fix the context before blaming the model.
+
+## Sources
+
+- [Anthropic — Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows)
+- [Anthropic — Context editing](https://platform.claude.com/docs/en/build-with-claude/context-editing)

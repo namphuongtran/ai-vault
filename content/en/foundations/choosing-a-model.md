@@ -45,3 +45,8 @@ high-volume tasks). Match the tier to the job rather than defaulting to the bigg
 - **Proprietary (API)** — easiest, most capable, no infrastructure; you send data to a vendor.
 - **Open-weight (self-host)** — full control and data residency; you run and scale the
   infrastructure.
+
+## Sources
+
+- [Anthropic — Models overview](https://platform.claude.com/docs/en/about-claude/models/overview)
+- [Anthropic — Pricing](https://platform.claude.com/docs/en/about-claude/pricing)

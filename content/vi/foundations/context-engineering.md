@@ -51,3 +51,8 @@ Với câu hỏi *"Chính sách hoàn tiền của mình bao lâu?"*:
 
 Phần lớn lỗi "mô hình trả lời sai" thật ra là lỗi context: nó thiếu thông tin đúng, hoặc chìm
 trong thông tin sai. Sửa context trước khi đổ lỗi cho mô hình.
+
+## Nguồn
+
+- [Anthropic — Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows)
+- [Anthropic — Context editing](https://platform.claude.com/docs/en/build-with-claude/context-editing)

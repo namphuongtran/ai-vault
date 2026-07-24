@@ -37,3 +37,14 @@ document and do not add facts."
 - **Prompt template** — a reusable prompt structure with input variables.
 - **Chain-of-thought** — ask the model to reason step by step.
 - **Prompt caching** — reuse a repeated prompt prefix to cut latency and cost (where supported).
+
+## Strengths & limitations
+
+- **Strengths** — the cheapest, fastest lever; no infrastructure; you iterate instantly.
+- **Limitations** — can't add knowledge the model lacks (use RAG); sensitive to wording; hits a
+  ceiling on hard or consistency-critical tasks (then consider fine-tuning).
+
+## Sources
+
+- [Anthropic — Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
+- [OpenAI — Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)
