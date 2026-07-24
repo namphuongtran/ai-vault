@@ -1,6 +1,6 @@
 ---
 title: "Prompt Patterns"
-weight: 3
+weight: 4
 description: Reasoning techniques, structured output, decomposition, and prompt optimization.
 ---
 

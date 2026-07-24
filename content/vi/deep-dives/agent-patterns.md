@@ -1,6 +1,6 @@
 ---
 title: "Agent Patterns"
-weight: 2
+weight: 3
 description: Vòng lặp ReAct, thiết kế tool, memory, multi-agent và reflection.
 ---
 

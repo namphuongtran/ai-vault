@@ -1,7 +1,7 @@
 ---
 title: "Adaptation: Fine-tuning vs RAG vs Prompting"
 linkTitle: "Adaptation"
-weight: 4
+weight: 5
 description: Cách chọn giữa prompting, RAG và fine-tuning — và cách kết hợp chúng.
 ---
 

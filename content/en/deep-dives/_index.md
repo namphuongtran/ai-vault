@@ -18,8 +18,9 @@ build real systems.
 
 ## In this section
 
-1. **Advanced RAG** — chunking, hybrid retrieval, re-ranking, query transforms, evaluation.
-2. **Agent patterns** — the ReAct loop, tool design, memory, multi-agent, reflection.
-3. **Prompt patterns** — reasoning techniques, structured output, decomposition, optimization.
-4. **Adaptation** — choosing between fine-tuning, RAG, and prompting.
-5. **Evaluation in practice** — eval sets, LLM-as-judge, offline vs online, regression testing.
+1. **Types of RAG** — the RAG family; which is an architecture vs a technique.
+2. **Advanced RAG** — chunking, hybrid retrieval, re-ranking, query transforms, evaluation.
+3. **Agent patterns** — the ReAct loop, tool design, memory, multi-agent, reflection.
+4. **Prompt patterns** — reasoning techniques, structured output, decomposition, optimization.
+5. **Adaptation** — choosing between fine-tuning, RAG, and prompting.
+6. **Evaluation in practice** — eval sets, LLM-as-judge, offline vs online, regression testing.
