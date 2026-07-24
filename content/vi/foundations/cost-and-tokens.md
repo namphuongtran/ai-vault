@@ -26,6 +26,21 @@ flowchart LR
 - **Số lần gọi** — [agent]({{< relref "/foundations/agentic-ai" >}}) nhân số lần gọi lên; một
   vòng lặp có thể là nhiều request cho mỗi tác vụ.
 
+## Ví dụ — một phép tính chi phí
+
+```text
+Support bot, mỗi câu trả lời:
+  input  = 2,000 tokens (system + context + câu hỏi)
+  output =   300 tokens
+Giá minh hoạ: $3 / 1M input, $15 / 1M output
+  input  = 2000/1e6 × $3  = $0.0060
+  output =  300/1e6 × $15 = $0.0045
+  → ~$0.011 mỗi câu  ≈ $11 cho 1,000 câu
+```
+
+Giá chỉ minh hoạ — hãy xem giá nhà cung cấp. Điểm mấu chốt: input token (context + lịch sử)
+thường chiếm phần lớn.
+
 ## Các đòn bẩy
 
 - **Chọn đúng cỡ model** — dùng tier nhỏ hơn ở nơi chất lượng vẫn đạt.

@@ -28,6 +28,22 @@ flowchart LR
   **online eval** (chấm một mẫu lưu lượng thật, thường bằng
   [LLM-as-judge]({{< relref "/deep-dives/evaluation-in-practice" >}})).
 
+## Ví dụ — một request trace
+
+```json
+{
+  "request_id": "req_123",
+  "steps": [
+    { "type": "retrieval", "query": "refund window", "hits": 3, "ms": 40 },
+    { "type": "model", "input_tokens": 1850, "output_tokens": 120, "stop_reason": "end_turn", "ms": 900 }
+  ],
+  "cost_usd": 0.0074,
+  "user_feedback": "thumbs_up"
+}
+```
+
+Khi câu trả lời sai, trace cho biết lỗi ở *retrieval* hay ở *model*.
+
 ## Vì sao quan trọng
 
 - **Debug** — một câu trả lời tệ có thể đến từ retrieval, prompt, tool, hoặc mô hình; chỉ trace

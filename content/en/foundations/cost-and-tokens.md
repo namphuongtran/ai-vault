@@ -25,6 +25,21 @@ flowchart LR
 - **Number of calls** — [agents]({{< relref "/foundations/agentic-ai" >}}) multiply calls; a
   loop can be many requests per task.
 
+## Example — a rough cost calc
+
+```text
+Support bot, per reply:
+  input  = 2,000 tokens (system + context + question)
+  output =   300 tokens
+Illustrative price: $3 / 1M input, $15 / 1M output
+  input  = 2000/1e6 × $3  = $0.0060
+  output =  300/1e6 × $15 = $0.0045
+  → ~$0.011 per reply  ≈ $11 per 1,000 replies
+```
+
+Prices are illustrative — check your provider's. The point: input tokens (context + history)
+usually dominate.
+
 ## The levers
 
 - **Right-size the model** — use a smaller tier where quality holds.

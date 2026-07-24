@@ -29,6 +29,11 @@ phù hợp thường cần quan tâm đến:
 > nhưng quyết định cuối cùng nên có con người kiểm tra — và cần đánh giá xem dữ liệu huấn luyện
 > có gây bất lợi cho một nhóm ứng viên cụ thể hay không.
 
+## Ví dụ — human in the loop
+
+AI sàng lọc 500 hồ sơ và xếp hạng, nhưng nhà tuyển dụng xem shortlist và ra quyết định cuối —
+và team kiểm tra AI không âm thầm hạ điểm một nhóm.
+
 ## Các khái niệm cần phân biệt
 
 - **Hallucination** — thông tin nghe hợp lý nhưng không chính xác hoặc không có nguồn hỗ trợ.

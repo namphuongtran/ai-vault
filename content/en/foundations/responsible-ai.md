@@ -29,6 +29,11 @@ good solution usually considers:
 > final decision — and the team should check whether the training data disadvantages any
 > group.
 
+## Example — human in the loop
+
+An AI screens 500 job applications and ranks them, but a recruiter reviews the shortlist and
+makes the final call — and the team checks the AI didn't systematically down-rank a group.
+
 ## Concepts to distinguish
 
 - **Hallucination** — plausible-sounding output that is inaccurate or unsupported.
