@@ -55,6 +55,11 @@ The **orchestrator (harness)** is the brain you build: it assembles the prompt, 
 - Put **determinism in code**, judgment in the model.
 - **Ground** with data, **constrain** with schemas, **gate** risky actions.
 - **Measure** everything — evals offline, traces online.
+- **Version your prompts** — prompts are code: keep them in the repo, review changes, and
+  record which version produced which output (it's how you debug "it worked yesterday").
+- **The right stack, not the biggest** — RAG, agents, memory, and MCP each earn their place
+  only when the problem demands them; the strongest systems use the fewest components that
+  solve the task, because every extra one is latency, cost, and attack surface.
 
 ## Sources
 

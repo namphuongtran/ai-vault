@@ -51,6 +51,10 @@ Mô hình là động cơ; harness là khung xe — nó chạy vòng lặp, qu�
 - ✅ Cần phản ứng theo kết quả trung gian (tìm, rồi quyết, rồi hành động).
 - ❌ Một workflow cố định đã giải quyết được — đừng thêm quyền tự chủ không cần thiết.
 
+Cụ thể: một bot support *luôn luôn* tra KB rồi trả lời là **workflow**. Một bot tra KB, nhận
+ra case thuộc về billing, truy vấn hệ thống billing, và chuyển cho con người khi khoản hoàn
+tiền vượt chính sách — đó là **agent**: bước kế tiếp phụ thuộc vào kết quả bước trước trả về.
+
 ## Đánh đổi
 
 Càng nhiều tự chủ = càng mạnh, nhưng cũng càng tốn chi phí, độ trễ, và kém dễ đoán. Đó là lý do

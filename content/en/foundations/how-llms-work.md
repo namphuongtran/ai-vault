@@ -64,6 +64,9 @@ knowledge of your data or recent events — which is exactly what
 - **Limitations** — predicts *plausible* text, not verified truth; cost grows with tokens;
   knowledge is frozen at the training cutoff.
 
+> The whole pipeline in one line: **text → tokens → vectors → transformer → next token →
+> answer.**
+
 ## Sources
 
 - Vaswani et al., *Attention Is All You Need* (2017) — [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)

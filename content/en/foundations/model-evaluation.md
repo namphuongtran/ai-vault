@@ -47,9 +47,20 @@ Push one up and the other usually drops — that's the trade-off F1 balances.
 - **Context relevance** — are the retrieved passages actually relevant to the question? If
   retrieval is wrong, even a good model produces poor answers.
 
-## Human evaluation
+## Which metric when
 
-**Human evaluation** fits when quality can't be fully captured by automatic metrics.
+| Task | Reach for |
+| ------ | ------ |
+| Summarization | **ROUGE** |
+| Translation | **BLEU** |
+| Classification where false positives hurt | **Precision** |
+| Classification where false negatives hurt | **Recall** |
+| Both hurt, or classes are imbalanced | **F1** |
+| RAG answers | **Faithfulness + context relevance** (RAGAS) |
+| Open-ended generation, no reference answer | **Human review or LLM-as-judge** — see [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) |
+
+The rule behind the table: pick the metric by **the cost of the error**, not by habit — decide
+first whether a false positive or a false negative hurts more.
 
 ## Sources
 

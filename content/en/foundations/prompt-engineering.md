@@ -28,15 +28,19 @@ want. It's the most direct lever over model behavior — no retraining required.
 points. Each point is no more than two sentences. Use only information present in the
 document and do not add facts."
 
-## Techniques to distinguish
+## Which technique when
 
-- **Zero-shot** — ask the task with no examples.
-- **One-shot** — give exactly one example first.
-- **Few-shot** — give several examples so the model infers the pattern.
-- **Prompt chaining** — split a big task into smaller prompts run in sequence.
-- **Prompt template** — a reusable prompt structure with input variables.
-- **Chain-of-thought** — ask the model to reason step by step.
-- **Prompt caching** — reuse a repeated prompt prefix to cut latency and cost (where supported).
+| Situation | Reach for |
+| ------ | ------ |
+| The task is common and well-understood | **Zero-shot** — just ask; modern models usually get it |
+| Output format or style keeps drifting | **Few-shot** — 2–5 examples teach the pattern faster than a paragraph of rules |
+| Multi-step logic goes wrong | **Chain-of-thought** — ask it to reason step by step (or use a [reasoning model]({{< relref "/foundations/reasoning-models" >}})) |
+| The task is too big for one prompt | **Prompt chaining** — split into sequential prompts and validate between steps |
+| The same prompt shape runs on many inputs | **Prompt template** — one structure, input variables |
+| Every call repeats a long prefix | **Prompt caching** — a cost lever; see [Cost & tokens]({{< relref "/foundations/cost-and-tokens" >}}) |
+
+The pattern behind the table: examples beat instructions for *form*; reasoning beats both for
+*logic*; and decomposition beats bigger prompts.
 
 ## Strengths & limitations
 

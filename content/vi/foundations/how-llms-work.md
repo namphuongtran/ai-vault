@@ -65,6 +65,9 @@ không biết dữ liệu của bạn hay sự kiện gần đây — và đó c
 - **Hạn chế** — dự đoán văn bản *hợp lý*, không phải sự thật đã kiểm chứng; chi phí tăng theo
   token; kiến thức đóng băng ở mốc huấn luyện.
 
+> Toàn bộ pipeline trong một dòng: **text → token → vector → transformer → token kế tiếp →
+> câu trả lời.**
+
 ## Nguồn
 
 - Vaswani et al., *Attention Is All You Need* (2017) — [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)

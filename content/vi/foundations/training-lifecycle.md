@@ -28,6 +28,16 @@ nhiều hành vi của nó. Đây là mức nhận biết — không cần kỹ 
   cách đáng tin cậy; nó **không** đáng tin để bổ sung kiến thức mới. Xem
   [Adaptation]({{< relref "/deep-dives/adaptation" >}}).
 
+## Ví dụ — base vs instruction-tuned
+
+Prompt: *"Viết một bài haiku về biển."*
+
+- **Base model** — có thể trả lời: `Viết một bài haiku về núi. Viết một bài haiku về…` — nó
+  *tiếp nối văn bản*, vì dự đoán token kế tiếp là tất cả những gì pre-training dạy nó.
+- **Model đã instruction-tune** — trả về một bài haiku thật.
+
+Cùng kiến thức, khác hành vi. Khác biệt đó *chính là* post-training.
+
 ## Những gì bạn chưa cần
 
 Tập dữ liệu, GPU, hàm mất mát, gradient descent. Nhà cung cấp lo hết; bạn dùng mô hình đã hoàn thiện.

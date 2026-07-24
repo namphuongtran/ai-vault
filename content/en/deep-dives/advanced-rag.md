@@ -28,6 +28,11 @@ mid-thought.
 - **Hybrid** — combine both, then fuse scores (e.g. Reciprocal Rank Fusion). Usually the
   strongest default, since each covers the other's blind spots.
 
+Why hybrid wins, in one query: *"error E-4012 when the invoice sync times out."* Dense
+retrieval finds passages about *invoice synchronization timeouts* (meaning) but misses the
+exact code; sparse finds every mention of *E-4012* (exact term) but not the paraphrased
+troubleshooting doc. Fused, the right page ranks first.
+
 ## Re-ranking
 
 Retrieve a wide set (e.g. top 50), then re-score with a **cross-encoder** re-ranker that

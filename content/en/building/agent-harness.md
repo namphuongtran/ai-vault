@@ -52,9 +52,18 @@ append the result, and loop — until the model answers or a stop condition fire
 - **Memory** — carry facts across turns (and sessions) without stuffing everything into the
   window.
 - **Stop conditions** — max steps, loop detection, and a token/time budget, so a stuck agent
-  ends gracefully instead of spinning.
+  ends gracefully instead of spinning. A real-world set: *stop after 20 steps or 100k tokens;
+  stop if the same tool is called with the same arguments twice in a row; on stop, summarize
+  progress instead of failing silently.*
 - **Guardrails** — apply [input/output checks]({{< relref "/foundations/guardrails" >}}) and
   [security]({{< relref "/foundations/ai-security" >}}) on *every* turn, not just the first.
+
+## Skills — packaged procedures
+
+Beyond tools, mature harnesses support **skills**: packaged instructions for a specific kind
+of task (a deploy checklist, a review procedure, a report format) that load into context when
+that task comes up. Tools give the agent *capabilities*; skills give it *procedures* — the
+difference between handing someone a terminal and handing them the runbook.
 
 ## Build vs. buy
 

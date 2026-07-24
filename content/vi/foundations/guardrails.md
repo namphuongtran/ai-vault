@@ -10,20 +10,16 @@ description: Cơ chế an toàn và kiểm soát quanh đầu vào và đầu ra
 tuân thủ. Chúng nằm *trước* mô hình (với đầu vào) và *sau* mô hình (với đầu ra), và hoạt động độc
 lập với cách mô hình được huấn luyện.
 
-## Áp dụng ở đâu
+## Các loại, theo vị trí đứng
 
-- **Guardrail đầu vào** — chặn prompt injection, yêu cầu lạc đề, hoặc nội dung không được phép;
-  che (redact) PII trước khi đưa vào mô hình.
-- **Guardrail đầu ra** — lọc phản hồi độc hại hoặc không an toàn, ép định dạng, kiểm tra câu trả
-  lời có bám sát context được cung cấp hay không (xem [Faithfulness]({{< relref "model-evaluation" >}})).
-
-## Các loại phổ biến
-
-- **Content moderation** — phát hiện nội dung độc hại, thù ghét, không an toàn.
-- **Topic restriction** — giữ mô hình trong phạm vi được phép.
-- **PII detection / redaction** — bảo vệ dữ liệu cá nhân và nhạy cảm.
-- **Format / schema enforcement** — đảm bảo đầu ra hợp lệ, có cấu trúc.
-- **Grounding checks** — loại bỏ câu trả lời không được hỗ trợ bởi context truy xuất.
+| Vị trí | Guardrail | Bắt được gì |
+| ------ | ------ | ------ |
+| Đầu vào | Phát hiện prompt injection | *"bỏ qua quy tắc của bạn và…"* trước khi model thấy |
+| Đầu vào | Topic restriction | yêu cầu ngoài phạm vi cho phép |
+| Đầu vào | PII detection / redaction | dữ liệu cá nhân lọt vào model |
+| Đầu ra | Content moderation | phản hồi độc hại, thù ghét, không an toàn |
+| Đầu ra | Format / schema enforcement | đầu ra sai định dạng, thiếu cấu trúc |
+| Đầu ra | Grounding check | câu trả lời không được context truy xuất hỗ trợ (xem [Faithfulness]({{< relref "model-evaluation" >}})) |
 
 ## Ví dụ — guardrail đầu vào và đầu ra
 

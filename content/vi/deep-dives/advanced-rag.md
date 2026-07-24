@@ -28,6 +28,11 @@ giữa chừng.
 - **Hybrid** — kết hợp cả hai rồi hợp nhất điểm (ví dụ Reciprocal Rank Fusion). Thường là lựa
   chọn mặc định mạnh nhất, vì mỗi bên bù điểm mù cho bên kia.
 
+Vì sao hybrid thắng, gói trong một truy vấn: *"lỗi E-4012 khi đồng bộ hóa đơn bị timeout."*
+Dense tìm ra các đoạn nói về *timeout khi đồng bộ hóa đơn* (đúng nghĩa) nhưng trượt mã lỗi
+chính xác; sparse tìm ra mọi chỗ nhắc *E-4012* (đúng term) nhưng trượt tài liệu troubleshooting
+viết bằng cách diễn đạt khác. Hợp nhất lại, trang đúng xếp hạng nhất.
+
 ## Re-ranking
 
 Truy xuất một tập rộng (ví dụ top 50), rồi chấm lại bằng **cross-encoder** đọc cả câu hỏi và

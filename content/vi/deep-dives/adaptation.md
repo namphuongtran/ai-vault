@@ -46,6 +46,11 @@ Chúng không loại trừ nhau. Một kiến trúc production phổ biến là 
 cho kiến thức**: fine-tune để mô hình trả lời đúng giọng và schema của bạn, và dùng RAG để cấp
 dữ kiện cập nhật, có căn cứ ngay lúc truy vấn.
 
+Ví dụ: một bot support fine-tune (LoRA) trên vài nghìn câu trả lời tốt nhất của đội bạn — để
+nó luôn nói đúng giọng team và luôn xuất đúng schema ticket — trong khi RAG kéo gói dịch vụ
+của khách và các sự cố đã biết tuần này. Bỏ một trong hai là hỏng: chỉ prompt thì giọng trôi;
+kiến thức fine-tune thì lỗi thời.
+
 ## Nguồn
 
 - Hu et al., *LoRA: Low-Rank Adaptation of Large Language Models* (2021) — [arXiv:2106.09685](https://arxiv.org/abs/2106.09685)

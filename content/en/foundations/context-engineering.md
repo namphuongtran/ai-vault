@@ -6,7 +6,7 @@ description: Managing what goes into the context window — the discipline benea
 
 Builds on [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}}). Prompting is
 *wording* the request; **context engineering** is deciding *everything* the model sees in its
-finite [context window](/foundations/how-llms-work/) — and what to leave out.
+finite [context window]({{< relref "/foundations/how-llms-work" >}}) — and what to leave out.
 
 ## What's in the context
 

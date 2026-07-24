@@ -27,6 +27,17 @@ dedicated reasoning model). Higher effort → more internal reasoning → slower
 - ❌ Simple lookups, classification, or high-volume/latency-sensitive calls — a fast model is
   cheaper and good enough.
 
+## Example — where the extra tokens pay off
+
+*"Invoice totals are wrong, but only for orders with mixed-currency line items — find the
+bug."*
+
+A fast model pattern-matches and blames the rounding helper — plausible, wrong. A reasoning
+model traces the flow: line items convert to base currency per line, the discount is applied
+at order level, but one code path applies it *before* conversion — a double conversion only
+mixed-currency orders can hit. Chained dependencies like this are exactly where the thinking
+earns its cost; for a lookup or a classification it's money spent on nothing.
+
 ## The trade-off
 
 | | Fast model | Reasoning model |

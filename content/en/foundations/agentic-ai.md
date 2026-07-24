@@ -51,6 +51,11 @@ The model is the engine; the harness is the chassis — it runs the loop, manage
 - ✅ It needs to react to intermediate results (search, then decide, then act).
 - ❌ A fixed workflow already solves it — don't add autonomy you don't need.
 
+Concretely: a support bot that *always* looks up the KB and answers is a **workflow**. One
+that searches the KB, decides the case is billing-specific, queries the billing system, and
+escalates to a human when the refund exceeds policy — that's an **agent**: each next step
+depends on what the last one returned.
+
 ## The trade-off
 
 More autonomy = more capability, but also more cost, more latency, and less predictability.

@@ -30,16 +30,19 @@ sung dữ kiện."
 
 Prompt thứ hai rõ ràng hơn vì có vai trò, nhiệm vụ, giới hạn, định dạng và tiêu chí đầu ra.
 
-## Các kỹ thuật cần phân biệt
+## Khi nào dùng kỹ thuật nào
 
-- **Zero-shot** — yêu cầu mô hình thực hiện nhiệm vụ mà không cung cấp ví dụ.
-- **One-shot** — cung cấp một ví dụ trước khi yêu cầu mô hình thực hiện.
-- **Few-shot** — cung cấp một số ví dụ để mô hình nhận biết cách trả lời.
-- **Prompt chaining** — chia một nhiệm vụ lớn thành nhiều prompt nhỏ nối tiếp nhau.
-- **Prompt template** — tạo cấu trúc prompt tái sử dụng được bằng cách thay đổi các biến đầu vào.
-- **Chain-of-thought** — hướng mô hình xử lý bài toán theo từng bước suy luận.
-- **Prompt caching** — tái sử dụng phần prompt lặp lại để giảm độ trễ và chi phí xử lý đầu vào
-  (trong những trường hợp được hỗ trợ).
+| Tình huống | Dùng |
+| ------ | ------ |
+| Tác vụ phổ biến, ai cũng hiểu | **Zero-shot** — hỏi thẳng; model hiện đại thường làm được |
+| Định dạng hoặc phong cách output cứ trôi | **Few-shot** — 2–5 ví dụ dạy được khuôn mẫu nhanh hơn cả đoạn văn mô tả luật |
+| Logic nhiều bước bị sai | **Chain-of-thought** — yêu cầu suy luận từng bước (hoặc dùng [reasoning model]({{< relref "/foundations/reasoning-models" >}})) |
+| Tác vụ quá lớn cho một prompt | **Prompt chaining** — tách thành các prompt nối tiếp, kiểm tra giữa các bước |
+| Cùng một khuôn prompt chạy trên nhiều input | **Prompt template** — một cấu trúc, các biến đầu vào |
+| Mỗi lần gọi lặp lại một prefix dài | **Prompt caching** — đòn bẩy chi phí; xem [Cost & tokens]({{< relref "/foundations/cost-and-tokens" >}}) |
+
+Quy luật đằng sau bảng: ví dụ thắng chỉ dẫn khi cần *đúng dạng*; suy luận thắng cả hai khi cần
+*đúng logic*; và phân rã thắng prompt to hơn.
 
 ## Điểm mạnh & hạn chế
 

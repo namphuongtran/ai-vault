@@ -51,9 +51,18 @@ quả, và lặp — đến khi model trả lời hoặc chạm điều kiện d
   và trả lỗi dưới dạng kết quả để model phục hồi được.
 - **Memory** — mang dữ kiện qua các lượt (và các phiên) mà không nhồi mọi thứ vào window.
 - **Điều kiện dừng** — giới hạn số bước, phát hiện lặp, và ngân sách token/thời gian, để một
-  agent bị kẹt kết thúc êm thay vì quay vòng.
+  agent bị kẹt kết thúc êm thay vì quay vòng. Một bộ ngoài đời thật: *dừng sau 20 bước hoặc
+  100k token; dừng nếu cùng một tool bị gọi với cùng tham số hai lần liên tiếp; khi dừng, tóm
+  tắt tiến độ thay vì fail trong im lặng.*
 - **Guardrail** — áp [kiểm tra đầu vào/đầu ra]({{< relref "/foundations/guardrails" >}}) và
   [security]({{< relref "/foundations/ai-security" >}}) ở *mỗi* lượt, không chỉ lượt đầu.
+
+## Skills — quy trình đóng gói
+
+Ngoài tool, các harness trưởng thành còn hỗ trợ **skills**: chỉ dẫn đóng gói cho một loại tác
+vụ cụ thể (checklist deploy, quy trình review, format báo cáo) được nạp vào context khi tác vụ
+đó xuất hiện. Tool cho agent *năng lực*; skill cho nó *quy trình* — khác biệt giữa việc đưa ai
+đó cái terminal và đưa họ cuốn runbook.
 
 ## Build vs buy
 
