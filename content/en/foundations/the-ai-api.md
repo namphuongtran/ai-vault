@@ -1,6 +1,6 @@
 ---
 title: "The AI API"
-weight: 12
+weight: 9
 description: How you actually call a model — messages and roles, request/response, streaming, and SDKs.
 ---
 

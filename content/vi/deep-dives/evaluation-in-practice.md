@@ -1,6 +1,6 @@
 ---
 title: "Evaluation in Practice"
-weight: 6
+weight: 8
 description: Bộ eval, LLM-as-judge, offline vs online và regression testing.
 ---
 

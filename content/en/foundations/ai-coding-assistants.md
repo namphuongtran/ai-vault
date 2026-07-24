@@ -1,6 +1,6 @@
 ---
 title: "AI Coding Assistants"
-weight: 2
+weight: 23
 description: The agentic coding tools you already use — what's under the hood, and why this path helps you use them better.
 ---
 

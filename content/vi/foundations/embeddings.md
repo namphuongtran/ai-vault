@@ -1,7 +1,7 @@
 ---
 title: "Embeddings"
 linkTitle: "Embeddings"
-weight: 18
+weight: 17
 description: Biến văn bản thành vector thể hiện ý nghĩa — cơ chế đằng sau RAG và semantic search.
 ---
 

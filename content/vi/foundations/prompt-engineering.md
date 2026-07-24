@@ -1,6 +1,6 @@
 ---
 title: "Prompt Engineering"
-weight: 16
+weight: 11
 description: Cách trực tiếp nhất để kiểm soát đầu ra của foundation model.
 ---
 

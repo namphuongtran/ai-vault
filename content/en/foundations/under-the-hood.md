@@ -1,6 +1,6 @@
 ---
 title: "Under the Hood"
-weight: 7
+weight: 5
 description: A light look at transformers and attention — just enough to explain why LLMs behave as they do.
 ---
 

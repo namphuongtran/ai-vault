@@ -1,6 +1,6 @@
 ---
 title: "Advanced RAG"
-weight: 2
+weight: 4
 description: Chunking, hybrid retrieval, re-ranking, query transforms, and RAG evaluation.
 ---
 

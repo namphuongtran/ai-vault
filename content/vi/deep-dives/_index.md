@@ -17,11 +17,28 @@ description: >
 thì Giai đoạn 1 trả lời *như thế nào* — các chiến lược, mẫu (pattern) và đánh đổi xuất hiện
 khi bạn xây hệ thống thật.
 
+## Lộ trình
+
+Các bài đào sâu đi theo đúng trục module của Giai đoạn 0 — prompt, rồi dữ liệu, rồi agent,
+rồi vận hành:
+
+```mermaid
+flowchart LR
+    A[Prompt patterns] --> B[Types of RAG] --> C[Advanced RAG]
+    C --> D[Agent patterns] --> E[Adaptation] --> F[Evaluation in practice]
+```
+
 ## Trong phần này
 
-1. **Types of RAG** — họ RAG; cái nào là kiến trúc vs kỹ thuật.
-2. **Advanced RAG** — chunking, hybrid retrieval, re-ranking, query transform, đánh giá.
-3. **Agent patterns** — vòng lặp ReAct, thiết kế tool, memory, multi-agent, reflection.
-4. **Prompt patterns** — kỹ thuật suy luận, structured output, phân rã, tối ưu prompt.
-5. **Adaptation** — chọn giữa fine-tuning, RAG và prompting.
-6. **Evaluation in practice** — bộ eval, LLM-as-judge, offline vs online, regression testing.
+1. [Prompt patterns]({{< relref "/deep-dives/prompt-patterns" >}}) — kỹ thuật suy luận,
+   structured output, phân rã, tối ưu prompt.
+2. [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) — họ RAG; cái nào là kiến trúc
+   vs kỹ thuật.
+3. [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) — chunking, hybrid retrieval,
+   re-ranking, query transform.
+4. [Agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) — vòng lặp ReAct, thiết kế
+   tool, memory, multi-agent, reflection.
+5. [Adaptation]({{< relref "/deep-dives/adaptation" >}}) — chọn giữa prompting, RAG và
+   fine-tuning.
+6. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — bộ eval,
+   LLM-as-judge, offline vs online, regression testing.

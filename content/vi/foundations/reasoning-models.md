@@ -1,7 +1,7 @@
 ---
 title: "Reasoning Models"
 linkTitle: "Reasoning Models"
-weight: 11
+weight: 14
 description: Mô hình suy nghĩ từng bước trước khi trả lời — khi nào thời gian và token bỏ ra là xứng đáng.
 ---
 

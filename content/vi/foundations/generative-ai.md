@@ -1,6 +1,6 @@
 ---
 title: "Generative AI"
-weight: 4
+weight: 2
 description: Mô hình tạo ra nội dung mới — văn bản, hình ảnh, âm thanh hoặc mã nguồn.
 ---
 

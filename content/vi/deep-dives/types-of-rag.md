@@ -1,7 +1,7 @@
 ---
 title: "Types of RAG"
 linkTitle: "Types of RAG"
-weight: 1
+weight: 3
 description: Họ RAG — standard, advanced, agentic, graph, multimodal — và cái nào là kiến trúc vs kỹ thuật.
 ---
 

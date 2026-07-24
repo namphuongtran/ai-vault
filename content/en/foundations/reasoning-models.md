@@ -1,6 +1,6 @@
 ---
 title: "Reasoning Models"
-weight: 11
+weight: 14
 description: Models that think step-by-step before answering — when the extra time and tokens pay off.
 ---
 

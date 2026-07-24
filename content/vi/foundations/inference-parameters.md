@@ -1,7 +1,7 @@
 ---
 title: "Inference Parameters"
 linkTitle: "Inference Parameters"
-weight: 13
+weight: 10
 description: Các "núm" định hình đầu ra — temperature, top-p/top-k, max tokens, stop.
 ---
 

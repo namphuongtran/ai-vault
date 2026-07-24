@@ -1,7 +1,7 @@
 ---
 title: "Limitations & Failure Modes"
 linkTitle: "Limitations & Failure Modes"
-weight: 9
+weight: 8
 description: Mô hình sai ở đâu và vì sao — để biết khi nào cần thêm RAG, tool, guardrail, hoặc con người.
 ---
 

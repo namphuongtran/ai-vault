@@ -1,6 +1,6 @@
 ---
 title: "Types of RAG"
-weight: 1
+weight: 3
 description: The RAG family — standard, advanced, agentic, graph, multimodal — and which is an architecture vs a technique.
 ---
 
