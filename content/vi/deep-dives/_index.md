@@ -24,21 +24,25 @@ rồi vận hành:
 
 ```mermaid
 flowchart LR
-    A[Prompt patterns] --> B[Types of RAG] --> C[Advanced RAG]
-    C --> D[Agent patterns] --> E[Adaptation] --> F[Evaluation in practice]
+    A[Prompt patterns] --> B[Vector databases] --> C[Types of RAG] --> D[Advanced RAG]
+    D --> E[Agent patterns] --> F[Agent memory] --> G[Adaptation] --> H[Evaluation in practice]
 ```
 
 ## Trong phần này
 
 1. [Prompt patterns]({{< relref "/deep-dives/prompt-patterns" >}}) — kỹ thuật suy luận,
    structured output, phân rã, tối ưu prompt.
-2. [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) — họ RAG; cái nào là kiến trúc
+2. [Vector databases]({{< relref "/deep-dives/vector-databases" >}}) — chỉ mục ANN (HNSW,
+   IVF, PQ), lọc metadata, chọn store.
+3. [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) — họ RAG; cái nào là kiến trúc
    vs kỹ thuật.
-3. [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) — chunking, hybrid retrieval,
+4. [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) — chunking, hybrid retrieval,
    re-ranking, query transform.
-4. [Agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) — vòng lặp ReAct, thiết kế
-   tool, memory, multi-agent, reflection.
-5. [Adaptation]({{< relref "/deep-dives/adaptation" >}}) — chọn giữa prompting, RAG và
+5. [Agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) — vòng lặp ReAct, thiết kế
+   tool, multi-agent, reflection.
+6. [Agent memory]({{< relref "/deep-dives/agent-memory" >}}) — các loại bộ nhớ, và khi nào
+   mỗi loại xứng đáng có mặt.
+7. [Adaptation]({{< relref "/deep-dives/adaptation" >}}) — chọn giữa prompting, RAG và
    fine-tuning.
-6. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — bộ eval,
+8. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — bộ eval,
    LLM-as-judge, offline vs online, regression testing.
