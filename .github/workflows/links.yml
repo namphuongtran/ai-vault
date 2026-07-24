@@ -48,6 +48,7 @@ jobs:
             --accept 200..=299,429
             --max-retries 3
             --exclude-loopback
+            --exclude "openai\.com"
             "./public/**/*.html"
           fail: false
           output: ./lychee/out.md

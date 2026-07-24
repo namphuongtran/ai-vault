@@ -43,3 +43,8 @@ context/RAG, tool & agent design, guardrails, evaluation, and cost/latency aware
 
 Training algorithms, gradient descent, model architecture internals. Useful background later
 — not required to ship.
+
+## Sources
+
+- [Google Cloud — What is Generative AI?](https://cloud.google.com/use-cases/generative-ai)
+- Bommasani et al., *On the Opportunities and Risks of Foundation Models* (2021) — [arXiv:2108.07258](https://arxiv.org/abs/2108.07258)

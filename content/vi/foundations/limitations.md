@@ -35,3 +35,7 @@ flowchart LR
 Một mô hình đứng một mình thì không đáng tin cho dữ kiện, toán, và tính nhất quán. Bạn làm nó
 đáng tin bằng cách **bao quanh nó** — neo vào dữ liệu, cho tool, ràng buộc đầu ra, và đo lường.
 Đó chính là nội dung của phần còn lại trong giai đoạn này.
+
+## Nguồn
+
+- Ji et al., *Survey of Hallucination in Natural Language Generation* (2022) — [arXiv:2202.03629](https://arxiv.org/abs/2202.03629)

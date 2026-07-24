@@ -24,3 +24,7 @@ Given a product review: a **discriminative** model labels it *positive / negativ
 **generative** model writes a reply to the customer. Same input, different job.
 
 > Foundation models are the engines; generative AI is what they do when producing content.
+
+## Sources
+
+- [Google Cloud — What is Generative AI?](https://cloud.google.com/use-cases/generative-ai)

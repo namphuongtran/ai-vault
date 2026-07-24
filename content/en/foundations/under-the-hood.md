@@ -34,3 +34,7 @@ flowchart LR
   can be confidently wrong (see [Limitations]({{< relref "/foundations/limitations" >}})).
 
 That's the whole point of this page — awareness, not implementation. The math is optional.
+
+## Sources
+
+- Vaswani et al., *Attention Is All You Need* (2017) — [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)

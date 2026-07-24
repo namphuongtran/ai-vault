@@ -25,3 +25,15 @@ general-purpose model and specialize it.
 
 The *same* foundation model can summarize an email, write SQL, translate French, and answer a
 support question — with no task-specific training. You just change the prompt.
+
+## Strengths & limitations
+
+- **Strengths** — one general-purpose model for many tasks; adapt it cheaply along
+  prompting → RAG → fine-tuning.
+- **Limitations** — knowledge frozen at a cutoff; can hallucinate; capability, cost, and
+  latency all scale with size; behavior is hard to fully predict.
+
+## Sources
+
+- Bommasani et al., *On the Opportunities and Risks of Foundation Models* (2021) — [arXiv:2108.07258](https://arxiv.org/abs/2108.07258)
+- [Anthropic — Models overview](https://platform.claude.com/docs/en/about-claude/models/overview)

@@ -43,3 +43,8 @@ thiết kế tool & agent, guardrail, đánh giá, và ý thức về chi phí/�
 
 Thuật toán huấn luyện, gradient descent, chi tiết kiến trúc mô hình. Là kiến thức nền hữu ích
 về sau — không bắt buộc để bắt đầu làm.
+
+## Nguồn
+
+- [Google Cloud — What is Generative AI?](https://cloud.google.com/use-cases/generative-ai)
+- Bommasani et al., *On the Opportunities and Risks of Foundation Models* (2021) — [arXiv:2108.07258](https://arxiv.org/abs/2108.07258)
