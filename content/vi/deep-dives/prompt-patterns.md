@@ -50,3 +50,9 @@ Ví dụ định hướng định dạng và phong cách — nhưng *chọn ví 
 - Nhồi nhiều nhiệm vụ không liên quan vào một prompt.
 - Tiêu chí thành công mơ hồ ("làm cho tốt").
 - Dựa vào ví dụ để chữa một tác vụ mà chỉ dẫn chưa bao giờ nêu rõ.
+
+## Nguồn
+
+- Wei et al., *Chain-of-Thought Prompting Elicits Reasoning in LLMs* (2022) — [arXiv:2201.11903](https://arxiv.org/abs/2201.11903)
+- Wang et al., *Self-Consistency Improves Chain of Thought Reasoning* (2022) — [arXiv:2203.11171](https://arxiv.org/abs/2203.11171)
+- Zhou et al., *Least-to-Most Prompting* (2022) — [arXiv:2205.10625](https://arxiv.org/abs/2205.10625)

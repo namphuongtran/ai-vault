@@ -48,3 +48,8 @@ Mỗi công cụ đều được xây từ chính các khái niệm trong giai �
 Hiểu các mảnh này giúp bạn **dùng công cụ tốt hơn** (mục tiêu rõ hơn, context tốt hơn, biết khi
 nào chúng sẽ đuối) — và đó cũng chính là kiến thức bạn dùng để **tự build** agent và ứng dụng AI
 ở [Giai đoạn 2]({{< relref "/building" >}}). Dùng là cửa ngõ; build là đích đến.
+
+## Nguồn
+
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- [Anthropic — Agent SDK overview](https://platform.claude.com/docs/en/agent-sdk/overview)

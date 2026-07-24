@@ -55,3 +55,8 @@ flowchart TD
 
 When retrieval quality drops, you swap models, or a prompt regresses, you change *one* place —
 and your evals tell you whether it worked, instead of hunting through a monolith.
+
+## Sources
+
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- [Anthropic — Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)

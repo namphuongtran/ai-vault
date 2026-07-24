@@ -56,3 +56,8 @@ flowchart LR
 - Đặt **tính xác định trong code**, phần phán đoán ở model.
 - **Neo** bằng dữ liệu, **ràng buộc** bằng schema, **kiểm soát** các hành động rủi ro.
 - **Đo** mọi thứ — eval offline, trace online.
+
+## Nguồn
+
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- [Anthropic — Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)

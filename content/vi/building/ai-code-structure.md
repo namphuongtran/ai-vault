@@ -56,3 +56,8 @@ flowchart TD
 
 Khi chất lượng retrieval tụt, bạn đổi model, hay một prompt bị hồi quy, bạn chỉ sửa *một* chỗ —
 và evals cho biết có được hay không, thay vì lục trong một khối monolith.
+
+## Nguồn
+
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- [Anthropic — Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)

@@ -49,3 +49,8 @@ Understanding these pieces makes you **better at using** the tools (clearer goal
 context, knowing when they'll struggle) — and it's the same knowledge you'll use to **build
 your own** agents and AI apps in [Stage 2]({{< relref "/building" >}}). Using is the on-ramp;
 building is the destination.
+
+## Sources
+
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- [Anthropic — Agent SDK overview](https://platform.claude.com/docs/en/agent-sdk/overview)

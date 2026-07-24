@@ -55,3 +55,8 @@ The **orchestrator (harness)** is the brain you build: it assembles the prompt, 
 - Put **determinism in code**, judgment in the model.
 - **Ground** with data, **constrain** with schemas, **gate** risky actions.
 - **Measure** everything — evals offline, traces online.
+
+## Sources
+
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- [Anthropic — Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)

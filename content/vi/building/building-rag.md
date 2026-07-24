@@ -60,3 +60,8 @@ Chạy cho mỗi câu hỏi:
 re-ranking là các đòn bẩy. Xem [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}), và
 đánh giá truy xuất tách biệt với sinh câu trả lời (xem
 [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}})).
+
+## Nguồn
+
+- Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (2020) — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)
+- Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)

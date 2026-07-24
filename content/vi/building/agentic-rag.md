@@ -57,3 +57,8 @@ Mạnh hơn, nhưng nhiều độ trễ, chi phí và bộ phận chuyển độ
 giới hạn số bước, và [đánh giá]({{< relref "/deep-dives/evaluation-in-practice" >}}) — đặc biệt là
 các kiểm tra chất lượng truy xuất trong [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}).
 Chỉ dùng agentic RAG khi standard hoặc advanced RAG thực sự không đủ.
+
+## Nguồn
+
+- Asai et al., *Self-RAG* (2023) — [arXiv:2310.11511](https://arxiv.org/abs/2310.11511)
+- Yan et al., *Corrective RAG (CRAG)* (2024) — [arXiv:2401.15884](https://arxiv.org/abs/2401.15884)

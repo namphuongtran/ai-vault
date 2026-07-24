@@ -60,3 +60,8 @@ Most RAG quality problems are **retrieval** problems, not model problems — chu
 search, and re-ranking are the levers. See
 [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) for those, and evaluate retrieval and
 generation separately (see [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}})).
+
+## Sources
+
+- Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (2020) — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)
+- Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)

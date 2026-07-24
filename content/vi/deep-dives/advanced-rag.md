@@ -58,3 +58,9 @@ Xem [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}
 - Truy xuất bỏ sót thuật ngữ chính xác → thêm sparse/hybrid.
 - Đúng đoạn được truy xuất nhưng xếp hạng thấp → thêm re-ranking.
 - Câu trả lời lệch khỏi context → siết prompt và kiểm tra faithfulness.
+
+## Nguồn
+
+- Gao et al., *Precise Zero-Shot Dense Retrieval without Relevance Labels (HyDE)* (2022) — [arXiv:2212.10496](https://arxiv.org/abs/2212.10496)
+- Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)
+- Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (2020) — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)

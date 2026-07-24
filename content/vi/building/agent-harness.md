@@ -64,3 +64,8 @@ Bạn hiếm khi tự viết tất cả:
 - **Dịch vụ managed** — nhà cung cấp host vòng lặp và sandbox tool cho bạn.
 
 Chọn cái nào là chủ đề [Tooling & frameworks]({{< relref "/building" >}}), sắp tới.
+
+## Nguồn
+
+- [Anthropic — Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
