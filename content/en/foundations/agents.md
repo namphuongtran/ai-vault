@@ -30,10 +30,10 @@ flowchart TB
 - **Memory** — keep track of context across steps (short-term and long-term).
 - **Reflection** — evaluate results and adjust the approach.
 
-## Chat vs. agent
+## The agent loop
 
-- A plain **chat** call: one prompt in, one answer out.
-- An **agent**: a loop of *think → act → observe* that can use tools and take multiple steps.
+A plain chat call is one prompt in, one answer out. An agent instead runs a loop — *reason →
+act → observe* — until the goal is reached:
 
 ```mermaid
 flowchart LR
@@ -61,7 +61,19 @@ A plain chat call can't do steps 2–3 — it would just guess.
 - The model must fetch fresh data or operate on systems (search, code, APIs).
 - Outcomes depend on intermediate results the model can't know in advance.
 
-> More autonomy means more capability — and more need for **guardrails** and oversight.
+How much of the loop to hand over to the model — versus scripting the steps yourself — is
+its own decision: see [Agentic AI]({{< relref "/foundations/agentic-ai" >}}).
+
+## Strengths & limitations
+
+- **Strengths** — handles tasks you can't fully script in advance; acts on fresh data and
+  real systems instead of guessing; composes with everything else in this vault (tools, RAG,
+  memory).
+- **Limitations** — each loop step is a model call, so cost and latency multiply; behavior is
+  less predictable than a fixed workflow, and errors compound across steps — which is why
+  [guardrails]({{< relref "/foundations/guardrails" >}}), stop conditions, and
+  [evaluation]({{< relref "/foundations/model-evaluation" >}}) matter more here than anywhere
+  else.
 
 ## Sources
 

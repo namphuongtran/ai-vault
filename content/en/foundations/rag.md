@@ -63,7 +63,8 @@ approximate-nearest-neighbor for speed). Examples: pgvector, FAISS, Pinecone, Ch
 
 Suppose a company has thousands of product manuals updated weekly. With fine-tuning, they may
 need to retrain the model every time documents change. With RAG, they only update the data
-source and re-sync the embeddings.
+source and re-sync the embeddings. The full comparison — including prompting as the third
+lever — is in [Adaptation]({{< relref "/deep-dives/adaptation" >}}).
 
 ## Variants
 
