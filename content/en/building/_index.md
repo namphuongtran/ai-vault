@@ -29,7 +29,7 @@ flowchart LR
 2. [Building a RAG system]({{< relref "/building/building-rag" >}}) — end-to-end reference architecture.
 3. [Agentic RAG]({{< relref "/building/agentic-rag" >}}) — retrieval driven by an agent, not a fixed pipeline.
 4. [The agent harness]({{< relref "/building/agent-harness" >}}) — the loop, context, tools, memory, guardrails.
-5. AI code structure — *coming soon*.
+5. [AI code structure]({{< relref "/building/ai-code-structure" >}}) — how to organize an AI app codebase.
 6. Tooling & frameworks — *coming soon*.
 
 ## Prerequisites
