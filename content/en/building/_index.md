@@ -27,7 +27,7 @@ flowchart LR
 
 1. [AI system design]({{< relref "/building/ai-system-design" >}}) — the standard shape of an AI app.
 2. [Building a RAG system]({{< relref "/building/building-rag" >}}) — end-to-end reference architecture.
-3. Agentic RAG — *coming soon*.
+3. [Agentic RAG]({{< relref "/building/agentic-rag" >}}) — retrieval driven by an agent, not a fixed pipeline.
 4. The agent harness — *coming soon*.
 5. AI code structure — *coming soon*.
 6. Tooling & frameworks — *coming soon*.
