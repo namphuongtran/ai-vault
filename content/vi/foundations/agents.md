@@ -44,6 +44,17 @@ flowchart LR
     O --> D[Answer when done]
 ```
 
+## Ví dụ — một lượt dùng tool
+
+Câu hỏi: *"Thời tiết ở Paris thế nào?"*
+
+1. **Reason** — cần thời tiết hiện tại; mình có tool `get_weather`.
+2. **Act** — gọi `get_weather("Paris")`.
+3. **Observe** — tool trả về `18°C, mưa`.
+4. **Answer** — "Paris đang 18°C và có mưa."
+
+Một lời gọi chat thường không làm được bước 2–3 — nó sẽ chỉ đoán.
+
 ## Khi nào nên dùng
 
 - Tác vụ cần nhiều bước hoặc hành động bên ngoài (không chỉ sinh văn bản).

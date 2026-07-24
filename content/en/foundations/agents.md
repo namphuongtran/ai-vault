@@ -44,6 +44,17 @@ flowchart LR
     O --> D[Answer when done]
 ```
 
+## Example — a tool-using turn
+
+Question: *"What's the weather in Paris?"*
+
+1. **Reason** — I need current weather; I have a `get_weather` tool.
+2. **Act** — call `get_weather("Paris")`.
+3. **Observe** — the tool returns `18°C, rainy`.
+4. **Answer** — "It's 18°C and rainy in Paris right now."
+
+A plain chat call can't do steps 2–3 — it would just guess.
+
 ## When to use
 
 - The task needs several steps or external actions (not just text generation).

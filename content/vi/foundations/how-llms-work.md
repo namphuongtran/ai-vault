@@ -13,6 +13,15 @@ Mô hình không đọc ký tự hay từ — nó đọc **token**, các mẩu v
 Anh). "Tokenization" là bước chia văn bản thành token. Mọi thứ được đếm và tính phí theo token:
 cả đầu vào **và** đầu ra của mô hình.
 
+**Ví dụ** — cùng một đoạn text, theo cách model "thấy" nó:
+
+```text
+"AI is unbelievable"  →  ["AI"][" is"][" un"]["bel"]["iev"]["able"]
+```
+
+Ba từ thành sáu token: từ phổ biến là một token, từ hiếm hoặc dài bị tách thành nhiều mảnh. Đó
+là vì sao số token ≠ số từ.
+
 ## Dự đoán token kế tiếp
 
 LLM làm đúng một việc: cho văn bản hiện có, dự đoán **token kế tiếp**, nối vào, rồi lặp lại.

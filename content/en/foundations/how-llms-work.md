@@ -12,6 +12,15 @@ Models don't read characters or words — they read **tokens**, chunks of text (
 word in English). "Tokenization" is the step that splits text into tokens. Everything is
 counted and billed in tokens: your input **and** the model's output.
 
+**Example** — the same text, as the model sees it:
+
+```text
+"AI is unbelievable"  →  ["AI"][" is"][" un"]["bel"]["iev"]["able"]
+```
+
+Three words become six tokens: common words are one token, rarer or longer words split into
+pieces. That's why token count ≠ word count.
+
 ## Next-token prediction
 
 An LLM does one thing: given the text so far, predict the **next token**, append it, and
