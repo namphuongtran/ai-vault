@@ -25,6 +25,21 @@ Choose a metric based on the real goal of the problem.
 - **F1 score** — the balance of precision and recall; useful when both error types matter or
   when classes are imbalanced.
 
+## Example — precision vs recall with numbers
+
+A fraud filter flags 100 transactions as fraud; 90 are truly fraud, 10 are fine. It also
+missed 30 real frauds it never flagged:
+
+| | Flagged fraud | Not flagged |
+| -- | -------------- | ------------- |
+| Actually fraud | 90 (TP) | 30 (FN) |
+| Actually fine | 10 (FP) | rest (TN) |
+
+- **Precision** = 90 / (90 + 10) = **0.90** — of what it flagged, 90% were right.
+- **Recall** = 90 / (90 + 30) = **0.75** — it caught 75% of all real fraud.
+
+Push one up and the other usually drops — that's the trade-off F1 balances.
+
 ## RAG-specific metrics
 
 - **Faithfulness** — does the answer stay true to the provided context? A fluent answer can

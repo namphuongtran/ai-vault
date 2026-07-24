@@ -24,6 +24,11 @@ knobs for controlling output.
 - Don't tune temperature *and* top-p aggressively at once; pick one lever.
 - Even at temperature 0, output isn't guaranteed identical every time.
 
+**Example** — prompt: *"Write a tagline for a coffee shop."*
+
+- **Temperature 0** → the same safe answer each time: *"Great coffee, every day."*
+- **Temperature 0.9** → varied and creative: *"Sip the sunrise."* / *"Your daily grind, reimagined."*
+
 ## `max_tokens` is a hard cap
 
 If the model hits it mid-sentence, the response is truncated — raise the limit or stream long

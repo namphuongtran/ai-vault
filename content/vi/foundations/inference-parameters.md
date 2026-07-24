@@ -25,6 +25,11 @@ Khi gửi request, vài tham số định hình *cách* mô hình sinh nội dun
 - Đừng chỉnh mạnh cả temperature *và* top-p cùng lúc; chọn một đòn bẩy.
 - Ngay cả temperature 0, đầu ra không đảm bảo giống hệt mỗi lần.
 
+**Ví dụ** — prompt: *"Viết một tagline cho quán cà phê."*
+
+- **Temperature 0** → cùng một câu an toàn mỗi lần: *"Cà phê ngon, mỗi ngày."*
+- **Temperature 0.9** → đa dạng, sáng tạo: *"Nhấp một ngụm bình minh."* / *"Ly cà phê quen, cảm hứng mới."*
+
 ## `max_tokens` là giới hạn cứng
 
 Nếu mô hình chạm giới hạn giữa câu, câu trả lời bị cắt — hãy nâng giới hạn hoặc stream đầu ra

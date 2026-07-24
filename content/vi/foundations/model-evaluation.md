@@ -26,6 +26,21 @@ evaluation** rất quan trọng. Khi lựa chọn metric, cần dựa trên mụ
 - **F1 score** — cân bằng giữa precision và recall; hữu ích khi cả hai loại lỗi đều quan trọng
   hoặc khi dữ liệu giữa các lớp không cân bằng.
 
+## Ví dụ — precision vs recall bằng số
+
+Một bộ lọc gian lận gắn cờ 100 giao dịch là gian lận; 90 đúng là gian lận, 10 là bình thường.
+Nó cũng bỏ sót 30 ca gian lận thật mà không gắn cờ:
+
+| | Gắn cờ gian lận | Không gắn cờ |
+| -- | ----------------- | -------------- |
+| Thực sự gian lận | 90 (TP) | 30 (FN) |
+| Thực sự bình thường | 10 (FP) | còn lại (TN) |
+
+- **Precision** = 90 / (90 + 10) = **0.90** — trong số gắn cờ, 90% đúng.
+- **Recall** = 90 / (90 + 30) = **0.75** — bắt được 75% tổng gian lận thật.
+
+Đẩy cái này lên thì cái kia thường tụt — đó là đánh đổi mà F1 cân bằng.
+
 ## Metric riêng cho RAG
 
 - **Faithfulness** — câu trả lời có bám sát context được cung cấp hay không. Một câu trả lời có
