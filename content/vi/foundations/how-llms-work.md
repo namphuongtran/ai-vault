@@ -58,3 +58,15 @@ không biết dữ liệu của bạn hay sự kiện gần đây — và đó c
 - Bạn trả phí theo token → prompt gọn và caching giúp tiết kiệm.
 - Context là hữu hạn → quản lý những gì bạn đưa vào.
 - Đầu ra mang tính xác suất → hãy validate và dùng [evaluation]({{< relref "/foundations/model-evaluation" >}}).
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — năng lực ngôn ngữ trôi chảy, tổng quát; context dài; đa ngôn ngữ.
+- **Hạn chế** — dự đoán văn bản *hợp lý*, không phải sự thật đã kiểm chứng; chi phí tăng theo
+  token; kiến thức đóng băng ở mốc huấn luyện.
+
+## Nguồn
+
+- Vaswani et al., *Attention Is All You Need* (2017) — [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)
+- [OpenAI — What are tokens and how to count them](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
+- [Anthropic — Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows)

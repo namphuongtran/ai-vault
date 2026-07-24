@@ -24,3 +24,7 @@ Cho một review sản phẩm: model **discriminative** gán nhãn *tích cực 
 **generative** viết luôn câu trả lời cho khách. Cùng input, khác việc.
 
 > Foundation model là "động cơ"; generative AI là việc chúng làm khi tạo ra nội dung.
+
+## Nguồn
+
+- [Google Cloud — What is Generative AI?](https://cloud.google.com/use-cases/generative-ai)

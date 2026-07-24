@@ -25,3 +25,15 @@ tác vụ, ta bắt đầu từ một mô hình đa dụng và chuyên biệt ho
 
 *Cùng một* foundation model có thể tóm tắt email, viết SQL, dịch tiếng Pháp, và trả lời một câu
 hỏi hỗ trợ — không cần huấn luyện riêng cho từng tác vụ. Bạn chỉ đổi prompt.
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — một model đa dụng cho nhiều tác vụ; điều chỉnh rẻ theo
+  prompting → RAG → fine-tuning.
+- **Hạn chế** — kiến thức đóng băng ở mốc cutoff; có thể hallucinate; năng lực, chi phí và độ
+  trễ đều tăng theo kích thước; hành vi khó đoán hết.
+
+## Nguồn
+
+- Bommasani et al., *On the Opportunities and Risks of Foundation Models* (2021) — [arXiv:2108.07258](https://arxiv.org/abs/2108.07258)
+- [Anthropic — Models overview](https://platform.claude.com/docs/en/about-claude/models/overview)

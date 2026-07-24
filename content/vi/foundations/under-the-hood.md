@@ -33,3 +33,7 @@ flowchart LR
   cách tự tin (xem [Limitations]({{< relref "/foundations/limitations" >}})).
 
 Đó là toàn bộ mục đích trang này — để nhận biết, không phải để cài đặt. Phần toán là tùy chọn.
+
+## Nguồn
+
+- Vaswani et al., *Attention Is All You Need* (2017) — [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)

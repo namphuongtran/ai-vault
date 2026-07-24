@@ -57,3 +57,15 @@ knowledge of your data or recent events — which is exactly what
 - You pay per token → concise prompts and caching save money.
 - Context is finite → manage what you put in it.
 - Output is probabilistic → validate, and use [evaluation]({{< relref "/foundations/model-evaluation" >}}).
+
+## Strengths & limitations
+
+- **Strengths** — fluent, general language ability; long context; multilingual.
+- **Limitations** — predicts *plausible* text, not verified truth; cost grows with tokens;
+  knowledge is frozen at the training cutoff.
+
+## Sources
+
+- Vaswani et al., *Attention Is All You Need* (2017) — [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)
+- [OpenAI — What are tokens and how to count them](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
+- [Anthropic — Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows)

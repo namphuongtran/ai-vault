@@ -39,3 +39,15 @@ Mỗi mô hình hỗ trợ một tập cụ thể — hãy kiểm tra trước k
 - Ảnh cũng tốn **token** — thường khá nhiều; độ phân giải cao = nhiều token hơn.
 - Một mô hình đa phương thức thì tiện; mô hình chuyên biệt có thể tốt hoặc rẻ hơn cho một
   phương thức duy nhất. Đây là đánh đổi khi [chọn model]({{< relref "/foundations/choosing-a-model" >}}).
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — một giao diện cho text, ảnh và audio; mở khóa ảnh màn hình, PDF, biểu đồ,
+  giọng nói.
+- **Hạn chế** — ảnh tốn nhiều token; giới hạn độ phân giải; không phải model nào cũng hỗ trợ
+  mọi phương thức.
+
+## Nguồn
+
+- [Anthropic — Vision](https://platform.claude.com/docs/en/build-with-claude/vision)
+- [Google Cloud — What is Generative AI?](https://cloud.google.com/use-cases/generative-ai)

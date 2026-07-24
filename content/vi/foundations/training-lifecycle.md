@@ -31,3 +31,8 @@ nhiều hành vi của nó. Đây là mức nhận biết — không cần kỹ 
 ## Những gì bạn chưa cần
 
 Tập dữ liệu, GPU, hàm mất mát, gradient descent. Nhà cung cấp lo hết; bạn dùng mô hình đã hoàn thiện.
+
+## Nguồn
+
+- Ouyang et al., *Training language models to follow instructions with human feedback* (2022) — [arXiv:2203.02155](https://arxiv.org/abs/2203.02155)
+- Bommasani et al., *On the Opportunities and Risks of Foundation Models* (2021) — [arXiv:2108.07258](https://arxiv.org/abs/2108.07258)

@@ -38,3 +38,15 @@ A model supports a specific set of these — check before you rely on one.
 - Images cost **tokens too** — often a lot; higher resolution = more tokens.
 - One multimodal model is convenient; specialized models can be better or cheaper for a single
   modality. This is a [model-choice]({{< relref "/foundations/choosing-a-model" >}}) trade-off.
+
+## Strengths & limitations
+
+- **Strengths** — one interface across text, images, and audio; unlocks screenshots, PDFs,
+  charts, and voice.
+- **Limitations** — images cost many tokens; resolution is capped; not every model supports
+  every modality.
+
+## Sources
+
+- [Anthropic — Vision](https://platform.claude.com/docs/en/build-with-claude/vision)
+- [Google Cloud — What is Generative AI?](https://cloud.google.com/use-cases/generative-ai)

@@ -35,3 +35,7 @@ flowchart LR
 A model alone is unreliable for facts, math, and consistency. You make it reliable by
 **surrounding it** — grounding it in data, giving it tools, constraining its output, and
 measuring it. That's what the rest of this stage is about.
+
+## Sources
+
+- Ji et al., *Survey of Hallucination in Natural Language Generation* (2022) — [arXiv:2202.03629](https://arxiv.org/abs/2202.03629)

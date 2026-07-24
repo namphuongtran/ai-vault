@@ -32,3 +32,8 @@ behavior. This is awareness-level — no training techniques required.
 
 Datasets, GPUs, loss functions, gradient descent. Providers handle all of it; you consume the
 finished model.
+
+## Sources
+
+- Ouyang et al., *Training language models to follow instructions with human feedback* (2022) — [arXiv:2203.02155](https://arxiv.org/abs/2203.02155)
+- Bommasani et al., *On the Opportunities and Risks of Foundation Models* (2021) — [arXiv:2108.07258](https://arxiv.org/abs/2108.07258)
