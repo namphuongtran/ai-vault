@@ -19,8 +19,9 @@ khi bạn xây hệ thống thật.
 
 ## Trong phần này
 
-1. **Advanced RAG** — chunking, hybrid retrieval, re-ranking, query transform, đánh giá.
-2. **Agent patterns** — vòng lặp ReAct, thiết kế tool, memory, multi-agent, reflection.
-3. **Prompt patterns** — kỹ thuật suy luận, structured output, phân rã, tối ưu prompt.
-4. **Adaptation** — chọn giữa fine-tuning, RAG và prompting.
-5. **Evaluation in practice** — bộ eval, LLM-as-judge, offline vs online, regression testing.
+1. **Types of RAG** — họ RAG; cái nào là kiến trúc vs kỹ thuật.
+2. **Advanced RAG** — chunking, hybrid retrieval, re-ranking, query transform, đánh giá.
+3. **Agent patterns** — vòng lặp ReAct, thiết kế tool, memory, multi-agent, reflection.
+4. **Prompt patterns** — kỹ thuật suy luận, structured output, phân rã, tối ưu prompt.
+5. **Adaptation** — chọn giữa fine-tuning, RAG và prompting.
+6. **Evaluation in practice** — bộ eval, LLM-as-judge, offline vs online, regression testing.

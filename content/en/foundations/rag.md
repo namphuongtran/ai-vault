@@ -64,3 +64,10 @@ approximate-nearest-neighbor for speed). Examples: pgvector, FAISS, Pinecone, Ch
 Suppose a company has thousands of product manuals updated weekly. With fine-tuning, they may
 need to retrain the model every time documents change. With RAG, they only update the data
 source and re-sync the embeddings.
+
+## Variants
+
+"RAG" is a family, not one design — standard, advanced, agentic, graph, and multimodal. And
+some things you'll hear (hybrid search, re-ranking) are *techniques* used inside a variant, not
+separate types. See [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) to tell which is
+which.

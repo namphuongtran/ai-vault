@@ -65,3 +65,10 @@ Chroma, Weaviate.
 Ví dụ, một doanh nghiệp có hàng nghìn tài liệu hướng dẫn sản phẩm được cập nhật mỗi tuần. Nếu
 dùng fine-tuning để bổ sung kiến thức, doanh nghiệp có thể phải huấn luyện lại mô hình mỗi khi
 tài liệu thay đổi. Với RAG, doanh nghiệp chỉ cần cập nhật nguồn dữ liệu và đồng bộ lại embeddings.
+
+## Các biến thể
+
+"RAG" là một họ, không phải một thiết kế duy nhất — standard, advanced, agentic, graph và
+multimodal. Và vài thứ bạn hay nghe (hybrid search, re-ranking) là *kỹ thuật* dùng bên trong
+một biến thể, không phải loại riêng. Xem [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}})
+để phân biệt cái nào với cái nào.

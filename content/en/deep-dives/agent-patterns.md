@@ -1,6 +1,6 @@
 ---
 title: "Agent Patterns"
-weight: 2
+weight: 3
 description: The ReAct loop, tool design, memory, multi-agent, and reflection.
 ---
 
