@@ -8,26 +8,31 @@ menu:
   main:
     weight: 3
 description: >
-  Hands-on architecture for building AI systems — planned, with C4 diagrams.
+  Hands-on architecture for building AI systems.
 ---
 
-> **Status: planned — coming next.** Stage 2 moves from *concepts* to *construction*.
-
 Where [Foundations]({{< relref "/foundations" >}}) explains the pieces and
-[Deep Dives]({{< relref "/deep-dives" >}}) go deeper, **Stage 2** is about assembling real
-systems — with **[C4](https://c4model.com/) diagrams** for system design.
+[Deep Dives]({{< relref "/deep-dives" >}}) go deeper, **Stage 2** is about assembling them into
+real systems — with diagrams for the architecture.
 
-## Planned pages
+## Roadmap
 
-1. **AI system design** — architecture patterns; C4 system-context & container diagrams.
-2. **Building a RAG system** — an end-to-end reference architecture.
-3. **Agentic RAG** — retrieval driven by an agent, not a fixed pipeline.
-4. **The agent harness** — building the loop, context management, and tool execution.
-5. **AI code structure** — how to organize an AI application codebase.
-6. **Tooling** — Claude Agent SDK vs the Anthropic API SDK, Managed Agents, agent frameworks
-   (Microsoft Agent Framework, LangGraph), building skills / plugins & MCP servers, deployment.
+```mermaid
+flowchart LR
+    A[AI system design] --> B[Building a RAG system] --> C[Agentic RAG]
+    C --> D[The agent harness] --> E[AI code structure] --> F[Tooling and frameworks]
+```
+
+## In this section
+
+1. [AI system design]({{< relref "/building/ai-system-design" >}}) — the standard shape of an AI app.
+2. [Building a RAG system]({{< relref "/building/building-rag" >}}) — end-to-end reference architecture.
+3. Agentic RAG — *coming soon*.
+4. The agent harness — *coming soon*.
+5. AI code structure — *coming soon*.
+6. Tooling & frameworks — *coming soon*.
 
 ## Prerequisites
 
-Work through **[Stage 0 — Foundations]({{< relref "/foundations" >}})** and
-**[Stage 1 — Deep Dives]({{< relref "/deep-dives" >}})** first — Stage 2 builds directly on both.
+Work through [Stage 0 — Foundations]({{< relref "/foundations" >}}) and
+[Stage 1 — Deep Dives]({{< relref "/deep-dives" >}}) first — Stage 2 builds directly on both.
