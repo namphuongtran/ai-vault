@@ -30,10 +30,10 @@ flowchart TB
 - **Memory** — lưu ngữ cảnh xuyên suốt các bước (ngắn hạn và dài hạn).
 - **Reflection** — đánh giá kết quả và điều chỉnh cách tiếp cận.
 
-## Chat vs agent
+## Vòng lặp agent
 
-- Một lời gọi **chat** thông thường: một prompt vào, một câu trả lời ra.
-- Một **agent**: vòng lặp *suy nghĩ → hành động → quan sát*, có thể dùng công cụ và thực hiện nhiều bước.
+Một lời gọi chat thường là một prompt vào, một câu trả lời ra. Agent thì chạy một vòng lặp —
+*reason → act → observe* — cho đến khi đạt mục tiêu:
 
 ```mermaid
 flowchart LR
@@ -61,7 +61,18 @@ Một lời gọi chat thường không làm được bước 2–3 — nó sẽ
 - Mô hình cần lấy dữ liệu mới hoặc thao tác trên hệ thống (tìm kiếm, code, API).
 - Kết quả phụ thuộc vào các kết quả trung gian mà mô hình chưa biết trước.
 
-> Càng nhiều quyền tự chủ thì càng mạnh — và càng cần **guardrail** và giám sát.
+Nên trao bao nhiêu phần của vòng lặp cho model — hay tự script các bước — là một quyết định
+riêng: xem [Agentic AI]({{< relref "/foundations/agentic-ai" >}}).
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — xử lý được các tác vụ không thể script trước hoàn toàn; hành động trên dữ
+  liệu mới và hệ thống thật thay vì đoán; ghép được với mọi thứ khác trong vault này (tool,
+  RAG, memory).
+- **Hạn chế** — mỗi bước lặp là một lần gọi model, nên chi phí và độ trễ nhân lên; hành vi
+  khó đoán hơn workflow cố định, và lỗi tích lũy qua các bước — vì thế
+  [guardrails]({{< relref "/foundations/guardrails" >}}), điều kiện dừng, và
+  [đánh giá]({{< relref "/foundations/model-evaluation" >}}) quan trọng ở đây hơn bất cứ đâu.
 
 ## Nguồn
 

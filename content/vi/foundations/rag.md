@@ -65,6 +65,8 @@ Chroma, Weaviate.
 Ví dụ, một doanh nghiệp có hàng nghìn tài liệu hướng dẫn sản phẩm được cập nhật mỗi tuần. Nếu
 dùng fine-tuning để bổ sung kiến thức, doanh nghiệp có thể phải huấn luyện lại mô hình mỗi khi
 tài liệu thay đổi. Với RAG, doanh nghiệp chỉ cần cập nhật nguồn dữ liệu và đồng bộ lại embeddings.
+So sánh đầy đủ — gồm cả prompting là đòn bẩy thứ ba — nằm ở
+[Adaptation]({{< relref "/deep-dives/adaptation" >}}).
 
 ## Các biến thể
 
