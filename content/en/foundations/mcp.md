@@ -1,6 +1,6 @@
 ---
 title: "MCP (Model Context Protocol)"
-weight: 23
+weight: 22
 description: The open standard for connecting tools and data to models — what it is and why it exists.
 ---
 

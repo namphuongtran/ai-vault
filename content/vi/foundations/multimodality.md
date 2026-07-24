@@ -1,7 +1,7 @@
 ---
 title: "Multimodality"
 linkTitle: "Multimodality"
-weight: 5
+weight: 7
 description: Mô hình xử lý nhiều hơn văn bản — hình ảnh, âm thanh, video, cả đầu vào lẫn đầu ra.
 ---
 

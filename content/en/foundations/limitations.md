@@ -1,7 +1,7 @@
 ---
 title: "Limitations & Failure Modes"
 linkTitle: "Limitations & Failure Modes"
-weight: 9
+weight: 8
 description: What models get wrong and why — so you know when to add RAG, tools, guardrails, or a human.
 ---
 

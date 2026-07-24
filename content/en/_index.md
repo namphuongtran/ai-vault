@@ -27,7 +27,7 @@ flowchart LR
       A0[28 concepts + diagrams]
     end
     subgraph S1["Stage 1 · Deep Dives ✓"]
-      A1[5 deep dives]
+      A1[6 deep dives]
     end
     subgraph S2["Stage 2 · Building with AI ✓"]
       A2[System design · RAG · agentic RAG · harness · code structure]
@@ -39,10 +39,10 @@ flowchart LR
   technical builders who *use* AI: models, prompting, context, embeddings, RAG, tools, agents,
   MCP, guardrails, security, evaluation, observability.
 - **[Stage 1 — Deep Dives]({{< relref "/deep-dives" >}})** ✓ — one level deeper on the topics
-  that pay off in real systems: advanced RAG, agent patterns, prompt patterns, adaptation,
-  evaluation in practice.
-- **[Stage 2 — Building with AI]({{< relref "/building" >}})** — *planned* — hands-on
-  architecture with **C4 diagrams**: AI system design, building RAG, agentic RAG, the agent
-  harness, and code structure.
+  that pay off in real systems: prompt patterns, types of RAG, advanced RAG, agent patterns,
+  adaptation, evaluation in practice.
+- **[Stage 2 — Building with AI]({{< relref "/building" >}})** ✓ — assembling the pieces into
+  real systems: AI system design, building RAG, agentic RAG, the agent harness, code
+  structure, and tooling & frameworks.
 
 New here? Start at **[Stage 0 — Foundations]({{< relref "/foundations" >}})**.

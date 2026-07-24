@@ -1,7 +1,7 @@
 ---
 title: "Structured Outputs"
 linkTitle: "Structured Outputs"
-weight: 14
+weight: 13
 description: Bắt model trả về JSON đúng schema để code của bạn dựa vào được.
 ---
 

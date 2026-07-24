@@ -1,6 +1,6 @@
 ---
 title: "Embeddings"
-weight: 18
+weight: 17
 description: Turning text into vectors that capture meaning — the mechanism behind RAG and semantic search.
 ---
 

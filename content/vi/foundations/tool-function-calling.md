@@ -1,7 +1,7 @@
 ---
 title: "Tool & Function Calling"
 linkTitle: "Tool & Function Calling"
-weight: 20
+weight: 19
 description: Nguyên thủy dưới agent, skill, plugin và MCP — cho mô hình gọi các hàm bạn định nghĩa.
 ---
 

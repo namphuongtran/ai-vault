@@ -1,6 +1,6 @@
 ---
 title: "Inference Parameters"
-weight: 13
+weight: 10
 description: The knobs that shape a model's output — temperature, top-p/top-k, max tokens, stop.
 ---
 

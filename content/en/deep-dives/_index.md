@@ -16,11 +16,28 @@ description: >
 Stage 1 answers *how* — the strategies, patterns, and trade-offs that show up when you
 build real systems.
 
+## Roadmap
+
+The dives follow the same spine as the Stage 0 modules — prompts, then data, then agents,
+then operating:
+
+```mermaid
+flowchart LR
+    A[Prompt patterns] --> B[Types of RAG] --> C[Advanced RAG]
+    C --> D[Agent patterns] --> E[Adaptation] --> F[Evaluation in practice]
+```
+
 ## In this section
 
-1. **Types of RAG** — the RAG family; which is an architecture vs a technique.
-2. **Advanced RAG** — chunking, hybrid retrieval, re-ranking, query transforms, evaluation.
-3. **Agent patterns** — the ReAct loop, tool design, memory, multi-agent, reflection.
-4. **Prompt patterns** — reasoning techniques, structured output, decomposition, optimization.
-5. **Adaptation** — choosing between fine-tuning, RAG, and prompting.
-6. **Evaluation in practice** — eval sets, LLM-as-judge, offline vs online, regression testing.
+1. [Prompt patterns]({{< relref "/deep-dives/prompt-patterns" >}}) — reasoning techniques,
+   structured output, decomposition, optimization.
+2. [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) — the RAG family; which is an
+   architecture vs a technique.
+3. [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) — chunking, hybrid retrieval,
+   re-ranking, query transforms.
+4. [Agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) — the ReAct loop, tool
+   design, memory, multi-agent, reflection.
+5. [Adaptation]({{< relref "/deep-dives/adaptation" >}}) — choosing between prompting, RAG,
+   and fine-tuning.
+6. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — eval sets,
+   LLM-as-judge, offline vs online, regression testing.

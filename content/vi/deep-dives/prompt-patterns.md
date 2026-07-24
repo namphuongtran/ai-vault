@@ -1,6 +1,6 @@
 ---
 title: "Prompt Patterns"
-weight: 4
+weight: 1
 description: Kỹ thuật suy luận, structured output, phân rã và tối ưu prompt.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "AI Coding Assistants"
 linkTitle: "AI Coding Assistants"
-weight: 2
+weight: 23
 description: Các công cụ coding agentic bạn đang dùng — bên dưới là gì, và vì sao lộ trình này giúp bạn dùng chúng tốt hơn.
 ---
 

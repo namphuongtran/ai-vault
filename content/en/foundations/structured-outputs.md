@@ -1,6 +1,6 @@
 ---
 title: "Structured Outputs"
-weight: 14
+weight: 13
 description: Making a model return machine-readable JSON that matches a schema — so your code can rely on it.
 ---
 

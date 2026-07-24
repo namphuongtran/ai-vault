@@ -1,7 +1,7 @@
 ---
 title: "Context Engineering"
 linkTitle: "Context Engineering"
-weight: 17
+weight: 12
 description: Quản lý những gì đưa vào context window — bộ môn nền dưới prompting, RAG và agent.
 ---
 

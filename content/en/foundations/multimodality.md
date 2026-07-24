@@ -1,6 +1,6 @@
 ---
 title: "Multimodality"
-weight: 5
+weight: 7
 description: Models that handle more than text — images, audio, and video, in and out.
 ---
 

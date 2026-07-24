@@ -22,14 +22,13 @@ ML/DL, tập trung vào những gì bạn cần để xây một cách tự tin.
 ## Học theo thứ tự nào
 
 Đi theo năm module tuần tự — mỗi cái xây trên cái trước, từ *hiểu* mô hình đến *vận hành* chúng
-trên production. Mới bắt đầu? Hãy xem
-**[AI coding assistants]({{< relref "/foundations/ai-coding-assistants" >}})** — các công cụ bạn
-đã dùng — rồi vào Module 1.
+trên production. Bắt đầu từ
+**[The AI landscape]({{< relref "/foundations/ai-landscape" >}})** và đọc lần lượt từng module
+từ trên xuống.
 
 ```mermaid
 flowchart TB
-    Start[Start here - AI coding assistants] --> M1[Module 1 - Understand]
-    M1 --> M2[Module 2 - Work with a model]
+    M1[Module 1 - Understand] --> M2[Module 2 - Work with a model]
     M2 --> M3[Module 3 - Ground it in your data]
     M3 --> M4[Module 4 - Make it act]
     M4 --> M5[Module 5 - Operate and govern]
@@ -40,26 +39,27 @@ flowchart TB
 *Mục tiêu: biết các mô hình này là gì và hành xử ra sao.*
 
 1. [The AI landscape]({{< relref "/foundations/ai-landscape" >}})
-2. [Foundation models]({{< relref "/foundations/foundation-models" >}})
-3. [Generative AI]({{< relref "/foundations/generative-ai" >}})
-4. [Multimodality]({{< relref "/foundations/multimodality" >}})
-5. [How LLMs work]({{< relref "/foundations/how-llms-work" >}})
-6. [Under the hood]({{< relref "/foundations/under-the-hood" >}})
-7. [How models are trained]({{< relref "/foundations/training-lifecycle" >}})
+2. [Generative AI]({{< relref "/foundations/generative-ai" >}})
+3. [Foundation models]({{< relref "/foundations/foundation-models" >}})
+4. [How LLMs work]({{< relref "/foundations/how-llms-work" >}})
+5. [Under the hood]({{< relref "/foundations/under-the-hood" >}})
+6. [How models are trained]({{< relref "/foundations/training-lifecycle" >}})
+7. [Multimodality]({{< relref "/foundations/multimodality" >}})
 8. [Limitations & failure modes]({{< relref "/foundations/limitations" >}})
 
 ### Module 2 · Work with a model
 
 *Mục tiêu: gọi được model và kiểm soát đầu ra.*
 
-1. [Choosing a model]({{< relref "/foundations/choosing-a-model" >}})
-2. [Reasoning models]({{< relref "/foundations/reasoning-models" >}})
-3. [The AI API]({{< relref "/foundations/the-ai-api" >}})
-4. [Inference parameters]({{< relref "/foundations/inference-parameters" >}})
+1. [The AI API]({{< relref "/foundations/the-ai-api" >}})
+2. [Inference parameters]({{< relref "/foundations/inference-parameters" >}})
+3. [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})
+4. [Context engineering]({{< relref "/foundations/context-engineering" >}})
 5. [Structured outputs]({{< relref "/foundations/structured-outputs" >}})
-6. [Cost & tokens]({{< relref "/foundations/cost-and-tokens" >}})
-7. [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})
-8. [Context engineering]({{< relref "/foundations/context-engineering" >}})
+6. [Reasoning models]({{< relref "/foundations/reasoning-models" >}})
+7. [Cost & tokens]({{< relref "/foundations/cost-and-tokens" >}})
+8. [Choosing a model]({{< relref "/foundations/choosing-a-model" >}}) — *bài chốt: chọn đúng
+   model khi đã hiểu các tham số và chi phí*
 
 ### Module 3 · Ground it in your data
 
@@ -73,9 +73,11 @@ flowchart TB
 *Mục tiêu: cho model dùng tool và chạy như một agent.*
 
 1. [Tool & function calling]({{< relref "/foundations/tool-function-calling" >}})
-2. [Agentic AI]({{< relref "/foundations/agentic-ai" >}})
-3. [Agents]({{< relref "/foundations/agents" >}})
+2. [Agents]({{< relref "/foundations/agents" >}})
+3. [Agentic AI]({{< relref "/foundations/agentic-ai" >}})
 4. [MCP]({{< relref "/foundations/mcp" >}})
+5. [AI coding assistants]({{< relref "/foundations/ai-coding-assistants" >}}) — *một agent
+   hoàn chỉnh bạn đã dùng mỗi ngày*
 
 ### Module 5 · Operate & govern
 

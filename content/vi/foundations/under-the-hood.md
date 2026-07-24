@@ -1,7 +1,7 @@
 ---
 title: "Under the Hood"
 linkTitle: "Under the Hood"
-weight: 7
+weight: 5
 description: Nhìn nhẹ vào transformer và attention — vừa đủ để hiểu vì sao LLM hành xử như vậy.
 ---
 
