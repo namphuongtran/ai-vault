@@ -57,3 +57,8 @@ cho agent một tool có thể rò rỉ dữ liệu như vậy mà không có c�
 - **Không bao giờ đặt bí mật trong prompt** — chúng tồn tại trong lịch sử và log.
 - **Phòng thủ nhiều lớp** — không bộ lọc đơn lẻ nào đủ; giả định injection đôi khi sẽ lọt và
   giới hạn phạm vi thiệt hại.
+
+## Nguồn
+
+- [OWASP — Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)
+- Greshake et al., *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection* (2023) — [arXiv:2302.12173](https://arxiv.org/abs/2302.12173)

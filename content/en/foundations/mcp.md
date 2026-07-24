@@ -44,3 +44,8 @@ A server can expose three things:
   servers under the hood.
 
 > *What* MCP is belongs in foundations. *Building* an MCP server is a build-stage topic — later.
+
+## Sources
+
+- [Model Context Protocol — Introduction](https://modelcontextprotocol.io)
+- [Model Context Protocol — Specification (2025-06-18)](https://modelcontextprotocol.io/specification/2025-06-18)

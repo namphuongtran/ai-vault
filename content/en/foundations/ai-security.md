@@ -56,3 +56,8 @@ tool that could leak such data without a gate.
 - **Never put secrets in prompts** — they persist in history and logs.
 - **Defense in depth** — no single filter is enough; assume injection will sometimes get
   through and limit the blast radius.
+
+## Sources
+
+- [OWASP — Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)
+- Greshake et al., *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection* (2023) — [arXiv:2302.12173](https://arxiv.org/abs/2302.12173)

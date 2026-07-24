@@ -55,3 +55,15 @@ mọi thứ — đó là cách mô hình chọn đúng tool.
 
 > Skill, plugin và [MCP]({{< relref "/foundations/mcp" >}}) đều là cách *cung cấp* tool (và
 > context) cho mô hình — cơ chế gọi bên dưới chính là cái này.
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — cho model *hành động*, không chỉ nói; tham số có kiểu, được validate; là nguyên
+  thủy dưới agent, skill, MCP.
+- **Hạn chế** — model có thể chọn sai tool hoặc bịa tham số; *bạn* sở hữu việc thực thi và an toàn
+  của nó; mỗi lần gọi là một round-trip, thêm độ trễ và chi phí.
+
+## Nguồn
+
+- [Anthropic — Tool use overview](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)
+- [OpenAI — Function calling](https://platform.openai.com/docs/guides/function-calling)

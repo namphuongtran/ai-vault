@@ -55,3 +55,15 @@ than anything — they're how the model picks the right tool.
 
 > Skills, plugins, and [MCP]({{< relref "/foundations/mcp" >}}) are all ways to *supply* tools
 > (and context) to a model — the calling mechanism underneath is this.
+
+## Strengths & limitations
+
+- **Strengths** — lets the model *act*, not just talk; typed, validated inputs; the primitive
+  underneath agents, skills, and MCP.
+- **Limitations** — the model can pick the wrong tool or hallucinate arguments; *you* own
+  execution and its security; each call is a round-trip, adding latency and cost.
+
+## Sources
+
+- [Anthropic — Tool use overview](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)
+- [OpenAI — Function calling](https://platform.openai.com/docs/guides/function-calling)

@@ -44,3 +44,8 @@ và team kiểm tra AI không âm thầm hạ điểm một nhóm.
 - **Interpretability** — mức độ con người có thể hiểu cách mô hình hoạt động.
 - **Explainability** — khả năng giải thích lý do một dự đoán hoặc kết quả được tạo ra.
 - **Transparency** — mức độ công khai về cách hệ thống được xây dựng, đánh giá và sử dụng.
+
+## Nguồn
+
+- [NIST — AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework)
+- [NIST — AI RMF: Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence)

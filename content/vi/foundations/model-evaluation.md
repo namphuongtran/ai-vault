@@ -51,3 +51,9 @@ Nó cũng bỏ sót 30 ca gian lận thật mà không gắn cờ:
 ## Human evaluation
 
 **Human evaluation** phù hợp khi chất lượng khó được đánh giá đầy đủ bằng metric tự động.
+
+## Nguồn
+
+- Papineni et al., *BLEU: a Method for Automatic Evaluation of Machine Translation* (2002) — [ACL P02-1040](https://aclanthology.org/P02-1040/)
+- Lin, *ROUGE: A Package for Automatic Evaluation of Summaries* (2004) — [ACL W04-1013](https://aclanthology.org/W04-1013/)
+- Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)

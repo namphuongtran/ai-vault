@@ -62,3 +62,8 @@ A plain chat call can't do steps 2–3 — it would just guess.
 - Outcomes depend on intermediate results the model can't know in advance.
 
 > More autonomy means more capability — and more need for **guardrails** and oversight.
+
+## Sources
+
+- Yao et al., *ReAct: Synergizing Reasoning and Acting in Language Models* (2022) — [arXiv:2210.03629](https://arxiv.org/abs/2210.03629)
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)

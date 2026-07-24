@@ -36,3 +36,15 @@ work regardless of how the model itself was trained.
 
 Guardrails reduce risk (harmful output, data leakage, off-scope use) without retraining the
 model. They pair naturally with **agents**, where more autonomy raises the need for control.
+
+## Strengths & limitations
+
+- **Strengths** — catch unsafe, off-topic, or malformed I/O without retraining; layerable on
+  input and output; independent of the model.
+- **Limitations** — not foolproof (injections still slip through); add latency; can
+  false-positive and block valid content.
+
+## Sources
+
+- [OWASP — Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)
+- [OpenAI — Moderation](https://platform.openai.com/docs/guides/moderation)

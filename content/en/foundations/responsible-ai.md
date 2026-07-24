@@ -44,3 +44,8 @@ makes the final call — and the team checks the AI didn't systematically down-r
 - **Interpretability** — how well a human can understand how the model works.
 - **Explainability** — the ability to explain why a specific prediction was made.
 - **Transparency** — how openly the system's build, evaluation, and use are disclosed.
+
+## Sources
+
+- [NIST — AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework)
+- [NIST — AI RMF: Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence)
