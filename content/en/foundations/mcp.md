@@ -43,7 +43,19 @@ A server can expose three things:
 - **It's the backbone of the ecosystem** — many "connectors", "skills", and "plugins" are MCP
   servers under the hood.
 
-> *What* MCP is belongs in foundations. *Building* an MCP server is a build-stage topic — later.
+Building your own server is a Stage 2 topic — see
+[Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}).
+
+## Strengths & limitations
+
+- **Strengths** — an integration is written once and reused by any MCP-compatible app; a
+  growing catalog of ready-made servers; one standard shape (tools, resources, prompts)
+  instead of bespoke glue per app.
+- **Limitations** — every server you connect **extends your attack surface**: a malicious or
+  compromised server can feed the model instructions or leak what the model sends it (the
+  supply-chain threat in [AI security]({{< relref "/foundations/ai-security" >}})); permissions
+  are often coarser than the task needs — prefer servers with narrow scopes; and the standard
+  is young, so auth and transport details are still maturing.
 
 ## Sources
 

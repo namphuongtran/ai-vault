@@ -29,6 +29,14 @@ Chia một tác vụ lớn thành **chuỗi** prompt nhỏ, mỗi cái một nhi
 Dễ test, debug và thay thế hơn. Ưu tiên chaining hơn một mega-prompt khi các bước có mục tiêu
 khác nhau (extract → transform → format).
 
+Một chuỗi cụ thể — "biến thread email support này thành ticket":
+
+1. **Extract** — rút khách hàng, sản phẩm, nội dung khiếu nại từ thread → JSON.
+2. **Transform** — phân loại mức nghiêm trọng và định tuyến về team, chỉ từ JSON đó.
+3. **Format** — dựng ticket theo template của tracker.
+
+Mỗi bước test riêng được; khi định tuyến sai, bạn debug bước 2, không phải một prompt khổng lồ.
+
 ## Chọn few-shot
 
 Ví dụ định hướng định dạng và phong cách — nhưng *chọn ví dụ nào* mới quan trọng:

@@ -1,17 +1,23 @@
 ---
 title: "AI Coding Assistants"
 weight: 23
-description: The agentic coding tools you already use — what's under the hood, and why this path helps you use them better.
+description: A complete agent you already use every day — every concept in this module, working together.
 ---
 
-Odds are you already use one of these. This page is the **on-ramp**: what these tools
-actually are, so the rest of the vault clicks into place.
+## Goal
+
+See this module's concepts running as one product. An AI coding assistant is the most
+complete agent most builders touch daily — understanding what's inside makes you better at
+*using* it, and it's the same architecture you'll *build* in
+[Stage 2]({{< relref "/building" >}}).
 
 ## What they are
 
-An AI coding assistant is an [agent]({{< relref "/foundations/agentic-ai" >}}) for software
-work: an LLM wrapped in a **harness** that can read and edit your files, run commands, search,
-and use tools — in your editor or terminal.
+An AI coding assistant is an [agent]({{< relref "/foundations/agents" >}}) for software work:
+an LLM wrapped in a **harness** that can read and edit your files, run commands, search, and
+use tools — in your editor, terminal, or as a cloud agent that opens a pull request. Products
+differ (Claude Code, Codex, Cursor, Copilot, Gemini CLI…), but the shape is always the same:
+**model + harness + tools**.
 
 ```mermaid
 flowchart LR
@@ -22,33 +28,40 @@ flowchart LR
     A --> W[Search and web]
 ```
 
-## The landscape (moves fast)
-
-- **Terminal / CLI agents** — Claude Code, OpenAI Codex CLI, Gemini CLI.
-- **Editor / IDE agents** — Cursor, GitHub Copilot, Google Antigravity.
-- **Cloud / async agents** — run tasks on a server and open a pull request.
-
-They differ in surface and model, but the shape is the same: **model + harness + tools**.
-
 ## What's under the hood
 
 Every one of them is built from the concepts in this stage:
 
 - A [foundation model]({{< relref "/foundations/foundation-models" >}}) does the reasoning.
-- A [harness / agent loop]({{< relref "/foundations/agentic-ai" >}}) runs *reason → act →
-  observe*.
+- The [agent loop]({{< relref "/foundations/agents" >}}) runs *reason → act → observe*.
 - [Tool & function calling]({{< relref "/foundations/tool-function-calling" >}}) lets it edit
   files and run commands.
 - [Context engineering]({{< relref "/foundations/context-engineering" >}}) decides what code
   and history the model sees.
 - [MCP]({{< relref "/foundations/mcp" >}}) connects it to external tools and data.
 
-## Why this matters for your path
+## Example — one task through the loop
 
-Understanding these pieces makes you **better at using** the tools (clearer goals, better
-context, knowing when they'll struggle) — and it's the same knowledge you'll use to **build
-your own** agents and AI apps in [Stage 2]({{< relref "/building" >}}). Using is the on-ramp;
-building is the destination.
+You say: *"the login test is failing — fix it."*
+
+1. **Act** — runs the test suite; **observe** — one assertion fails on an expired mock token.
+2. **Act** — reads the test and the auth module; **observe** — the token helper hardcodes a
+   date.
+3. **Act** — edits the helper to generate a fresh date, re-runs the tests; **observe** — green.
+4. **Answer** — summarizes the change and shows the diff.
+
+No step was scripted — the model chose each action from what it observed. That's the
+[agent loop]({{< relref "/foundations/agents" >}}), applied to code.
+
+## Strengths & limitations
+
+- **Strengths** — tireless on mechanical, multi-file work; verifies its own changes by
+  running tests and commands; one clear goal plus good context routinely beats hand-typing
+  the change.
+- **Limitations** — quality tracks *your* input: vague goals or missing context produce
+  confident wrong changes; struggles with implicit knowledge that lives only in your head or
+  your team; long sessions degrade as context fills. You review the diff — it ships nothing
+  on its own.
 
 ## Sources
 

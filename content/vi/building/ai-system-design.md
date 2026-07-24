@@ -56,6 +56,11 @@ flowchart LR
 - Đặt **tính xác định trong code**, phần phán đoán ở model.
 - **Neo** bằng dữ liệu, **ràng buộc** bằng schema, **kiểm soát** các hành động rủi ro.
 - **Đo** mọi thứ — eval offline, trace online.
+- **Version prompt của bạn** — prompt là code: để trong repo, review khi thay đổi, và ghi lại
+  phiên bản nào sinh ra output nào (đó là cách bạn debug "hôm qua còn chạy đúng mà").
+- **Stack phù hợp, không phải stack to nhất** — RAG, agent, memory, MCP chỉ xứng đáng có mặt
+  khi bài toán đòi hỏi; hệ thống mạnh nhất dùng ít thành phần nhất mà vẫn giải được việc, vì
+  mỗi thành phần thêm vào là thêm độ trễ, chi phí và bề mặt tấn công.
 
 ## Nguồn
 

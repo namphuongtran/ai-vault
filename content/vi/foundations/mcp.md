@@ -42,7 +42,19 @@ Một server có thể bày ra ba thứ:
 - **Tính di động** — cùng một server chạy được trên mọi client tương thích MCP.
 - **Là xương sống của hệ sinh thái** — nhiều "connector", "skill" và "plugin" bên dưới là MCP server.
 
-> *MCP là gì* thuộc phần nền tảng. *Xây* một MCP server là chủ đề giai đoạn build — để sau.
+Xây server của riêng bạn là chủ đề Giai đoạn 2 — xem
+[Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}).
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — một tích hợp viết một lần, tái dùng ở mọi app tương thích MCP; catalog server
+  làm sẵn ngày càng lớn; một khuôn dạng chuẩn (tools, resources, prompts) thay vì keo dán riêng
+  cho từng app.
+- **Hạn chế** — mỗi server bạn kết nối **mở rộng bề mặt tấn công**: server độc hại hoặc bị chiếm
+  quyền có thể nhét chỉ dẫn cho model hoặc rò rỉ những gì model gửi sang (mối đe dọa supply
+  chain trong [AI security]({{< relref "/foundations/ai-security" >}})); quyền hạn thường thô
+  hơn mức tác vụ cần — ưu tiên server có scope hẹp; và chuẩn còn trẻ, chi tiết auth và
+  transport vẫn đang hoàn thiện.
 
 ## Nguồn
 

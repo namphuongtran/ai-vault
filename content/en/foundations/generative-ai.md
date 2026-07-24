@@ -1,27 +1,51 @@
 ---
 title: "Generative AI"
 weight: 2
-description: Models that generate new content — text, images, audio, or code.
+description: Generative vs. discriminative — the one distinction this page exists to make stick.
 ---
 
-## What it is
+## Goal
 
-**Generative AI** refers to models that create new content rather than only classifying or
-scoring existing data. Given a prompt, they generate text, images, audio, video, or code.
+Own one distinction: models that **create** content versus models that **label** it. It
+sounds academic but it decides real architecture: which problems need an LLM at all, and
+which are cheaper solved another way.
 
-## Key points
+## Generative vs. discriminative
 
-- **Generative vs discriminative** — generative models *produce* content; discriminative
-  models *label* or *score* it (e.g., spam vs. not-spam).
-- Common modalities: **text** (LLMs), **image** (diffusion models), **audio**, **code**.
-- Output is **probabilistic** — the same prompt can yield different answers.
-- Strengths: drafting, summarizing, translating, brainstorming, coding.
-- Limits: can **hallucinate**, has a **knowledge cutoff**, and reflects biases in training data.
+- A **discriminative** model maps input → label or score: spam / not-spam, fraud risk 0.83,
+  positive / negative.
+- A **generative** model maps input → *new content*: text, images, audio, video, code.
 
-## Example — generative vs. discriminative
+```mermaid
+flowchart LR
+    In[Product review] --> D[Discriminative model]
+    D --> L[Label: positive]
+    In --> G[Generative model]
+    G --> C[New content: a reply to the customer]
+```
 
-Given a product review: a **discriminative** model labels it *positive / negative*; a
-**generative** model writes a reply to the customer. Same input, different job.
+Same input, different job: the discriminative model *labels* the review; the generative model
+*writes the reply*.
+
+## Why the distinction matters to a builder
+
+- **Not every problem needs generation.** Classify tickets, score leads, detect fraud —
+  discriminative tasks. An LLM can do them (and is a fast way to prototype), but a small
+  classifier is often cheaper, faster, and more predictable at scale.
+- **Generative output is probabilistic** — the same prompt can yield different answers. Great
+  for drafting and brainstorming; a liability where there is exactly one right answer, which
+  is why [structured outputs]({{< relref "/foundations/structured-outputs" >}}) and
+  [evaluation]({{< relref "/foundations/model-evaluation" >}}) exist.
+- **Generation is the interface change.** Pre-GenAI, ML gave you predictions to build UI
+  around; now the model produces the artifact itself — the email, the code, the summary.
+
+## Strengths & limitations
+
+- **Strengths** — one model covers drafting, summarizing, translating, coding, brainstorming;
+  no task-specific training needed — a prompt reshapes the behavior.
+- **Limitations** — output varies run to run; it optimizes for *plausible*, not *true* (see
+  [Limitations]({{< relref "/foundations/limitations" >}})); for pure labeling at scale it can
+  be an expensive way to do a cheap job.
 
 > Foundation models are the engines; generative AI is what they do when producing content.
 

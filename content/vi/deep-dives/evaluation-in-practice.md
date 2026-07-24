@@ -23,6 +23,12 @@ trả lời theo một rubric.
 - Ưu tiên so sánh **theo cặp** (A vs B) — đáng tin hơn điểm tuyệt đối.
 - Kiểm chứng judge với một số nhãn của con người; đề phòng thiên lệch (độ dài, vị trí, thiên vị chính mình).
 
+Một rubric tối giản, cho cụ thể:
+
+> Chấm câu trả lời 1–5 về **faithfulness**: 5 = mọi khẳng định đều được context cung cấp hỗ
+> trợ; 3 = vài chi tiết nhỏ không có căn cứ; 1 = mâu thuẫn với context. Trích các khẳng định
+> không có căn cứ trước, rồi mới chấm điểm.
+
 ## Offline vs online
 
 - **Offline** — chạy bộ eval trong CI trước khi ship thay đổi. Phản hồi nhanh, có kiểm soát.

@@ -23,6 +23,12 @@ responses against a rubric.
 - Prefer **pairwise** comparisons (A vs B) — more reliable than absolute scores.
 - Validate the judge against some human labels; watch for bias (length, position, self-preference).
 
+A minimal rubric, to make it concrete:
+
+> Grade the answer 1–5 for **faithfulness**: 5 = every claim is supported by the provided
+> context; 3 = minor unsupported details; 1 = contradicts the context. First quote the
+> unsupported claims, then give the score.
+
 ## Offline vs online
 
 - **Offline** — run the eval set in CI before shipping a change. Fast feedback, controlled.

@@ -49,6 +49,10 @@ Càng nhiều agent thì chi phí phối hợp càng lớn — chỉ dùng khi m
 Cho agent tự đánh giá đầu ra so với mục tiêu và thử lại nếu chưa đạt. Rẻ và hiệu quả với các tác
 vụ có kết quả kiểm tra được (test pass, schema hợp lệ, có dẫn nguồn).
 
+Cụ thể, một coding agent có reflection: viết patch → chạy test → hai cái fail → đọc lỗi, sửa
+lại → chạy lại → xanh → xong. Cái phép kiểm (bộ test) mới là thứ khiến reflection hoạt động;
+không có kết quả kiểm tra được thì agent chỉ đang tự chấm bài của chính mình.
+
 ## Các lỗi thường gặp
 
 - **Loop** — lặp lại cùng một hành động; thêm giới hạn số bước và phát hiện lặp.

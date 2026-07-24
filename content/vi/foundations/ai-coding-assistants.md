@@ -2,17 +2,22 @@
 title: "AI Coding Assistants"
 linkTitle: "AI Coding Assistants"
 weight: 23
-description: Các công cụ coding agentic bạn đang dùng — bên dưới là gì, và vì sao lộ trình này giúp bạn dùng chúng tốt hơn.
+description: Một agent hoàn chỉnh bạn đã dùng mỗi ngày — mọi khái niệm trong module này, chạy cùng nhau.
 ---
 
-Nhiều khả năng bạn đã đang dùng một trong số này. Trang này là **cửa ngõ**: các công cụ đó thực
-sự là gì, để phần còn lại của vault khớp vào đúng chỗ.
+## Mục tiêu
+
+Thấy các khái niệm của module này chạy trong một sản phẩm thật. AI coding assistant là agent
+hoàn chỉnh nhất mà đa số builder chạm vào hằng ngày — hiểu bên trong giúp bạn *dùng* nó tốt
+hơn, và đó cũng chính là kiến trúc bạn sẽ *xây* ở [Giai đoạn 2]({{< relref "/building" >}}).
 
 ## Chúng là gì
 
-AI coding assistant là một [agent]({{< relref "/foundations/agentic-ai" >}}) cho công việc phần
-mềm: một LLM được bọc trong một **harness** có thể đọc và sửa file, chạy lệnh, tìm kiếm, và dùng
-tool — ngay trong editor hoặc terminal của bạn.
+AI coding assistant là một [agent]({{< relref "/foundations/agents" >}}) cho công việc phần
+mềm: một LLM bọc trong **harness** có thể đọc và sửa file, chạy lệnh, tìm kiếm và dùng tool —
+trong editor, terminal, hoặc dạng cloud agent tự mở pull request. Sản phẩm khác nhau (Claude
+Code, Codex, Cursor, Copilot, Gemini CLI…), nhưng hình hài luôn giống nhau:
+**model + harness + tools**.
 
 ```mermaid
 flowchart LR
@@ -23,31 +28,37 @@ flowchart LR
     A --> W[Search and web]
 ```
 
-## Bức tranh (thay đổi rất nhanh)
+## Bên trong có gì
 
-- **Agent dòng lệnh / CLI** — Claude Code, OpenAI Codex CLI, Gemini CLI.
-- **Agent trong editor / IDE** — Cursor, GitHub Copilot, Google Antigravity.
-- **Agent cloud / bất đồng bộ** — chạy tác vụ trên server và mở pull request.
+Mỗi công cụ đều được lắp từ các khái niệm trong giai đoạn này:
 
-Chúng khác nhau về bề mặt và model, nhưng hình dạng thì như nhau: **model + harness + tool**.
+- Một [foundation model]({{< relref "/foundations/foundation-models" >}}) đảm nhiệm suy luận.
+- [Vòng lặp agent]({{< relref "/foundations/agents" >}}) chạy *reason → act → observe*.
+- [Tool & function calling]({{< relref "/foundations/tool-function-calling" >}}) cho phép nó
+  sửa file và chạy lệnh.
+- [Context engineering]({{< relref "/foundations/context-engineering" >}}) quyết định model
+  thấy code và lịch sử nào.
+- [MCP]({{< relref "/foundations/mcp" >}}) nối nó với tool và dữ liệu bên ngoài.
 
-## Bên dưới là gì
+## Ví dụ — một tác vụ đi qua vòng lặp
 
-Mỗi công cụ đều được xây từ chính các khái niệm trong giai đoạn này:
+Bạn nói: *"test login đang fail — sửa đi."*
 
-- Một [foundation model]({{< relref "/foundations/foundation-models" >}}) đảm nhận suy luận.
-- Một [harness / agent loop]({{< relref "/foundations/agentic-ai" >}}) chạy *reason → act → observe*.
-- [Tool & function calling]({{< relref "/foundations/tool-function-calling" >}}) cho phép nó sửa
-  file và chạy lệnh.
-- [Context engineering]({{< relref "/foundations/context-engineering" >}}) quyết định model thấy
-  code và lịch sử nào.
-- [MCP]({{< relref "/foundations/mcp" >}}) kết nối nó tới tool và dữ liệu bên ngoài.
+1. **Act** — chạy test suite; **observe** — một assertion fail vì mock token hết hạn.
+2. **Act** — đọc file test và module auth; **observe** — helper tạo token đang hardcode ngày.
+3. **Act** — sửa helper để sinh ngày mới, chạy lại test; **observe** — xanh.
+4. **Answer** — tóm tắt thay đổi và đưa diff.
 
-## Vì sao điều này quan trọng với lộ trình của bạn
+Không bước nào được script sẵn — model tự chọn hành động từ những gì nó quan sát. Đó chính là
+[vòng lặp agent]({{< relref "/foundations/agents" >}}), áp vào code.
 
-Hiểu các mảnh này giúp bạn **dùng công cụ tốt hơn** (mục tiêu rõ hơn, context tốt hơn, biết khi
-nào chúng sẽ đuối) — và đó cũng chính là kiến thức bạn dùng để **tự build** agent và ứng dụng AI
-ở [Giai đoạn 2]({{< relref "/building" >}}). Dùng là cửa ngõ; build là đích đến.
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — bền bỉ với việc cơ học trải nhiều file; tự kiểm chứng thay đổi bằng cách
+  chạy test và lệnh; một mục tiêu rõ cộng context tốt thường thắng việc tự gõ tay.
+- **Hạn chế** — chất lượng đi theo đầu vào *của bạn*: mục tiêu mơ hồ hoặc thiếu context sinh
+  thay đổi sai một cách tự tin; yếu với tri thức ngầm chỉ nằm trong đầu bạn hoặc team; phiên
+  dài xuống cấp khi context đầy. Bạn review diff — nó không tự ship gì cả.
 
 ## Nguồn
 

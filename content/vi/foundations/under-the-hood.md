@@ -21,6 +21,14 @@ flowchart LR
     H --> Next[Predict next token]
 ```
 
+## Ví dụ — attention giải quyết cái gì
+
+*"Chiếc cúp không bỏ vừa vali vì **nó** quá to."*
+
+*Nó* là cái gì? Bạn biết ngay: chiếc cúp — vì *không bỏ vừa* và *quá to* trỏ về đó. Đổi thành
+*quá nhỏ* thì *nó* lập tức thành cái vali. Attention chính là cơ chế cân các mối quan hệ giữa
+token, nhờ vậy model trả lời đúng mà không cần bất kỳ luật ngữ pháp nào.
+
 ## Vì sao điều này giải thích hành vi bạn thấy
 
 - **Context là tất cả** — mô hình không có bộ nhớ ngoài những gì trong window; attention làm việc
@@ -31,8 +39,6 @@ flowchart LR
 - **Chi phí tăng theo độ dài** — attention so từng token với nhau, nên đầu vào dài đắt lên không cân xứng.
 - **Không thực sự "hiểu"** — đây là dự đoán mẫu, không phải thấu hiểu, nên mô hình có thể sai một
   cách tự tin (xem [Limitations]({{< relref "/foundations/limitations" >}})).
-
-Đó là toàn bộ mục đích trang này — để nhận biết, không phải để cài đặt. Phần toán là tùy chọn.
 
 ## Nguồn
 

@@ -48,9 +48,20 @@ Nó cũng bỏ sót 30 ca gian lận thật mà không gắn cờ:
 - **Context relevance** — tài liệu/đoạn văn được truy xuất có thực sự liên quan đến câu hỏi không.
   Nếu truy xuất sai, mô hình có thể tạo câu trả lời kém chính xác dù bản thân nó hoạt động tốt.
 
-## Human evaluation
+## Metric nào cho việc gì
 
-**Human evaluation** phù hợp khi chất lượng khó được đánh giá đầy đủ bằng metric tự động.
+| Tác vụ | Dùng |
+| ------ | ------ |
+| Tóm tắt | **ROUGE** |
+| Dịch máy | **BLEU** |
+| Phân loại mà false positive gây hại | **Precision** |
+| Phân loại mà false negative gây hại | **Recall** |
+| Cả hai đều hại, hoặc lớp mất cân bằng | **F1** |
+| Câu trả lời RAG | **Faithfulness + context relevance** (RAGAS) |
+| Sinh nội dung mở, không có đáp án tham chiếu | **Human review hoặc LLM-as-judge** — xem [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) |
+
+Quy luật đằng sau bảng: chọn metric theo **cái giá của lỗi**, không theo thói quen — hãy quyết
+định trước xem false positive hay false negative đau hơn.
 
 ## Nguồn
 

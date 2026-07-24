@@ -29,6 +29,15 @@ Split a big task into a **chain** of smaller prompts, each with one job and a ch
 output. Easier to test, debug, and swap. Prefer chaining over one mega-prompt when steps
 have distinct goals (extract → transform → format).
 
+A concrete chain — "turn this support email thread into a ticket":
+
+1. **Extract** — pull customer, product, and complaint from the thread → JSON.
+2. **Transform** — classify severity and route to a team, from the JSON only.
+3. **Format** — render the ticket in the tracker's template.
+
+Each step is testable on its own; when routing is wrong you debug step 2, not one giant
+prompt.
+
 ## Few-shot selection
 
 Examples steer format and style — but *which* examples matters:

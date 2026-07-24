@@ -27,6 +27,17 @@ hình reasoning riêng). Effort càng cao → suy luận nội bộ càng nhiề
 - ✅ Tác vụ [agentic]({{< relref "/foundations/agentic-ai" >}}) nhiều bước.
 - ❌ Tra cứu đơn giản, phân loại, hoặc gọi khối lượng lớn/nhạy độ trễ — model nhanh rẻ hơn và đủ tốt.
 
+## Ví dụ — chỗ mà token bỏ thêm là xứng đáng
+
+Đề bài: *"Tổng hóa đơn bị sai, nhưng chỉ với đơn hàng có line item nhiều loại tiền tệ — tìm
+bug."*
+
+Model nhanh khớp mẫu và đổ cho hàm làm tròn — nghe hợp lý, nhưng sai. Reasoning model lần theo
+luồng: line item quy đổi về tiền tệ gốc theo từng dòng, giảm giá áp ở mức đơn hàng, nhưng có
+một nhánh code áp giảm giá *trước khi* quy đổi — lỗi quy đổi kép mà chỉ đơn đa tiền tệ chạm
+tới. Chuỗi phụ thuộc nhiều tầng như vậy chính là nơi phần "suy nghĩ" đáng giá; còn với tra cứu
+hay phân loại thì đó là tiền trả cho hư không.
+
 ## Đánh đổi
 
 | | Model nhanh | Reasoning model |

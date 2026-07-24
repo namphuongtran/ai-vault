@@ -21,6 +21,15 @@ flowchart LR
     H --> Next[Predict next token]
 ```
 
+## Example — what attention resolves
+
+*"The trophy didn't fit in the suitcase because **it** was too big."*
+
+What does *it* refer to? You instantly know: the trophy — because *didn't fit* and *too big*
+point there. Swap in *too small* and *it* flips to the suitcase. Attention is the mechanism
+that weighs those relationships between tokens, which is how the model gets this right
+without any grammar rules.
+
 ## Why this explains the behavior you see
 
 - **Context is everything** — the model has no memory beyond what's in the window; attention
@@ -32,8 +41,6 @@ flowchart LR
   disproportionately expensive.
 - **No true understanding** — it's pattern prediction, not comprehension, which is why models
   can be confidently wrong (see [Limitations]({{< relref "/foundations/limitations" >}})).
-
-That's the whole point of this page — awareness, not implementation. The math is optional.
 
 ## Sources
 

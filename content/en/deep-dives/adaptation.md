@@ -45,6 +45,11 @@ These aren't exclusive. A common production stack is **fine-tune for form + RAG 
 knowledge**: fine-tune so the model reliably answers in your voice and schema, and use RAG to
 feed it current, grounded facts at query time.
 
+Example: a support bot fine-tuned (LoRA) on a few thousand of your best agent replies — so it
+always sounds like your team and always emits the ticket schema — while RAG pulls the
+customer's plan and this week's known issues. Swap either part alone and it breaks: prompt-only
+tone drifts; fine-tuned knowledge goes stale.
+
 ## Sources
 
 - Hu et al., *LoRA: Low-Rank Adaptation of Large Language Models* (2021) — [arXiv:2106.09685](https://arxiv.org/abs/2106.09685)

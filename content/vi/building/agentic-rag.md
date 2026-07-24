@@ -42,6 +42,12 @@ flowchart TD
 Truy xuất trở thành một [tool]({{< relref "/foundations/tool-function-calling" >}}) mà agent gọi,
 không phải bước đầu tiên cố định.
 
+Một câu hỏi multi-hop cho thấy khác biệt: *"Chính sách lưu trữ của mình có cho phép xóa audit
+log của khách hàng đã rời đi không?"* RAG chuẩn truy xuất một lần — nhiều khả năng ra chính
+sách lưu trữ — và trả lời với nửa bức tranh. Vòng lặp agentic truy xuất chính sách lưu trữ,
+nhận ra audit log được quy định riêng, truy xuất tiếp chính sách audit-log, rồi kiểm tra điều
+khoản dành cho khách rời đi: ba lần tra cứu, mỗi lần được định hình bởi kết quả lần trước.
+
 ## Khi nào nên dùng
 
 - ✅ **Câu hỏi multi-hop** — câu trả lời cần một dữ kiện đòi hỏi tra lần hai.

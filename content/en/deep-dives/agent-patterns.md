@@ -49,6 +49,10 @@ More agents means more coordination cost — use it only when a single agent gen
 Have the agent evaluate its own output against the goal and retry if it falls short. Cheap
 and effective for tasks with a checkable result (tests pass, schema valid, sources cited).
 
+Concretely, a coding agent with reflection: write the patch → run the tests → two fail →
+read the failures, revise → re-run → green → done. The check (the test suite) is what makes
+reflection work; without a checkable result, the agent just grades its own homework.
+
 ## Common failure modes
 
 - **Loops** — repeating the same action; add step limits and loop detection.

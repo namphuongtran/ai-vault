@@ -7,7 +7,7 @@ description: Quản lý những gì đưa vào context window — bộ môn nề
 
 Tiếp nối [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}}). Prompting là
 *diễn đạt* yêu cầu; **context engineering** là quyết định *mọi thứ* mô hình nhìn thấy trong
-[context window](/foundations/how-llms-work/) hữu hạn của nó — và những gì cần bỏ ra ngoài.
+[context window]({{< relref "/foundations/how-llms-work" >}}) hữu hạn của nó — và những gì cần bỏ ra ngoài.
 
 ## Trong context có gì
 

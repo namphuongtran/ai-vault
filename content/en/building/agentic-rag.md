@@ -41,6 +41,12 @@ flowchart TD
 Retrieval becomes a [tool]({{< relref "/foundations/tool-function-calling" >}}) the agent calls,
 not a fixed first step.
 
+A multi-hop question shows the difference: *"Does our retention policy allow deleting the
+audit logs of a churned customer?"* Standard RAG retrieves once — probably the retention
+policy — and answers with half the picture. An agentic loop retrieves the retention policy,
+notices audit logs are governed separately, retrieves the audit-log policy, then checks the
+churn-specific clause: three lookups, each shaped by what the last one said.
+
 ## When to use it
 
 - ✅ **Multi-hop questions** — the answer needs a fact that requires a second lookup.

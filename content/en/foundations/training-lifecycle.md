@@ -28,6 +28,16 @@ behavior. This is awareness-level — no training techniques required.
   skills; it does **not** reliably inject fresh knowledge. See
   [Adaptation]({{< relref "/deep-dives/adaptation" >}}).
 
+## Example — base vs. instruction-tuned
+
+Prompt: *"Write a haiku about the sea."*
+
+- **Base model** — may reply: `Write a haiku about the mountains. Write a haiku about…` —
+  it *continues text*, because predicting the next token is all pre-training taught it.
+- **Instruction-tuned model** — returns an actual haiku.
+
+Same knowledge, different behavior. That difference *is* post-training.
+
 ## What you don't need
 
 Datasets, GPUs, loss functions, gradient descent. Providers handle all of it; you consume the
