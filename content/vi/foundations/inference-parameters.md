@@ -41,3 +41,8 @@ Một số mô hình mới đang chuyển khỏi các núm sampling thủ công 
 ví dụ thiết lập **effort / reasoning**, hoặc reasoning tự động ("adaptive") — và có thể từ chối
 `temperature`/`top_p`/`top_k`. Hãy kiểm tra API hiện tại của nhà cung cấp trước khi giả định
 các núm cổ điển còn dùng được.
+
+## Nguồn
+
+- [Anthropic — Working with the Messages API](https://platform.claude.com/docs/en/build-with-claude/working-with-messages)
+- [OpenAI — Text generation](https://platform.openai.com/docs/guides/text)

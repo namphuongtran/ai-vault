@@ -42,3 +42,15 @@ flowchart LR
   isn't always better.
 - **Model choice** matters — pick one suited to your language and domain.
 - Embeddings are **cheap** compared to generation; embedding a large corpus is routine.
+
+## Strengths & limitations
+
+- **Strengths** — turns meaning into measurable distance; cheap and reusable; powers search,
+  clustering, and classification.
+- **Limitations** — quality depends on the model and domain; fixed at embed time (re-embed when
+  data changes); misses exact keywords — pair with keyword / hybrid search.
+
+## Sources
+
+- Reimers & Gurevych, *Sentence-BERT* (2019) — [arXiv:1908.10084](https://arxiv.org/abs/1908.10084)
+- [OpenAI — Embeddings](https://platform.openai.com/docs/guides/embeddings)

@@ -37,3 +37,8 @@ dedicated reasoning model). Higher effort → more internal reasoning → slower
 
 Choosing between them is a [model-choice]({{< relref "/foundations/choosing-a-model" >}})
 decision; the effort dial is one of your [inference parameters]({{< relref "/foundations/inference-parameters" >}}).
+
+## Sources
+
+- [Anthropic — Extended thinking](https://platform.claude.com/docs/en/build-with-claude/extended-thinking)
+- [Anthropic — Effort](https://platform.claude.com/docs/en/build-with-claude/effort)

@@ -71,3 +71,15 @@ source and re-sync the embeddings.
 some things you'll hear (hybrid search, re-ranking) are *techniques* used inside a variant, not
 separate types. See [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) to tell which is
 which.
+
+## Strengths & limitations
+
+- **Strengths** — fresh, private, and citable knowledge without retraining; reduces hallucination;
+  update by re-syncing data.
+- **Limitations** — answer quality is capped by retrieval quality; adds an ingestion pipeline,
+  a vector store, and latency; needs chunking and evaluation tuning.
+
+## Sources
+
+- Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (2020) — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)
+- Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)

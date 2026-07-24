@@ -40,3 +40,14 @@ Prompt thứ hai rõ ràng hơn vì có vai trò, nhiệm vụ, giới hạn, đ
 - **Chain-of-thought** — hướng mô hình xử lý bài toán theo từng bước suy luận.
 - **Prompt caching** — tái sử dụng phần prompt lặp lại để giảm độ trễ và chi phí xử lý đầu vào
   (trong những trường hợp được hỗ trợ).
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — đòn bẩy rẻ nhất, nhanh nhất; không cần hạ tầng; lặp lại tức thì.
+- **Hạn chế** — không thêm được kiến thức model thiếu (dùng RAG); nhạy với cách diễn đạt; chạm trần
+  ở tác vụ khó hoặc cần nhất quán cao (khi đó cân nhắc fine-tuning).
+
+## Nguồn
+
+- [Anthropic — Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
+- [OpenAI — Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)

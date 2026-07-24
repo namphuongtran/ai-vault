@@ -54,3 +54,14 @@ Không parse chuỗi, không "thỉnh thoảng nó thêm một câu trước JSO
 
 Structured outputs là thứ biến một LLM thành **một thành phần đáng tin** trong pipeline — phân
 loại, trích xuất, định tuyến, hay bất kỳ bước nào mà kết quả đưa vào code khác.
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — đầu ra máy đọc được, đáng tin; không phải parse chuỗi mong manh; schema được ép.
+- **Hạn chế** — tính năng schema có giới hạn (không phải ràng buộc tuỳ ý); schema hoàn toàn mới có
+  thể thêm độ trễ lần đầu; một refusal hoặc bị cắt vì `max_tokens` vẫn có thể làm hỏng JSON.
+
+## Nguồn
+
+- [OpenAI — Structured outputs](https://platform.openai.com/docs/guides/structured-outputs)
+- [Anthropic — Tool use overview](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)

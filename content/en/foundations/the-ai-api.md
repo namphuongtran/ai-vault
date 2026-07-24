@@ -73,3 +73,8 @@ want the model to see; managing that is [context engineering]({{< relref "/found
 You rarely hand-write HTTP. Each provider ships an **SDK** (a library) that wraps these calls
 in your language. Exact field names vary by provider — the concepts (messages, roles, usage,
 streaming) do not.
+
+## Sources
+
+- [Anthropic — Working with the Messages API](https://platform.claude.com/docs/en/build-with-claude/working-with-messages)
+- [OpenAI — Text generation](https://platform.openai.com/docs/guides/text)

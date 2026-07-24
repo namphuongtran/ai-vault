@@ -45,3 +45,8 @@ chọn bậc theo công việc thay vì mặc định lấy cái lớn nhất.
 - **Proprietary (API)** — dễ nhất, mạnh nhất, không cần hạ tầng; bạn gửi dữ liệu cho nhà cung cấp.
 - **Open-weight (tự host)** — toàn quyền kiểm soát và chủ quyền dữ liệu; bạn tự vận hành và mở
   rộng hạ tầng.
+
+## Nguồn
+
+- [Anthropic — Models overview](https://platform.claude.com/docs/en/about-claude/models/overview)
+- [Anthropic — Pricing](https://platform.claude.com/docs/en/about-claude/pricing)

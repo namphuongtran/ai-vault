@@ -53,3 +53,14 @@ No string-parsing, no "sometimes it adds a sentence before the JSON."
 
 Structured outputs are what make an LLM a **reliable component** in a pipeline — classification,
 extraction, routing, or any step whose result feeds other code.
+
+## Strengths & limitations
+
+- **Strengths** — reliable, machine-readable output; no brittle text parsing; the schema is enforced.
+- **Limitations** — schema features are limited (not arbitrary constraints); a brand-new schema can
+  add first-request latency; a refusal or a `max_tokens` cut can still break the JSON.
+
+## Sources
+
+- [OpenAI — Structured outputs](https://platform.openai.com/docs/guides/structured-outputs)
+- [Anthropic — Tool use overview](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)
