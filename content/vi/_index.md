@@ -28,7 +28,7 @@ flowchart LR
     subgraph S1["Stage 1 · Deep Dives ✓"]
       A1[5 deep dives]
     end
-    subgraph S2["Stage 2 · Building with AI · planned"]
+    subgraph S2["Stage 2 · Building with AI · in progress"]
       A2[System design · RAG · agentic RAG · harness · code structure]
     end
     S0 --> S1 --> S2

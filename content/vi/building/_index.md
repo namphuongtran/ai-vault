@@ -8,26 +8,31 @@ menu:
   main:
     weight: 3
 description: >
-  Kiến trúc thực hành để xây hệ thống AI — dự kiến, kèm C4 diagram.
+  Kiến trúc thực hành để xây hệ thống AI.
 ---
 
-> **Trạng thái: dự kiến — sắp tới.** Giai đoạn 2 chuyển từ *khái niệm* sang *xây dựng*.
-
 Nếu [Nền tảng]({{< relref "/foundations" >}}) giải thích các mảnh ghép và
-[Deep Dives]({{< relref "/deep-dives" >}}) đào sâu hơn, thì **Giai đoạn 2** là về lắp ráp hệ
-thống thật — với **[C4](https://c4model.com/) diagram** cho thiết kế hệ thống.
+[Deep Dives]({{< relref "/deep-dives" >}}) đào sâu hơn, thì **Giai đoạn 2** là về lắp ráp chúng
+thành hệ thống thật — kèm sơ đồ cho phần kiến trúc.
 
-## Các trang dự kiến
+## Lộ trình
 
-1. **AI system design** — mẫu kiến trúc; C4 system-context & container diagram.
-2. **Building a RAG system** — kiến trúc tham chiếu end-to-end.
-3. **Agentic RAG** — truy xuất do agent dẫn dắt, không phải pipeline cố định.
-4. **The agent harness** — xây vòng lặp, quản lý context, và thực thi tool.
-5. **AI code structure** — cách tổ chức codebase của ứng dụng AI.
-6. **Tooling** — Claude Agent SDK vs Anthropic API SDK, Managed Agents, agent framework
-   (Microsoft Agent Framework, LangGraph), xây skill / plugin & MCP server, deployment.
+```mermaid
+flowchart LR
+    A[AI system design] --> B[Building a RAG system] --> C[Agentic RAG]
+    C --> D[The agent harness] --> E[AI code structure] --> F[Tooling and frameworks]
+```
+
+## Trong phần này
+
+1. [AI system design]({{< relref "/building/ai-system-design" >}}) — hình hài chuẩn của một app AI.
+2. [Building a RAG system]({{< relref "/building/building-rag" >}}) — kiến trúc tham chiếu end-to-end.
+3. Agentic RAG — *sắp có*.
+4. The agent harness — *sắp có*.
+5. AI code structure — *sắp có*.
+6. Tooling & frameworks — *sắp có*.
 
 ## Yêu cầu trước
 
-Hãy học qua **[Giai đoạn 0 — Nền tảng]({{< relref "/foundations" >}})** và
-**[Giai đoạn 1 — Deep Dives]({{< relref "/deep-dives" >}})** trước — Giai đoạn 2 xây trực tiếp trên cả hai.
+Hãy học qua [Giai đoạn 0 — Nền tảng]({{< relref "/foundations" >}}) và
+[Giai đoạn 1 — Deep Dives]({{< relref "/deep-dives" >}}) trước — Giai đoạn 2 xây trực tiếp trên cả hai.
