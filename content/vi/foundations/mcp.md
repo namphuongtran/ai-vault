@@ -43,3 +43,8 @@ Một server có thể bày ra ba thứ:
 - **Là xương sống của hệ sinh thái** — nhiều "connector", "skill" và "plugin" bên dưới là MCP server.
 
 > *MCP là gì* thuộc phần nền tảng. *Xây* một MCP server là chủ đề giai đoạn build — để sau.
+
+## Nguồn
+
+- [Model Context Protocol — Introduction](https://modelcontextprotocol.io)
+- [Model Context Protocol — Specification (2025-06-18)](https://modelcontextprotocol.io/specification/2025-06-18)

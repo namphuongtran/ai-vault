@@ -56,3 +56,8 @@ Mô hình là động cơ; harness là khung xe — nó chạy vòng lặp, qu�
 Càng nhiều tự chủ = càng mạnh, nhưng cũng càng tốn chi phí, độ trễ, và kém dễ đoán. Đó là lý do
 [đánh giá]({{< relref "/foundations/model-evaluation" >}}) và
 [guardrail]({{< relref "/foundations/guardrails" >}}) càng quan trọng khi bạn càng agentic.
+
+## Nguồn
+
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- Yao et al., *ReAct: Synergizing Reasoning and Acting in Language Models* (2022) — [arXiv:2210.03629](https://arxiv.org/abs/2210.03629)

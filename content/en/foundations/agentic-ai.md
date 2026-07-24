@@ -56,3 +56,8 @@ The model is the engine; the harness is the chassis — it runs the loop, manage
 More autonomy = more capability, but also more cost, more latency, and less predictability.
 That's why [evaluation]({{< relref "/foundations/model-evaluation" >}}) and
 [guardrails]({{< relref "/foundations/guardrails" >}}) matter more the more agentic you go.
+
+## Sources
+
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- Yao et al., *ReAct: Synergizing Reasoning and Acting in Language Models* (2022) — [arXiv:2210.03629](https://arxiv.org/abs/2210.03629)

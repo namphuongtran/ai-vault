@@ -36,3 +36,15 @@ lập với cách mô hình được huấn luyện.
 
 Guardrail giảm rủi ro (đầu ra gây hại, rò rỉ dữ liệu, dùng sai phạm vi) mà không cần huấn luyện
 lại mô hình. Chúng đi đôi tự nhiên với **agent**, nơi quyền tự chủ càng cao thì càng cần kiểm soát.
+
+## Điểm mạnh & hạn chế
+
+- **Điểm mạnh** — chặn I/O không an toàn, lạc đề, sai định dạng mà không cần huấn luyện lại; xếp
+  lớp ở đầu vào và đầu ra; độc lập với model.
+- **Hạn chế** — không tuyệt đối (injection vẫn có thể lọt); thêm độ trễ; có thể báo nhầm và chặn
+  nội dung hợp lệ.
+
+## Nguồn
+
+- [OWASP — Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)
+- [OpenAI — Moderation](https://platform.openai.com/docs/guides/moderation)

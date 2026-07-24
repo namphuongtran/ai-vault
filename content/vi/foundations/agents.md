@@ -62,3 +62,8 @@ Một lời gọi chat thường không làm được bước 2–3 — nó sẽ
 - Kết quả phụ thuộc vào các kết quả trung gian mà mô hình chưa biết trước.
 
 > Càng nhiều quyền tự chủ thì càng mạnh — và càng cần **guardrail** và giám sát.
+
+## Nguồn
+
+- Yao et al., *ReAct: Synergizing Reasoning and Acting in Language Models* (2022) — [arXiv:2210.03629](https://arxiv.org/abs/2210.03629)
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)

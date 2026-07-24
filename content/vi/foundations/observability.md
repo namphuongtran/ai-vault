@@ -56,3 +56,8 @@ Khi câu trả lời sai, trace cho biết lỗi ở *retrieval* hay ở *model*
 
 Offline eval (trong [CI]({{< relref "/deep-dives/evaluation-in-practice" >}})) bắt regression
 trước khi ship; observability bắt những gì người dùng thật gặp *sau đó*. Bạn cần cả hai.
+
+## Nguồn
+
+- [OpenTelemetry — GenAI semantic conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/)
+- [Anthropic — Usage and Cost API](https://platform.claude.com/docs/en/manage-claude/usage-cost-api)

@@ -54,3 +54,8 @@ When an answer is wrong, the trace shows whether the fault was in *retrieval* or
 
 Offline evals (in [CI]({{< relref "/deep-dives/evaluation-in-practice" >}})) catch regressions
 before shipping; observability catches what real users hit *after*. You need both.
+
+## Sources
+
+- [OpenTelemetry — GenAI semantic conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/)
+- [Anthropic — Usage and Cost API](https://platform.claude.com/docs/en/manage-claude/usage-cost-api)
