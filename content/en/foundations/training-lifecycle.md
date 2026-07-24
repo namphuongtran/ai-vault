@@ -1,7 +1,7 @@
 ---
 title: "How Models Are Trained"
 linkTitle: "How Models Are Trained"
-weight: 5
+weight: 6
 description: An awareness-level view of pre-training, fine-tuning, and alignment — and why it matters to a builder.
 ---
 

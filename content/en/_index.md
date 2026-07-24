@@ -23,7 +23,7 @@ topics, to *building* real systems.
 ```mermaid
 flowchart LR
     subgraph S0["Stage 0 · Foundations ✓"]
-      A0[20 concepts + diagrams]
+      A0[22 concepts + diagrams]
     end
     subgraph S1["Stage 1 · Deep Dives ✓"]
       A1[5 deep dives]

@@ -1,6 +1,6 @@
 ---
 title: "Choosing a Model"
-weight: 6
+weight: 7
 description: Capability vs cost vs latency vs context — how to pick the right model for a task.
 ---
 

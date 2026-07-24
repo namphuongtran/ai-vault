@@ -18,25 +18,64 @@ Viết cho **builder kỹ thuật** — developer, AI/data engineer, DevSecOps, 
 architect — những người muốn *dùng và áp dụng* AI, không phải huấn luyện mô hình. Ít đi sâu vào
 ML/DL, tập trung vào những gì bạn cần để xây một cách tự tin.
 
-## Trong phần này
+## Học theo thứ tự nào
 
-1. **The AI landscape** — GenAI nằm ở đâu; bạn xây *với* mô hình, không huấn luyện chúng.
-2. **Foundation model** — mô hình lớn, đa dụng, được huấn luyện trước.
-3. **Generative AI** — mô hình tạo ra nội dung mới.
-4. **How LLMs work** — token, dự đoán token kế tiếp, context window.
-5. **How models are trained** — pre-training → fine-tuning → alignment (mức nhận biết).
-6. **Choosing a model** — năng lực vs chi phí vs độ trễ vs context.
-7. **Inference parameters** — temperature, top-p/top-k, max tokens, stop.
-8. **Prompt engineering** — cách kiểm soát đầu ra của mô hình.
-9. **Context engineering** — quản lý những gì đưa vào context window.
-10. **Embeddings** — biến văn bản thành vector thể hiện ý nghĩa.
-11. **RAG** — trả lời dựa trên dữ liệu bên ngoài (embeddings + vector store).
-12. **Tool & function calling** — nguyên thủy giúp mô hình hành động.
-13. **Agentic AI** — mô hình tự dẫn dắt hành động; cái harness.
-14. **Agent** — mô hình lập kế hoạch và hành động bằng công cụ.
-15. **MCP** — chuẩn mở để kết nối tool và dữ liệu với mô hình.
-16. **Guardrail** — an toàn và kiểm soát quanh đầu vào/đầu ra.
-17. **AI security** — prompt injection, jailbreak, rò rỉ dữ liệu, và cách phòng thủ.
-18. **Model evaluation** — cách đo chất lượng cho từng tác vụ.
-19. **Observability** — trace, metric và eval trên production.
-20. **Responsible AI** — công bằng, minh bạch và giám sát của con người.
+Đi theo năm module tuần tự — mỗi cái xây trên cái trước, từ *hiểu* mô hình đến *vận hành* chúng
+trên production. Mới bắt đầu? Hãy xem
+**[AI coding assistants]({{< relref "/foundations/ai-coding-assistants" >}})** — các công cụ bạn
+đã dùng — rồi vào Module 1.
+
+```mermaid
+flowchart TB
+    Start[Start here - AI coding assistants] --> M1[Module 1 - Understand]
+    M1 --> M2[Module 2 - Work with a model]
+    M2 --> M3[Module 3 - Ground it in your data]
+    M3 --> M4[Module 4 - Make it act]
+    M4 --> M5[Module 5 - Operate and govern]
+```
+
+### Module 1 · Understand · *Cơ bản*
+
+*Mục tiêu: biết các mô hình này là gì và hành xử ra sao.*
+
+1. [The AI landscape]({{< relref "/foundations/ai-landscape" >}})
+2. [Foundation models]({{< relref "/foundations/foundation-models" >}})
+3. [Generative AI]({{< relref "/foundations/generative-ai" >}})
+4. [How LLMs work]({{< relref "/foundations/how-llms-work" >}})
+5. [How models are trained]({{< relref "/foundations/training-lifecycle" >}})
+
+### Module 2 · Work with a model · *Cơ bản*
+
+*Mục tiêu: gọi được model và kiểm soát đầu ra.*
+
+1. [Choosing a model]({{< relref "/foundations/choosing-a-model" >}})
+2. [The AI API]({{< relref "/foundations/the-ai-api" >}})
+3. [Inference parameters]({{< relref "/foundations/inference-parameters" >}})
+4. [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})
+5. [Context engineering]({{< relref "/foundations/context-engineering" >}})
+
+### Module 3 · Ground it in your data · *Trung cấp*
+
+*Mục tiêu: khiến câu trả lời dùng dữ liệu của bạn, cập nhật.*
+
+1. [Embeddings]({{< relref "/foundations/embeddings" >}})
+2. [RAG]({{< relref "/foundations/rag" >}})
+
+### Module 4 · Make it act · *Trung cấp*
+
+*Mục tiêu: cho model dùng tool và chạy như một agent.*
+
+1. [Tool & function calling]({{< relref "/foundations/tool-function-calling" >}})
+2. [Agentic AI]({{< relref "/foundations/agentic-ai" >}})
+3. [Agents]({{< relref "/foundations/agents" >}})
+4. [MCP]({{< relref "/foundations/mcp" >}})
+
+### Module 5 · Operate & govern · *Trung cấp*
+
+*Mục tiêu: đưa lên production an toàn, đo được, có trách nhiệm.*
+
+1. [Guardrails]({{< relref "/foundations/guardrails" >}})
+2. [AI security]({{< relref "/foundations/ai-security" >}})
+3. [Model evaluation]({{< relref "/foundations/model-evaluation" >}})
+4. [Observability]({{< relref "/foundations/observability" >}})
+5. [Responsible AI]({{< relref "/foundations/responsible-ai" >}})

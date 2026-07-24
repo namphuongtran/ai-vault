@@ -1,6 +1,6 @@
 ---
 title: "Guardrails"
-weight: 16
+weight: 18
 description: Safety and control mechanisms around a model's inputs and outputs.
 ---
 

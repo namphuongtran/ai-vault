@@ -1,6 +1,6 @@
 ---
 title: "Responsible AI"
-weight: 20
+weight: 22
 description: Công bằng, minh bạch, quyền riêng tư và giám sát của con người trong hệ thống AI.
 ---
 

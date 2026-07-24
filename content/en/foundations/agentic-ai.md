@@ -1,6 +1,6 @@
 ---
 title: "Agentic AI"
-weight: 13
+weight: 15
 description: The paradigm where a model drives its own multi-step actions — and the harness that makes it work.
 ---
 
