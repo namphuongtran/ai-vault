@@ -34,7 +34,7 @@ flowchart TB
     M4 --> M5[Module 5 - Operate and govern]
 ```
 
-### Module 1 · Understand · *Cơ bản*
+### Module 1 · Understand
 
 *Mục tiêu: biết các mô hình này là gì và hành xử ra sao.*
 
@@ -44,7 +44,7 @@ flowchart TB
 4. [How LLMs work]({{< relref "/foundations/how-llms-work" >}})
 5. [How models are trained]({{< relref "/foundations/training-lifecycle" >}})
 
-### Module 2 · Work with a model · *Cơ bản*
+### Module 2 · Work with a model
 
 *Mục tiêu: gọi được model và kiểm soát đầu ra.*
 
@@ -54,14 +54,14 @@ flowchart TB
 4. [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})
 5. [Context engineering]({{< relref "/foundations/context-engineering" >}})
 
-### Module 3 · Ground it in your data · *Trung cấp*
+### Module 3 · Ground it in your data
 
 *Mục tiêu: khiến câu trả lời dùng dữ liệu của bạn, cập nhật.*
 
 1. [Embeddings]({{< relref "/foundations/embeddings" >}})
 2. [RAG]({{< relref "/foundations/rag" >}})
 
-### Module 4 · Make it act · *Trung cấp*
+### Module 4 · Make it act
 
 *Mục tiêu: cho model dùng tool và chạy như một agent.*
 
@@ -70,7 +70,7 @@ flowchart TB
 3. [Agents]({{< relref "/foundations/agents" >}})
 4. [MCP]({{< relref "/foundations/mcp" >}})
 
-### Module 5 · Operate & govern · *Trung cấp*
+### Module 5 · Operate & govern
 
 *Mục tiêu: đưa lên production an toàn, đo được, có trách nhiệm.*
 

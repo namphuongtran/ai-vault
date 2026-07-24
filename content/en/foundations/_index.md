@@ -35,7 +35,7 @@ flowchart TB
     M4 --> M5[Module 5 - Operate and govern]
 ```
 
-### Module 1 · Understand · *Beginner*
+### Module 1 · Understand
 
 *Goal: know what these models are and how they behave.*
 
@@ -45,7 +45,7 @@ flowchart TB
 4. [How LLMs work]({{< relref "/foundations/how-llms-work" >}})
 5. [How models are trained]({{< relref "/foundations/training-lifecycle" >}})
 
-### Module 2 · Work with a model · *Beginner*
+### Module 2 · Work with a model
 
 *Goal: talk to a model and control its output.*
 
@@ -55,14 +55,14 @@ flowchart TB
 4. [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})
 5. [Context engineering]({{< relref "/foundations/context-engineering" >}})
 
-### Module 3 · Ground it in your data · *Intermediate*
+### Module 3 · Ground it in your data
 
 *Goal: make answers use your own, current data.*
 
 1. [Embeddings]({{< relref "/foundations/embeddings" >}})
 2. [RAG]({{< relref "/foundations/rag" >}})
 
-### Module 4 · Make it act · *Intermediate*
+### Module 4 · Make it act
 
 *Goal: let the model use tools and run as an agent.*
 
@@ -71,7 +71,7 @@ flowchart TB
 3. [Agents]({{< relref "/foundations/agents" >}})
 4. [MCP]({{< relref "/foundations/mcp" >}})
 
-### Module 5 · Operate & govern · *Intermediate*
+### Module 5 · Operate & govern
 
 *Goal: ship it safely, measurably, and responsibly.*
 
