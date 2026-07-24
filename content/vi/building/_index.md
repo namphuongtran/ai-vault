@@ -27,7 +27,7 @@ flowchart LR
 
 1. [AI system design]({{< relref "/building/ai-system-design" >}}) — hình hài chuẩn của một app AI.
 2. [Building a RAG system]({{< relref "/building/building-rag" >}}) — kiến trúc tham chiếu end-to-end.
-3. Agentic RAG — *sắp có*.
+3. [Agentic RAG]({{< relref "/building/agentic-rag" >}}) — truy xuất do agent dẫn dắt, không phải pipeline cố định.
 4. The agent harness — *sắp có*.
 5. AI code structure — *sắp có*.
 6. Tooling & frameworks — *sắp có*.
