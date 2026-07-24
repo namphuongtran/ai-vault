@@ -56,3 +56,8 @@ can loop or retrieve poorly). Add [guardrails]({{< relref "/foundations/guardrai
 limits, and [evaluation]({{< relref "/deep-dives/evaluation-in-practice" >}}) — especially the
 retrieval-quality checks in [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}). Reach for
 agentic RAG only when standard or advanced RAG genuinely falls short.
+
+## Sources
+
+- Asai et al., *Self-RAG* (2023) — [arXiv:2310.11511](https://arxiv.org/abs/2310.11511)
+- Yan et al., *Corrective RAG (CRAG)* (2024) — [arXiv:2401.15884](https://arxiv.org/abs/2401.15884)

@@ -45,3 +45,8 @@ tác vụ của bạn, từ rẻ nhất đến tốn kém nhất.
 Chúng không loại trừ nhau. Một kiến trúc production phổ biến là **fine-tune cho hình thức + RAG
 cho kiến thức**: fine-tune để mô hình trả lời đúng giọng và schema của bạn, và dùng RAG để cấp
 dữ kiện cập nhật, có căn cứ ngay lúc truy vấn.
+
+## Nguồn
+
+- Hu et al., *LoRA: Low-Rank Adaptation of Large Language Models* (2021) — [arXiv:2106.09685](https://arxiv.org/abs/2106.09685)
+- Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (2020) — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)

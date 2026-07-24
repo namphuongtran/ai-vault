@@ -50,3 +50,9 @@ Việc này cô lập được câu trả lời tệ đến từ truy xuất hay
 - Test trên chính các ví dụ đã dùng để tinh chỉnh (rò rỉ dữ liệu).
 - Một điểm tổng hợp che giấu lỗi ở một lát cắt quan trọng — hãy tách kết quả theo nhóm.
 - Tin một judge mà bạn chưa bao giờ kiểm chứng.
+
+## Nguồn
+
+- Zheng et al., *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena* (2023) — [arXiv:2306.05685](https://arxiv.org/abs/2306.05685)
+- Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)
+- [Anthropic — Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)

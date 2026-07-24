@@ -50,3 +50,9 @@ Examples steer format and style — but *which* examples matters:
 - Cramming many unrelated jobs into one prompt.
 - Vague success criteria ("make it good").
 - Relying on examples to fix a task the instructions never state clearly.
+
+## Sources
+
+- Wei et al., *Chain-of-Thought Prompting Elicits Reasoning in LLMs* (2022) — [arXiv:2201.11903](https://arxiv.org/abs/2201.11903)
+- Wang et al., *Self-Consistency Improves Chain of Thought Reasoning* (2022) — [arXiv:2203.11171](https://arxiv.org/abs/2203.11171)
+- Zhou et al., *Least-to-Most Prompting* (2022) — [arXiv:2205.10625](https://arxiv.org/abs/2205.10625)

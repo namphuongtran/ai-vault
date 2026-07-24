@@ -65,3 +65,11 @@ flowchart TD
 
 Prefer the simplest option that fits — most custom-tool agents are a tool runner. Reach for a
 framework or a managed service only when you need what it adds.
+
+## Sources
+
+- [Anthropic — Agent SDK overview](https://platform.claude.com/docs/en/agent-sdk/overview)
+- [Anthropic — Managed Agents overview](https://platform.claude.com/docs/en/managed-agents/overview)
+- [Model Context Protocol — Introduction](https://modelcontextprotocol.io)
+- [LangGraph — Overview](https://docs.langchain.com/oss/python/langgraph/overview)
+- [Microsoft — Agent Framework overview](https://learn.microsoft.com/en-us/agent-framework/overview/)

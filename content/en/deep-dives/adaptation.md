@@ -44,3 +44,8 @@ your task, from cheapest to most involved.
 These aren't exclusive. A common production stack is **fine-tune for form + RAG for
 knowledge**: fine-tune so the model reliably answers in your voice and schema, and use RAG to
 feed it current, grounded facts at query time.
+
+## Sources
+
+- Hu et al., *LoRA: Low-Rank Adaptation of Large Language Models* (2021) — [arXiv:2106.09685](https://arxiv.org/abs/2106.09685)
+- Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (2020) — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)

@@ -65,3 +65,8 @@ You rarely hand-write all of this:
 - **Managed service** — a provider hosts the loop and the tool sandbox for you.
 
 Choosing among these is the [Tooling & frameworks]({{< relref "/building" >}}) topic, coming next.
+
+## Sources
+
+- [Anthropic — Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)

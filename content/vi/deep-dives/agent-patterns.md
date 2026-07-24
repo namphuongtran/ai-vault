@@ -55,3 +55,8 @@ vụ có kết quả kiểm tra được (test pass, schema hợp lệ, có dẫ
 - **Hallucinated tool/tham số** — ràng buộc bằng schema và validate lời gọi.
 - **Phình context** — tóm tắt; đừng nối thêm mọi thứ mãi mãi.
 - **Không có điều kiện dừng** — định nghĩa tiêu chí thành công rõ ràng.
+
+## Nguồn
+
+- Yao et al., *ReAct: Synergizing Reasoning and Acting in Language Models* (2022) — [arXiv:2210.03629](https://arxiv.org/abs/2210.03629)
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)

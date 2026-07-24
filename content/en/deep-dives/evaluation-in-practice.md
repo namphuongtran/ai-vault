@@ -50,3 +50,9 @@ This isolates whether a bad answer came from retrieval or generation.
 - Testing on examples you tuned against (leakage).
 - One aggregate score hiding failures on a key slice — break results down by category.
 - Trusting a judge you never validated.
+
+## Sources
+
+- Zheng et al., *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena* (2023) — [arXiv:2306.05685](https://arxiv.org/abs/2306.05685)
+- Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)
+- [Anthropic — Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)

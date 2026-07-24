@@ -62,3 +62,11 @@ flowchart TD
 
 Ưu tiên lựa chọn đơn giản nhất phù hợp — đa số agent custom-tool là một tool runner. Chỉ dùng
 framework hoặc managed service khi bạn thực sự cần thứ chúng thêm vào.
+
+## Nguồn
+
+- [Anthropic — Agent SDK overview](https://platform.claude.com/docs/en/agent-sdk/overview)
+- [Anthropic — Managed Agents overview](https://platform.claude.com/docs/en/managed-agents/overview)
+- [Model Context Protocol — Introduction](https://modelcontextprotocol.io)
+- [LangGraph — Overview](https://docs.langchain.com/oss/python/langgraph/overview)
+- [Microsoft — Agent Framework overview](https://learn.microsoft.com/en-us/agent-framework/overview/)

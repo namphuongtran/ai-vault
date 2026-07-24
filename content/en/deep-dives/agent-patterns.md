@@ -55,3 +55,8 @@ and effective for tasks with a checkable result (tests pass, schema valid, sourc
 - **Hallucinated tools/args** — constrain with schemas and validate calls.
 - **Context bloat** — summarize; don't append everything forever.
 - **No stopping condition** — define explicit success criteria.
+
+## Sources
+
+- Yao et al., *ReAct: Synergizing Reasoning and Acting in Language Models* (2022) — [arXiv:2210.03629](https://arxiv.org/abs/2210.03629)
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
