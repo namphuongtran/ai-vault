@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 linkTitle: "Agentic AI"
-weight: 15
+weight: 21
 description: Mô hình tự dẫn dắt các hành động nhiều bước — và cái harness giúp nó hoạt động.
 ---
 

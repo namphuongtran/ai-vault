@@ -1,6 +1,6 @@
 ---
 title: "Prompt Engineering"
-weight: 10
+weight: 16
 description: The most direct way to control a foundation model's output.
 ---
 

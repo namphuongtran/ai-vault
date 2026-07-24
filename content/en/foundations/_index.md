@@ -3,6 +3,7 @@ title: "Foundations (Stage 0)"
 linkTitle: "Foundations"
 weight: 1
 type: docs
+no_list: true
 menu:
   main:
     weight: 1
@@ -42,18 +43,24 @@ flowchart TB
 1. [The AI landscape]({{< relref "/foundations/ai-landscape" >}})
 2. [Foundation models]({{< relref "/foundations/foundation-models" >}})
 3. [Generative AI]({{< relref "/foundations/generative-ai" >}})
-4. [How LLMs work]({{< relref "/foundations/how-llms-work" >}})
-5. [How models are trained]({{< relref "/foundations/training-lifecycle" >}})
+4. [Multimodality]({{< relref "/foundations/multimodality" >}})
+5. [How LLMs work]({{< relref "/foundations/how-llms-work" >}})
+6. [Under the hood]({{< relref "/foundations/under-the-hood" >}})
+7. [How models are trained]({{< relref "/foundations/training-lifecycle" >}})
+8. [Limitations & failure modes]({{< relref "/foundations/limitations" >}})
 
 ### Module 2 · Work with a model
 
 *Goal: talk to a model and control its output.*
 
 1. [Choosing a model]({{< relref "/foundations/choosing-a-model" >}})
-2. [The AI API]({{< relref "/foundations/the-ai-api" >}})
-3. [Inference parameters]({{< relref "/foundations/inference-parameters" >}})
-4. [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})
-5. [Context engineering]({{< relref "/foundations/context-engineering" >}})
+2. [Reasoning models]({{< relref "/foundations/reasoning-models" >}})
+3. [The AI API]({{< relref "/foundations/the-ai-api" >}})
+4. [Inference parameters]({{< relref "/foundations/inference-parameters" >}})
+5. [Structured outputs]({{< relref "/foundations/structured-outputs" >}})
+6. [Cost & tokens]({{< relref "/foundations/cost-and-tokens" >}})
+7. [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})
+8. [Context engineering]({{< relref "/foundations/context-engineering" >}})
 
 ### Module 3 · Ground it in your data
 

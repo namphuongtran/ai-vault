@@ -1,7 +1,7 @@
 ---
 title: "How LLMs Work"
 linkTitle: "How LLMs Work"
-weight: 5
+weight: 6
 description: Token, dự đoán token kế tiếp và context window — cơ chế bạn xây dựng trên đó.
 ---
 

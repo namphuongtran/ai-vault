@@ -1,6 +1,6 @@
 ---
 title: "Agents"
-weight: 16
+weight: 22
 description: Foundation models that plan and take actions using tools.
 ---
 

@@ -3,6 +3,7 @@ title: "Deep Dives (Giai đoạn 1)"
 linkTitle: "Deep Dives"
 weight: 2
 type: docs
+no_list: true
 menu:
   main:
     weight: 2

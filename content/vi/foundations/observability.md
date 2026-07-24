@@ -1,7 +1,7 @@
 ---
 title: "Observability"
 linkTitle: "Observability"
-weight: 21
+weight: 27
 description: Nhìn thấy hệ thống AI của bạn thực sự đã làm gì — trace, metric và eval trên production.
 ---
 

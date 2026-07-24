@@ -1,7 +1,7 @@
 ---
 title: "MCP (Model Context Protocol)"
 linkTitle: "MCP (Model Context Protocol)"
-weight: 17
+weight: 23
 description: Chuẩn mở để kết nối tool và dữ liệu với mô hình — là gì và vì sao tồn tại.
 ---
 
