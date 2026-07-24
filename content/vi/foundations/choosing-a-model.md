@@ -24,6 +24,14 @@ Hiếm khi có một mô hình "tốt nhất" — chỉ có mô hình phù hợp
 bậc trung (cân bằng), và mô hình nhỏ (nhanh, rẻ, hợp tác vụ đơn giản hoặc khối lượng lớn). Hãy
 chọn bậc theo công việc thay vì mặc định lấy cái lớn nhất.
 
+## Ví dụ — chọn model theo tác vụ
+
+| Tác vụ | Chọn | Vì sao |
+| -------- | ------ | -------- |
+| Autocomplete code trong IDE | Model nhỏ / nhanh | Khối lượng lớn, nhạy độ trễ, đơn giản |
+| Tóm tắt một đoạn chat hỗ trợ | Tier trung | Cân bằng chất lượng vs chi phí |
+| Phân tích hợp đồng 50 trang tìm rủi ro | Flagship / reasoning | Khó, khối lượng thấp, chịu được độ trễ |
+
 ## Cách tiếp cận thực tế
 
 1. **Prototype trên một mô hình mạnh** để chất lượng mô hình không phải nút thắt khi đang xây.

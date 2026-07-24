@@ -26,6 +26,22 @@ flowchart LR
 - **Quality signals** — user feedback (thumbs up/down), task success, and **online evals**
   (scoring a sample of real traffic, often with [LLM-as-judge]({{< relref "/deep-dives/evaluation-in-practice" >}})).
 
+## Example — a request trace
+
+```json
+{
+  "request_id": "req_123",
+  "steps": [
+    { "type": "retrieval", "query": "refund window", "hits": 3, "ms": 40 },
+    { "type": "model", "input_tokens": 1850, "output_tokens": 120, "stop_reason": "end_turn", "ms": 900 }
+  ],
+  "cost_usd": 0.0074,
+  "user_feedback": "thumbs_up"
+}
+```
+
+When an answer is wrong, the trace shows whether the fault was in *retrieval* or the *model*.
+
 ## Why it matters
 
 - **Debugging** — a bad answer could come from retrieval, the prompt, a tool, or the model;

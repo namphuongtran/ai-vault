@@ -18,4 +18,9 @@ có sẵn. Cho một prompt, chúng tạo ra văn bản, hình ảnh, âm thanh,
 - Điểm mạnh: soạn thảo, tóm tắt, dịch, brainstorm, viết code.
 - Giới hạn: có thể **hallucinate**, có **knowledge cutoff**, và phản ánh thiên lệch trong dữ liệu huấn luyện.
 
+## Ví dụ — generative vs discriminative
+
+Cho một review sản phẩm: model **discriminative** gán nhãn *tích cực / tiêu cực*; model
+**generative** viết luôn câu trả lời cho khách. Cùng input, khác việc.
+
 > Foundation model là "động cơ"; generative AI là việc chúng làm khi tạo ra nội dung.

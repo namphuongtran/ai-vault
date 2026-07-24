@@ -38,6 +38,14 @@ distracts the model and costs money. The goal is the **right** information, not 
 - **Pruning** — drop stale tool results and history the model no longer needs.
 - **Ordering & caching** — put stable content first so it can be cached and reused cheaply.
 
+## Example — lean vs. bloated context
+
+For the question *"What's our refund window?"*:
+
+- ❌ **Bloated** — the whole 40-page policy PDF + the entire chat history. Noisy, expensive, and
+  often a worse answer.
+- ✅ **Lean** — just the one retrieved paragraph about refunds + the question. Precise and cheap.
+
 ## Why it matters to you
 
 Most "the model got it wrong" problems are really context problems: it lacked the right

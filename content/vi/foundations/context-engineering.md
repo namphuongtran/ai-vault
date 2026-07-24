@@ -39,6 +39,14 @@ không liên quan làm mô hình phân tâm và tốn tiền. Mục tiêu là th
 - **Pruning** — bỏ các kết quả tool và lịch sử mô hình không còn cần.
 - **Ordering & caching** — đặt nội dung ổn định lên trước để cache và tái dùng rẻ hơn.
 
+## Ví dụ — context gọn vs phình
+
+Với câu hỏi *"Chính sách hoàn tiền của mình bao lâu?"*:
+
+- ❌ **Phình** — cả file chính sách 40 trang + toàn bộ lịch sử chat. Nhiễu, đắt, và thường trả
+  lời kém hơn.
+- ✅ **Gọn** — đúng một đoạn về refund được retrieve + câu hỏi. Chính xác và rẻ.
+
 ## Vì sao điều này quan trọng với bạn
 
 Phần lớn lỗi "mô hình trả lời sai" thật ra là lỗi context: nó thiếu thông tin đúng, hoặc chìm

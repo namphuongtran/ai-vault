@@ -20,3 +20,8 @@ general-purpose model and specialize it.
 - Adaptation options, from cheapest to most involved: **prompting → RAG → fine-tuning**.
 
 > A large language model (LLM) is a foundation model specialized for text.
+
+## Example — one model, many tasks
+
+The *same* foundation model can summarize an email, write SQL, translate French, and answer a
+support question — with no task-specific training. You just change the prompt.

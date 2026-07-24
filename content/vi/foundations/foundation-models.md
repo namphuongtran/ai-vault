@@ -20,3 +20,8 @@ tác vụ, ta bắt đầu từ một mô hình đa dụng và chuyên biệt ho
 - Các cách điều chỉnh, từ rẻ đến tốn kém: **prompting → RAG → fine-tuning**.
 
 > Large language model (LLM) là một foundation model chuyên cho văn bản.
+
+## Ví dụ — một model, nhiều tác vụ
+
+*Cùng một* foundation model có thể tóm tắt email, viết SQL, dịch tiếng Pháp, và trả lời một câu
+hỏi hỗ trợ — không cần huấn luyện riêng cho từng tác vụ. Bạn chỉ đổi prompt.

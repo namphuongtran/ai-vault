@@ -24,6 +24,14 @@ Most providers offer a **tier ladder** — a large flagship model (most capable,
 pricier), a mid tier (balanced), and a small model (fast, cheap, good for simple or
 high-volume tasks). Match the tier to the job rather than defaulting to the biggest.
 
+## Example — matching model to task
+
+| Task | Pick | Why |
+| ------ | ------ | ----- |
+| Code autocomplete in the IDE | Small / fast model | High volume, latency-sensitive, simple |
+| Summarize a support chat | Mid tier | Balanced quality vs. cost |
+| Analyze a 50-page contract for risks | Flagship / reasoning | Hard, low volume, tolerates latency |
+
 ## A practical approach
 
 1. **Prototype on a capable model** so model quality isn't the bottleneck while you build.
