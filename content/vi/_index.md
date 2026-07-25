@@ -26,7 +26,7 @@ flowchart LR
       A0[28 concepts + diagrams]
     end
     subgraph S1["Stage 1 · Deep Dives ✓"]
-      A1[6 deep dives]
+      A1[8 deep dives]
     end
     subgraph S2["Stage 2 · Building with AI ✓"]
       A2[System design · RAG · agentic RAG · harness · code structure]
@@ -38,8 +38,8 @@ flowchart LR
   cho builder kỹ thuật *dùng* AI: mô hình, prompting, context, embeddings, RAG, tool, agent,
   MCP, guardrail, security, đánh giá, observability.
 - **[Giai đoạn 1 — Deep Dives]({{< relref "/deep-dives" >}})** ✓ — đào sâu hơn các chủ đề hữu
-  ích trong hệ thống thật: prompt patterns, types of RAG, advanced RAG, agent patterns,
-  adaptation, evaluation in practice.
+  ích trong hệ thống thật: prompt patterns, vector databases, types of RAG, advanced RAG,
+  agent patterns, agent memory, adaptation, evaluation in practice.
 - **[Giai đoạn 2 — Building with AI]({{< relref "/building" >}})** ✓ — lắp ráp các mảnh ghép
   thành hệ thống thật: AI system design, building RAG, agentic RAG, agent harness, code
   structure, và tooling & frameworks.
