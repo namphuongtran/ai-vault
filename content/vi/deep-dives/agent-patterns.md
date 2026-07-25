@@ -43,6 +43,8 @@ Chia việc cho các agent chuyên biệt khi một context không chứa hết:
 - **Review/critique** — một agent tạo, một agent kiểm tra.
 
 Càng nhiều agent thì chi phí phối hợp càng lớn — chỉ dùng khi một agent thực sự đuối.
+Xem [Multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}) cho topologies và bộ nhớ
+knowledge graph chung.
 
 ## Reflection
 

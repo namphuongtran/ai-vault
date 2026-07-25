@@ -111,11 +111,15 @@ Example: a research assistant where a planner splits the question, two retriever
 conditional edge until the answer passes. Each node is its own small loop; the graph is the
 wiring.
 
-This is where [multi-agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) and the
+This is where [multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}) and the
 "orchestration" rung of [loop engineering]({{< relref "/building/loop-engineering" >}}) meet:
 graph engineering is the *structure* that orchestration runs on. Notably, the idea isn't new
 — frameworks like LangGraph modeled nodes/edges/state before the term "graph engineering"
 existed, which is the tell that some of this is **new vocabulary for existing architecture**.
+
+Don't confuse this **execution graph** (nodes = agents/steps, edges = control flow) with a
+**knowledge graph** (nodes = entities, edges = relations) used as shared agent memory — same
+word, different graphs; see [Multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}).
 
 ## Layers vs. renamed eras — a caution
 

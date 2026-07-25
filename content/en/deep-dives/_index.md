@@ -24,7 +24,7 @@ then operating:
 ```mermaid
 flowchart LR
     A[Prompt patterns] --> B[Vector databases] --> C[Types of RAG] --> D[Advanced RAG]
-    D --> E[Agent patterns] --> F[Agent memory] --> G[Adaptation] --> H[Evaluation in practice]
+    D --> E[Agent patterns] --> F[Agent memory] --> M[Multi-agent] --> G[Adaptation] --> H[Evaluation in practice]
 ```
 
 ## In this section
@@ -41,7 +41,9 @@ flowchart LR
    design, multi-agent, reflection.
 6. [Agent memory]({{< relref "/deep-dives/agent-memory" >}}) — the memory types, and when
    each one earns its place.
-7. [Adaptation]({{< relref "/deep-dives/adaptation" >}}) — choosing between prompting, RAG,
+7. [Multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}) — topologies, and a shared
+   knowledge graph as team memory.
+8. [Adaptation]({{< relref "/deep-dives/adaptation" >}}) — choosing between prompting, RAG,
    and fine-tuning.
-8. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — eval sets,
+9. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — eval sets,
    LLM-as-judge, offline vs online, regression testing.

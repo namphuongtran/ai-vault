@@ -108,11 +108,15 @@ Ví dụ: một trợ lý nghiên cứu — planner tách câu hỏi, hai retrie
 trên các nguồn khác nhau, một writer gộp lại, và một critic node quay lại qua edge có điều
 kiện đến khi câu trả lời đạt. Mỗi node là một loop nhỏ của riêng nó; graph là phần đấu dây.
 
-Đây là chỗ [multi-agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) gặp bậc
+Đây là chỗ [multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}) gặp bậc
 "orchestration" của [loop engineering]({{< relref "/building/loop-engineering" >}}): graph
 engineering là *cấu trúc* mà orchestration chạy trên đó. Đáng chú ý, ý tưởng này không mới —
 các framework như LangGraph đã mô hình node/edge/state trước khi thuật ngữ "graph engineering"
 tồn tại, đó là dấu hiệu cho thấy một phần chuyện này là **từ vựng mới cho kiến trúc đã có**.
+
+Đừng nhầm **execution graph** này (node = agent/bước, edge = luồng điều khiển) với một
+**knowledge graph** (node = thực thể, edge = quan hệ) dùng làm bộ nhớ chung của agent — cùng
+chữ, hai loại graph khác nhau; xem [Multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}).
 
 ## Lớp thật vs tên gọi đổi mới — một lưu ý
 
