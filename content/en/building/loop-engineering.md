@@ -85,9 +85,59 @@ Any loop you meet is a point on three independent axes:
 
 | Axis | Options | The trade |
 | ------ | ------ | ------ |
-| **Architecture** | **Open loop** — agent free to explore, decide next steps · **Closed loop** — predefined goal, criteria, and thresholds | Open suits unknown problems but burns tokens and resists prediction; closed is cheaper, repeatable, improvable — production defaults to closed |
+| **Architecture** | **Open loop** — agent free to explore, decide next steps · **Closed loop** — predefined goal, criteria, and thresholds | Open suits unknown problems but burns tokens and resists prediction; closed is cheaper, repeatable, improvable — the full comparison is in the [next section](#open-vs-closed-loop) |
 | **Oversight** | **Human in the loop** — approves each step · **on the loop** — monitors, intervenes on exception · **out of the loop** — reviews outcomes only | The same ladder as [responsible-ai's placements]({{< relref "/foundations/responsible-ai" >}}), applied to loops: you graduate from sitting inside one loop to designing loops that watch other loops |
 | **Topology** | **Single loop** — one worker · **Orchestrated** — supervisor + specialized workers | Single is simpler and usually enough; orchestrate when tasks parallelize or need separate maker and checker roles |
+
+## Open vs. closed loop
+
+The names come from control theory: a **closed** loop feeds its output back and corrects
+against a reference; an **open** loop runs without that feedback path. For agents:
+
+- **Open loop** — the agent gets a goal and freedom: it explores, reasons, and decides its
+  own next steps. There are no predefined success criteria; the run ends when the agent
+  declares itself done or the budget runs out, and a *human* judges the output afterwards.
+- **Closed loop** — the goal ships with **explicit success criteria and a validator** defined
+  *before* the run. Every iteration is measured against them; failures feed back into the
+  next round; "done" means *the threshold was passed*, not "the agent felt finished".
+
+```mermaid
+flowchart LR
+    subgraph O["Open loop"]
+      G1[Goal] --> A1[Agent explores and decides] --> R1[Output]
+      R1 --> H1[Human judges afterwards]
+    end
+    subgraph C["Closed loop"]
+      G2[Goal + criteria] --> W2[Worker] --> V2[Validator]
+      V2 -->|pass threshold| D2[Done]
+      V2 -->|fail + feedback| W2
+    end
+```
+
+| Question | Open loop | Closed loop |
+| ------ | ------ | ------ |
+| Who decides the next step? | The model, at runtime | The process, designed upfront |
+| What does "done" mean? | Agent self-declares, or budget dies | Validator passes a threshold |
+| Cost per run | Unpredictable | Bounded (rounds × budget) |
+| Result across runs | Varies | Repeatable |
+| Can it improve? | Hard — nothing is measured | Run over run — every run is scored |
+| Main risk | Token burn, drift, quality by luck | A wrong rubric gets enforced at machine speed; solutions outside the frame get missed |
+
+**Choose open when** the problem itself is unexplored: you don't yet know what "good" looks
+like, it's a one-off spike ("figure out why these tests are flaky", "map this legacy
+codebase"), and a human will read the output directly. Exploration is the one thing a closed
+loop *can't* do — its criteria would have to exist already.
+
+**Choose closed when** the task repeats, runs unattended (CI, schedules), spends real money,
+or its output ships without a human watching every step. Production defaults to closed for
+exactly those reasons.
+
+The two aren't rivals — they're **stages of the same lifecycle**: run the task open a few
+times to *discover* the criteria, then freeze those criteria into a validator and close the
+loop. The autofixer below went exactly this way: the first SonarQube fixes were exploratory,
+hand-reviewed; once the review rubric stabilized, it became the reviewer agent's rubric.
+
+> Open to explore, closed to operate — a task that repeats enough deserves to be closed.
 
 ## Why you need it
 
