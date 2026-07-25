@@ -25,7 +25,8 @@ rồi vận hành:
 ```mermaid
 flowchart LR
     A[Prompt patterns] --> B[Vector databases] --> C[Types of RAG] --> D[Advanced RAG]
-    D --> E[Agent patterns] --> F[Agent memory] --> M[Multi-agent] --> G[Adaptation] --> H[Evaluation in practice]
+    D --> E[Agent patterns] --> F[Agent memory] --> M[Multi-agent] --> SE[Self-improving] --> CU[Computer use]
+    CU --> G[Adaptation] --> H[Evaluation in practice]
 ```
 
 ## Trong phần này
@@ -44,7 +45,11 @@ flowchart LR
    mỗi loại xứng đáng có mặt.
 7. [Multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}) — topologies, và một
    knowledge graph chung làm bộ nhớ cho cả nhóm.
-8. [Adaptation]({{< relref "/deep-dives/adaptation" >}}) — chọn giữa prompting, RAG và
-   fine-tuning.
-9. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — bộ eval,
+8. [Self-improving agents]({{< relref "/deep-dives/self-improving-agents" >}}) — giỏi lên mà
+   không đổi trọng số.
+9. [Computer use & real-time]({{< relref "/deep-dives/computer-use" >}}) — agent hành động
+   trong thế giới, không chỉ trả lời.
+10. [Adaptation]({{< relref "/deep-dives/adaptation" >}}) — chọn giữa prompting, RAG và
+    fine-tuning.
+11. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — bộ eval,
    LLM-as-judge, offline vs online, regression testing.
