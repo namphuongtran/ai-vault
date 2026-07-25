@@ -50,6 +50,19 @@ thường chiếm phần lớn.
 - **Prompt caching** — tái dùng phần prefix ổn định giữa các lần gọi để giảm chi phí input.
 - **Batch** cho việc offline; **stream** cho UX (không giảm chi phí, cải thiện độ trễ cảm nhận).
 
+## Prompt caching hoạt động ra sao (KV cache)
+
+Để sinh văn bản, model tính các **key/value (KV) state** của attention cho mọi token trong
+prompt — phần tốn kém nhất. Bình thường chúng được tính lại ở mỗi lần gọi. **Prompt caching**
+lưu KV state cho một prefix ổn định (system prompt dài, định nghĩa tool, một tài liệu lớn) để
+lần gọi sau bắt đầu bằng cùng prefix đó **tái dùng** thay vì tính lại — giảm chi phí input và
+thời gian tới token đầu tiên.
+
+Ví dụ: một support bot có manual chính sách 8.000 token nằm đầu mọi prompt. Cache prefix đó
+một lần; mỗi câu hỏi sau chỉ trả tiền xử lý câu hỏi mới, không phải cả manual lần nữa. Chỉ chạy
+được khi prefix **giống hệt và ở đầu** — đặt phần ổn định trước, phần biến đổi (câu hỏi của
+user) sau cùng.
+
 ## Ước lượng và theo dõi
 
 - Đếm token bằng tokenizer trước khi ship (đừng đoán).
@@ -62,3 +75,4 @@ thường chiếm phần lớn.
 
 - [Anthropic — Pricing](https://platform.claude.com/docs/en/about-claude/pricing)
 - [Anthropic — Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting)
+- [Anthropic — Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching)

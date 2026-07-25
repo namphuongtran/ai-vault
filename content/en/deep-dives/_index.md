@@ -24,7 +24,8 @@ then operating:
 ```mermaid
 flowchart LR
     A[Prompt patterns] --> B[Vector databases] --> C[Types of RAG] --> D[Advanced RAG]
-    D --> E[Agent patterns] --> F[Agent memory] --> M[Multi-agent] --> G[Adaptation] --> H[Evaluation in practice]
+    D --> E[Agent patterns] --> F[Agent memory] --> M[Multi-agent] --> SE[Self-improving] --> CU[Computer use]
+    CU --> G[Adaptation] --> H[Evaluation in practice]
 ```
 
 ## In this section
@@ -43,7 +44,11 @@ flowchart LR
    each one earns its place.
 7. [Multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}) — topologies, and a shared
    knowledge graph as team memory.
-8. [Adaptation]({{< relref "/deep-dives/adaptation" >}}) — choosing between prompting, RAG,
-   and fine-tuning.
-9. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — eval sets,
-   LLM-as-judge, offline vs online, regression testing.
+8. [Self-improving agents]({{< relref "/deep-dives/self-improving-agents" >}}) — getting better
+   without changing the weights.
+9. [Computer use & real-time]({{< relref "/deep-dives/computer-use" >}}) — agents that act in
+   the world, not just answer.
+10. [Adaptation]({{< relref "/deep-dives/adaptation" >}}) — choosing between prompting, RAG,
+    and fine-tuning.
+11. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — eval sets,
+    LLM-as-judge, offline vs online, regression testing.
