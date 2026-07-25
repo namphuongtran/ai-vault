@@ -1,12 +1,12 @@
 ---
 title: "Deep Dives (Giai đoạn 1)"
 linkTitle: "Deep Dives"
-weight: 2
+weight: 3
 type: docs
 no_list: true
 menu:
   main:
-    weight: 2
+    weight: 3
 description: >
   Đào sâu hơn một mức vào các chủ đề cốt lõi ở Giai đoạn 0 — những phần thực sự hữu ích khi
   xây hệ thống thật.

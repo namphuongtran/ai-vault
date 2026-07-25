@@ -1,12 +1,12 @@
 ---
 title: "Building with AI (Giai đoạn 2)"
 linkTitle: "Building with AI"
-weight: 3
+weight: 4
 type: docs
 no_list: true
 menu:
   main:
-    weight: 3
+    weight: 4
 description: >
   Kiến trúc thực hành để xây hệ thống AI.
 ---

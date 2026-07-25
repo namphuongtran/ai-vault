@@ -1,12 +1,12 @@
 ---
 title: "Deep Dives (Stage 1)"
 linkTitle: "Deep Dives"
-weight: 2
+weight: 3
 type: docs
 no_list: true
 menu:
   main:
-    weight: 2
+    weight: 3
 description: >
   One level deeper on the core Stage 0 topics — the parts that pay off in real systems.
 ---

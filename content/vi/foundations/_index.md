@@ -1,12 +1,12 @@
 ---
 title: "Nền tảng (Giai đoạn 0)"
 linkTitle: "Nền tảng"
-weight: 1
+weight: 2
 type: docs
 no_list: true
 menu:
   main:
-    weight: 1
+    weight: 2
 description: >
   Các khối kiến thức cốt lõi của hệ thống AI hiện đại — từ foundation model đến responsible AI.
 ---
