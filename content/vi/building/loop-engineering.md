@@ -202,6 +202,10 @@ coding agent chạy script.
   phí và điểm hỏng — đa số task vẫn xứng với một worker và một cái lịch, không phải một hạm
   đội.
 
+Khi orchestration *thực sự* xứng đáng, cấu trúc mà các loop phối hợp chạy trên đó là một graph
+— xem [From prompts to graphs]({{< relref "/building/engineering-disciplines" >}}) để thấy
+loop engineering nằm ở đâu trong dòng tiến hoá rộng hơn.
+
 ## Nguồn
 
 - Osmani, *Loop Engineering* (2026) — [addyo.substack.com](https://addyo.substack.com/p/loop-engineering)

@@ -52,6 +52,10 @@ Với câu hỏi *"Chính sách hoàn tiền của mình bao lâu?"*:
 Phần lớn lỗi "mô hình trả lời sai" thật ra là lỗi context: nó thiếu thông tin đúng, hoặc chìm
 trong thông tin sai. Sửa context trước khi đổ lỗi cho mô hình.
 
+Prompt và context engineering là hai trong năm "-engineering" discipline xuất hiện khi hệ
+thống AI lớn dần; xem [From prompts to graphs]({{< relref "/building/engineering-disciplines" >}})
+để thấy chúng nối với harness, loop và graph engineering ra sao.
+
 ## Nguồn
 
 - [Anthropic — Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows)

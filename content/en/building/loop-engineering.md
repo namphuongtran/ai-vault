@@ -199,6 +199,10 @@ different models negotiate; the discovery half could have been a scripted coding
   labels); loops amplify a bad prompt or rubric at machine speed; orchestration multiplies
   cost and failure modes — most tasks still deserve one worker and a schedule, not a fleet.
 
+When orchestration *is* warranted, the structure those coordinated loops run on is a graph —
+see [From prompts to graphs]({{< relref "/building/engineering-disciplines" >}}) for where
+loop engineering sits in the wider lineage.
+
 ## Sources
 
 - Osmani, *Loop Engineering* (2026) — [addyo.substack.com](https://addyo.substack.com/p/loop-engineering)
