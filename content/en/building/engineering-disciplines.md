@@ -41,8 +41,8 @@ Read this as a ladder — every rung solves a failure the rung below couldn't:
 
 | Era | Discipline | What it adds | The failure it fixes |
 | ------ | ------ | ------ | ------ |
-| 2022 | [Prompt]({{< relref "/foundations/prompt-engineering" >}}) | Shaping one exchange | — |
-| 2025 | [Context]({{< relref "/foundations/context-engineering" >}}) | Everything the model knows beyond the prompt | A perfect prompt still can't add knowledge the model lacks |
+| 2022 | [Prompt]({{< relref "prompt-engineering.md" >}}) | Shaping one exchange | — |
+| 2025 | [Context]({{< relref "context-engineering.md" >}}) | Everything the model knows beyond the prompt | A perfect prompt still can't add knowledge the model lacks |
 | Feb 2026 | [Harness]({{< relref "/building/agent-harness" >}}) | Constraints and gates around the agent | A good prompt won't stop an agent from `rm -rf`-ing your repo |
 | Jun 2026 | [Loop]({{< relref "/building/loop-engineering" >}}) | The plan–execute–verify cycle and what counts as done | One call can't check and fix its own work |
 | Jul 2026 | Graph | Many loops wired via nodes, edges, shared state | One sequential loop stalls on work that needs parallel, specialized roles |
@@ -58,9 +58,9 @@ model was never given.
 
 ### Context engineering — managing what the model knows
 
-You assemble everything around the prompt: retrieved documents ([RAG]({{< relref "/foundations/rag" >}})),
+You assemble everything around the prompt: retrieved documents ([RAG]({{< relref "rag.md" >}})),
 [memory]({{< relref "/deep-dives/agent-memory" >}}), tool definitions, session history — and,
-just as important, what to leave out so the [context window]({{< relref "/foundations/context-engineering" >}})
+just as important, what to leave out so the [context window]({{< relref "context-engineering.md" >}})
 stays lean. Example: a support bot answers about *this* customer's plan because context
 engineering put the account record and the relevant policy in the window.
 

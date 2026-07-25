@@ -167,7 +167,7 @@ instead of inventing (that's your grounding prompt working).
 ## Step 6 — Monitoring and caching
 
 You can't improve what you can't see — capture a
-[trace]({{< relref "/foundations/observability" >}}) per request, and stop paying twice for
+[trace]({{< relref "observability.md" >}}) per request, and stop paying twice for
 the same question.
 
 ```python

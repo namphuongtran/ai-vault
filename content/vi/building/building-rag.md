@@ -5,7 +5,7 @@ weight: 3
 description: Kiến trúc tham chiếu end-to-end — pipeline ingest và pipeline query.
 ---
 
-Tiếp nối [RAG ở phần Nền tảng]({{< relref "/foundations/rag" >}}). Một hệ RAG thật là **hai
+Tiếp nối [RAG ở phần Nền tảng]({{< relref "rag.md" >}}). Một hệ RAG thật là **hai
 pipeline** gặp nhau tại vector store: một chạy *offline* để lập chỉ mục dữ liệu, một chạy
 *online* cho mỗi câu hỏi.
 
@@ -30,7 +30,7 @@ Chạy khi dữ liệu thay đổi, không phải mỗi request:
 
 1. **Parse** tài liệu (PDF, HTML, Word) thành text sạch.
 2. **Chunk** thành các đoạn có kích thước hợp cho truy xuất.
-3. **Embed** mỗi chunk bằng [embedding model]({{< relref "/foundations/embeddings" >}}).
+3. **Embed** mỗi chunk bằng [embedding model]({{< relref "embeddings.md" >}}).
 4. **Store** các vector (+ metadata nguồn) vào vector store.
 
 Chạy lại khi tài liệu đổi — không cần huấn luyện lại model.

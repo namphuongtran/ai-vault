@@ -9,12 +9,12 @@ description: Thiết kế vòng lặp như một hệ thống — là gì, cấu
 
 Trả lời đúng chuỗi câu hỏi một builder sẽ hỏi về loop: loop engineering *là gì*, cấu tạo gồm
 những phần nào, có bao nhiêu loại, vì sao cần — và có bắt buộc code trên SDK không, hay dùng
-được luôn [Claude Code / Codex]({{< relref "/foundations/ai-coding-assistants" >}}) có sẵn?
+được luôn [Claude Code / Codex]({{< relref "ai-coding-assistants.md" >}}) có sẵn?
 
 ## Là gì
 
 **Loop engineering là thiết kế chính sự lặp lại, thay vì tự mình ngồi lặp.**
-[Prompt engineering]({{< relref "/foundations/prompt-engineering" >}}) định hình *một lần gọi
+[Prompt engineering]({{< relref "prompt-engineering.md" >}}) định hình *một lần gọi
 model*; [harness]({{< relref "/building/agent-harness" >}}) chạy *vòng lặp của một agent*;
 loop engineering thiết kế **hệ thống các vòng lặp**: cái gì lặp, ai kiểm kết quả, thế nào là
 "xong", và cái gì dừng nó lại. Gói trong một câu: bạn thôi làm người prompt agent — bạn xây
@@ -69,8 +69,8 @@ flowchart LR
 - **Discovery / automations** — tự tìm việc không cần con người kích hoạt: lịch chạy,
   webhook, scanner.
 - **Decomposition** — orchestrator chia mục tiêu thành các task worker nhận được.
-- **Worker** — một agent với [tools]({{< relref "/foundations/tool-function-calling" >}}) và
-  [MCP connector]({{< relref "/foundations/mcp" >}}); worker chạy song song thì cần **git
+- **Worker** — một agent với [tools]({{< relref "tool-function-calling.md" >}}) và
+  [MCP connector]({{< relref "mcp.md" >}}); worker chạy song song thì cần **git
   worktree** để không ghi đè lên nhau.
 - **Validator** — một phán xét thứ hai ([LLM-as-judge]({{< relref "/deep-dives/evaluation-in-practice" >}}),
   bộ test, hoặc cả hai) quyết định đạt/không đạt — không bao giờ để worker tự chấm mình.
@@ -87,7 +87,7 @@ Mọi loop bạn gặp là một điểm trên ba trục độc lập:
 | Trục | Lựa chọn | Đánh đổi |
 | ------ | ------ | ------ |
 | **Kiến trúc** | **Open loop** — agent tự do khám phá, tự quyết bước sau · **Closed loop** — mục tiêu, tiêu chí, ngưỡng định trước | Open hợp bài chưa rõ hướng nhưng đốt token và khó đoán; closed rẻ hơn, lặp lại được, cải thiện dần — so sánh đầy đủ ở [mục kế tiếp](#open-vs-closed-loop) |
-| **Giám sát** | **Human in the loop** — duyệt từng bước · **on the loop** — theo dõi, can thiệp khi bất thường · **out of the loop** — chỉ xem kết quả | Đúng cái thang placement của [responsible-ai]({{< relref "/foundations/responsible-ai" >}}), áp cho loop: bạn tốt nghiệp từ ngồi canh một loop lên thiết kế loop để trông các loop khác |
+| **Giám sát** | **Human in the loop** — duyệt từng bước · **on the loop** — theo dõi, can thiệp khi bất thường · **out of the loop** — chỉ xem kết quả | Đúng cái thang placement của [responsible-ai]({{< relref "responsible-ai.md" >}}), áp cho loop: bạn tốt nghiệp từ ngồi canh một loop lên thiết kế loop để trông các loop khác |
 | **Topology** | **Single loop** — một worker · **Orchestrated** — supervisor + các worker chuyên biệt | Single đơn giản và thường là đủ; orchestrate khi task song song hóa được hoặc cần tách vai người-làm và người-kiểm |
 
 ## Open vs closed loop

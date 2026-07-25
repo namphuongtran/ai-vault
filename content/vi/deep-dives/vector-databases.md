@@ -8,13 +8,13 @@ description: Từ lưu một embedding tới similarity search ở quy mô — c
 ## Mục tiêu
 
 Hiểu chuyện gì xảy ra bên trong cái hộp "vector store" của mọi sơ đồ
-[RAG]({{< relref "/foundations/rag" >}}) — từ một bản ghi chứa gì, tới cách một truy vấn tìm
+[RAG]({{< relref "rag.md" >}}) — từ một bản ghi chứa gì, tới cách một truy vấn tìm
 được các kết quả gần nhất, tới việc giữ nhanh qua hàng triệu
-[embedding]({{< relref "/foundations/embeddings" >}}), và chọn store nào.
+[embedding]({{< relref "embeddings.md" >}}), và chọn store nào.
 
 ## Một bản ghi gồm gì
 
-Một [embedding]({{< relref "/foundations/embeddings" >}}) biến văn bản thành một vector — một
+Một [embedding]({{< relref "embeddings.md" >}}) biến văn bản thành một vector — một
 dãy số nắm bắt ý nghĩa. Vector database lưu một **bản ghi (record)** cho mỗi chunk:
 
 | Trường | Ví dụ | Dùng cho |
@@ -89,7 +89,7 @@ filter, để bạn lại tay trắng.
 
 ## Trong pipeline RAG
 
-Vector database là nửa truy xuất của [RAG]({{< relref "/foundations/rag" >}}):
+Vector database là nửa truy xuất của [RAG]({{< relref "rag.md" >}}):
 
 - **Offline** — chunk tài liệu, embed từng chunk, lưu `id + vector + metadata + content`.
 - **Online** — embed câu hỏi, Top-K search (kèm lọc metadata), đưa content trả về cho model

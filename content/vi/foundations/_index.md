@@ -12,79 +12,28 @@ description: >
 ---
 
 **Giai đoạn 0** là lớp nền tảng. Mục tiêu ở đây là chiều rộng, không phải chiều sâu: hiểu mỗi
-khái niệm *là gì* và *khi nào* dùng. Chúng ta đi từ nền tảng đến nâng cao, phần giải thích sâu
-hơn sẽ ở các giai đoạn sau.
+khái niệm *là gì* và *khi nào* dùng, rồi đào sâu ở các giai đoạn sau.
 
 Viết cho **builder kỹ thuật** — developer, AI/data engineer, DevSecOps, platform và solution
-architect — những người muốn *dùng và áp dụng* AI, không phải huấn luyện mô hình. Ít đi sâu vào
-ML/DL, tập trung vào những gì bạn cần để xây một cách tự tin.
+architect — những người muốn *dùng và áp dụng* AI, không phải huấn luyện mô hình. Ít đi sâu
+vào ML/DL, tập trung vào những gì bạn cần để xây một cách tự tin.
 
-## Học theo thứ tự nào
+## Năm module
 
-Đi theo năm module tuần tự — mỗi cái xây trên cái trước, từ *hiểu* mô hình đến *vận hành* chúng
-trên production. Bắt đầu từ
-**[The AI landscape]({{< relref "/foundations/ai-landscape" >}})** và đọc lần lượt từng module
-từ trên xuống.
+Đi lần lượt — mỗi cái xây trên cái trước. Bắt đầu từ
+**[The AI landscape]({{< relref "ai-landscape.md" >}})** và theo sidebar; mỗi module liệt kê
+các trang theo đúng thứ tự đọc.
 
 ```mermaid
 flowchart TB
-    M1[Module 1 - Understand] --> M2[Module 2 - Work with a model]
-    M2 --> M3[Module 3 - Ground it in your data]
-    M3 --> M4[Module 4 - Make it act]
-    M4 --> M5[Module 5 - Operate and govern]
+    M1[1 - Understand] --> M2[2 - Work with a model]
+    M2 --> M3[3 - Ground it in your data]
+    M3 --> M4[4 - Make it act]
+    M4 --> M5[5 - Operate and govern]
 ```
 
-### Module 1 · Understand
-
-*Mục tiêu: biết các mô hình này là gì và hành xử ra sao.*
-
-1. [The AI landscape]({{< relref "/foundations/ai-landscape" >}})
-2. [Generative AI]({{< relref "/foundations/generative-ai" >}})
-3. [Foundation models]({{< relref "/foundations/foundation-models" >}})
-4. [How LLMs work]({{< relref "/foundations/how-llms-work" >}})
-5. [Under the hood]({{< relref "/foundations/under-the-hood" >}})
-6. [How models are trained]({{< relref "/foundations/training-lifecycle" >}})
-7. [Multimodality]({{< relref "/foundations/multimodality" >}})
-8. [Limitations & failure modes]({{< relref "/foundations/limitations" >}})
-
-### Module 2 · Work with a model
-
-*Mục tiêu: gọi được model và kiểm soát đầu ra.*
-
-1. [The AI API]({{< relref "/foundations/the-ai-api" >}})
-2. [Inference parameters]({{< relref "/foundations/inference-parameters" >}})
-3. [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})
-4. [Context engineering]({{< relref "/foundations/context-engineering" >}})
-5. [Structured outputs]({{< relref "/foundations/structured-outputs" >}})
-6. [Reasoning models]({{< relref "/foundations/reasoning-models" >}})
-7. [Cost & tokens]({{< relref "/foundations/cost-and-tokens" >}})
-8. [Choosing a model]({{< relref "/foundations/choosing-a-model" >}}) — *bài chốt: chọn đúng
-   model khi đã hiểu các tham số và chi phí*
-
-### Module 3 · Ground it in your data
-
-*Mục tiêu: khiến câu trả lời dùng dữ liệu của bạn, cập nhật.*
-
-1. [Embeddings]({{< relref "/foundations/embeddings" >}})
-2. [RAG]({{< relref "/foundations/rag" >}})
-
-### Module 4 · Make it act
-
-*Mục tiêu: cho model dùng tool và chạy như một agent.*
-
-1. [Tool & function calling]({{< relref "/foundations/tool-function-calling" >}})
-2. [Agents]({{< relref "/foundations/agents" >}})
-3. [Agentic AI]({{< relref "/foundations/agentic-ai" >}})
-4. [MCP]({{< relref "/foundations/mcp" >}})
-5. [AI coding assistants]({{< relref "/foundations/ai-coding-assistants" >}}) — *một agent
-   hoàn chỉnh bạn đã dùng mỗi ngày*
-
-### Module 5 · Operate & govern
-
-*Mục tiêu: đưa lên production an toàn, đo được, có trách nhiệm.*
-
-1. [Guardrails]({{< relref "/foundations/guardrails" >}})
-2. [AI security]({{< relref "/foundations/ai-security" >}})
-3. [Model evaluation]({{< relref "/foundations/model-evaluation" >}})
-4. [Observability]({{< relref "/foundations/observability" >}})
-5. [Responsible AI]({{< relref "/foundations/responsible-ai" >}})
+1. **[Understand]({{< relref "/foundations/understand" >}})** — các mô hình này là gì và hành xử ra sao.
+2. **[Work with a model]({{< relref "/foundations/work-with-models" >}})** — gọi model và kiểm soát đầu ra.
+3. **[Ground it in your data]({{< relref "/foundations/ground-in-data" >}})** — khiến câu trả lời dùng dữ liệu của bạn, cập nhật.
+4. **[Make it act]({{< relref "/foundations/make-it-act" >}})** — tools, agents, agentic AI, và MCP.
+5. **[Operate & govern]({{< relref "/foundations/operate-and-govern" >}})** — guardrails, security, đánh giá, observability, responsible AI.

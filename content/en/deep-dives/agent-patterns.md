@@ -4,7 +4,7 @@ weight: 5
 description: The ReAct loop, tool design, memory, multi-agent, and reflection.
 ---
 
-Builds on [Agents in Foundations]({{< relref "/foundations/agents" >}}). Patterns for making
+Builds on [Agents in Foundations]({{< relref "agents.md" >}}). Patterns for making
 agents reliable rather than just capable.
 
 ## The ReAct loop
@@ -21,7 +21,7 @@ Tools are the agent's API to the world — design them like a good API.
 - Clear descriptions and typed parameters; the model picks tools from these.
 - Return concise, structured results; trim noise before it re-enters context.
 - Make tools **idempotent** where possible, and validate inputs (see
-  [Guardrails]({{< relref "/foundations/guardrails" >}})).
+  [Guardrails]({{< relref "guardrails.md" >}})).
 
 ## Planning
 

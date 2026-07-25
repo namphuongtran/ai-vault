@@ -4,7 +4,7 @@ weight: 1
 description: Reasoning techniques, structured output, decomposition, and prompt optimization.
 ---
 
-Builds on [Prompt Engineering in Foundations]({{< relref "/foundations/prompt-engineering" >}}).
+Builds on [Prompt Engineering in Foundations]({{< relref "prompt-engineering.md" >}}).
 Patterns for harder tasks where a single well-formed prompt isn't enough.
 
 ## Reasoning techniques

@@ -5,7 +5,7 @@ weight: 7
 description: How to choose between prompting, RAG, and fine-tuning — and how to combine them.
 ---
 
-Three ways to adapt a [foundation model]({{< relref "/foundations/foundation-models" >}}) to
+Three ways to adapt a [foundation model]({{< relref "foundation-models.md" >}}) to
 your task, from cheapest to most involved.
 
 ## The three levers

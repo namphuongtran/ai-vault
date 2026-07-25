@@ -39,9 +39,9 @@ flowchart TD
 ## Principles
 
 - **Prompts are files, not string literals** — version them, diff them, test them (see
-  [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})).
+  [Prompt engineering]({{< relref "prompt-engineering.md" >}})).
 - **One tool = one module** — a definition + a handler you can test in isolation (see
-  [Tool & function calling]({{< relref "/foundations/tool-function-calling" >}})).
+  [Tool & function calling]({{< relref "tool-function-calling.md" >}})).
 - **Keep retrieval separate** — the [ingest and query pipelines]({{< relref "/building/building-rag" >}})
   are their own layer, not tangled into the orchestrator.
 - **A thin orchestrator** — the [harness]({{< relref "/building/agent-harness" >}}) just wires

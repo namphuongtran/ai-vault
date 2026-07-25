@@ -5,7 +5,7 @@ weight: 7
 description: Cách chọn giữa prompting, RAG và fine-tuning — và cách kết hợp chúng.
 ---
 
-Ba cách điều chỉnh một [foundation model]({{< relref "/foundations/foundation-models" >}}) cho
+Ba cách điều chỉnh một [foundation model]({{< relref "foundation-models.md" >}}) cho
 tác vụ của bạn, từ rẻ nhất đến tốn kém nhất.
 
 ## Ba đòn bẩy

@@ -5,7 +5,7 @@ weight: 5
 description: Phần scaffolding chạy một agent — vòng lặp, quản lý context, thực thi tool, memory và guardrail.
 ---
 
-Tiếp nối [Agentic AI]({{< relref "/foundations/agentic-ai" >}}). Model là động cơ; **harness** là
+Tiếp nối [Agentic AI]({{< relref "agentic-ai.md" >}}). Model là động cơ; **harness** là
 mọi thứ quanh nó biến một lời gọi model đơn lẻ thành một agent hoạt động. Trang này nói cách xây một cái.
 
 ## Harness sở hữu những gì
@@ -39,13 +39,13 @@ flowchart TD
     Up --> Ctx
 ```
 
-Mỗi lượt: lắp ráp context, gọi [model]({{< relref "/foundations/the-ai-api" >}}), và nếu nó trả
-về một [tool call]({{< relref "/foundations/tool-function-calling" >}}), thực thi tool, nối kết
+Mỗi lượt: lắp ráp context, gọi [model]({{< relref "the-ai-api.md" >}}), và nếu nó trả
+về một [tool call]({{< relref "tool-function-calling.md" >}}), thực thi tool, nối kết
 quả, và lặp — đến khi model trả lời hoặc chạm điều kiện dừng.
 
 ## Những phần khó
 
-- **Quản lý context** — [window]({{< relref "/foundations/context-engineering" >}}) là hữu hạn;
+- **Quản lý context** — [window]({{< relref "context-engineering.md" >}}) là hữu hạn;
   khi vòng lặp dài ra, bạn phải tóm tắt hoặc cắt bớt kết quả tool cũ, nếu không run sẽ hỏng.
 - **Thực thi tool** — validate tham số, chặn hành động rủi ro sau phê duyệt, chạy gọi song song,
   và trả lỗi dưới dạng kết quả để model phục hồi được.
@@ -54,8 +54,8 @@ quả, và lặp — đến khi model trả lời hoặc chạm điều kiện d
   agent bị kẹt kết thúc êm thay vì quay vòng. Một bộ ngoài đời thật: *dừng sau 20 bước hoặc
   100k token; dừng nếu cùng một tool bị gọi với cùng tham số hai lần liên tiếp; khi dừng, tóm
   tắt tiến độ thay vì fail trong im lặng.*
-- **Guardrail** — áp [kiểm tra đầu vào/đầu ra]({{< relref "/foundations/guardrails" >}}) và
-  [security]({{< relref "/foundations/ai-security" >}}) ở *mỗi* lượt, không chỉ lượt đầu.
+- **Guardrail** — áp [kiểm tra đầu vào/đầu ra]({{< relref "guardrails.md" >}}) và
+  [security]({{< relref "ai-security.md" >}}) ở *mỗi* lượt, không chỉ lượt đầu.
 
 Một harness chạy vòng lặp của một agent. Còn thiết kế chính các vòng lặp — validator, closed
 loop, orchestration nhiều worker — là trang kế tiếp:

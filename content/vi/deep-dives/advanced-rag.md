@@ -4,7 +4,7 @@ weight: 4
 description: Chunking, hybrid retrieval, re-ranking, query transform và đánh giá RAG.
 ---
 
-Tiếp nối [RAG ở phần Nền tảng]({{< relref "/foundations/rag" >}}). RAG cơ bản thường kém hiệu
+Tiếp nối [RAG ở phần Nền tảng]({{< relref "rag.md" >}}). RAG cơ bản thường kém hiệu
 quả vì chất lượng *truy xuất*, không phải do mô hình. Các kỹ thuật sau nhắm vào điều đó.
 
 ## Chiến lược chunking

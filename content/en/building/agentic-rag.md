@@ -4,10 +4,10 @@ weight: 4
 description: Retrieval driven by an agent that decides when, what, and how often to retrieve — not a fixed pipeline.
 ---
 
-Builds on [Agentic AI]({{< relref "/foundations/agentic-ai" >}}) and
+Builds on [Agentic AI]({{< relref "agentic-ai.md" >}}) and
 [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}). In **standard RAG** the pipeline is
 fixed — always retrieve once, then generate. **Agentic RAG** hands that control to an
-[agent]({{< relref "/foundations/agents" >}}): it decides *whether*, *what*, and *how often* to
+[agent]({{< relref "agents.md" >}}): it decides *whether*, *what*, and *how often* to
 retrieve, using retrieval as a tool.
 
 ## Standard vs. agentic
@@ -38,7 +38,7 @@ flowchart TD
 - **How many rounds** — retrieve, read, then retrieve again for a follow-up fact (multi-hop).
 - **Whether the context is enough** — re-retrieve or ask for clarification if not.
 
-Retrieval becomes a [tool]({{< relref "/foundations/tool-function-calling" >}}) the agent calls,
+Retrieval becomes a [tool]({{< relref "tool-function-calling.md" >}}) the agent calls,
 not a fixed first step.
 
 A multi-hop question shows the difference: *"Does our retention policy allow deleting the
@@ -58,7 +58,7 @@ churn-specific clause: three lookups, each shaped by what the last one said.
 ## The trade-off
 
 More capable, but more latency, cost, and moving parts — and harder to make reliable (the agent
-can loop or retrieve poorly). Add [guardrails]({{< relref "/foundations/guardrails" >}}), step
+can loop or retrieve poorly). Add [guardrails]({{< relref "guardrails.md" >}}), step
 limits, and [evaluation]({{< relref "/deep-dives/evaluation-in-practice" >}}) — especially the
 retrieval-quality checks in [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}). Reach for
 agentic RAG only when standard or advanced RAG genuinely falls short.

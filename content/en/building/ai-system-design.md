@@ -34,10 +34,10 @@ flowchart LR
 ```
 
 The **orchestrator (harness)** is the brain you build: it assembles the prompt, manages the
-[context window]({{< relref "/foundations/context-engineering" >}}), runs the
-[agent loop]({{< relref "/foundations/agentic-ai" >}}), calls
-[tools]({{< relref "/foundations/tool-function-calling" >}}), and applies
-[guardrails]({{< relref "/foundations/guardrails" >}}).
+[context window]({{< relref "context-engineering.md" >}}), runs the
+[agent loop]({{< relref "agentic-ai.md" >}}), calls
+[tools]({{< relref "tool-function-calling.md" >}}), and applies
+[guardrails]({{< relref "guardrails.md" >}}).
 
 ## Where each foundation concept lives
 

@@ -49,7 +49,7 @@ Two layers, different keys:
 
 - **Exact cache** — same input string → return the stored answer. Trivial and free; only hits
   identical repeats.
-- **Semantic cache** — [embed]({{< relref "/foundations/embeddings" >}}) the query and reuse a
+- **Semantic cache** — [embed]({{< relref "embeddings.md" >}}) the query and reuse a
   past answer when a new question is *close enough* in meaning ("what's your refund window?" ≈
   "how long do I have to return something?"). Catches paraphrases an exact cache misses.
 - **Prompt cache** — a provider feature: reuse a repeated prompt *prefix* (system prompt, big
@@ -57,7 +57,7 @@ Two layers, different keys:
   *inside* one request path, not across users.
 
 Cache what's stable (docs, FAQs). Don't cache what must be fresh or per-user (account data,
-anything with a [guardrail]({{< relref "/foundations/guardrails" >}}) decision) — a stale
+anything with a [guardrail]({{< relref "guardrails.md" >}}) decision) — a stale
 cached answer to the wrong user is worse than a slow one.
 
 ## Model serving
@@ -93,10 +93,10 @@ Models fail, time out, and rate-limit — design for it:
 
 ## Cost and capacity at scale
 
-[Cost per call]({{< relref "/foundations/cost-and-tokens" >}}) is a Stage 0 topic; at scale it
+[Cost per call]({{< relref "cost-and-tokens.md" >}}) is a Stage 0 topic; at scale it
 becomes a *system* concern: route easy requests to cheap models, cache aggressively, cap
 context size, and batch where latency allows. Track cost per request in
-[observability]({{< relref "/foundations/observability" >}}) so a prompt change that doubles
+[observability]({{< relref "observability.md" >}}) so a prompt change that doubles
 tokens shows up as a bill, not a surprise. Set a per-user and global budget ceiling — an
 [agent loop]({{< relref "/building/loop-engineering" >}}) with no cost cap is an open wallet.
 
