@@ -54,11 +54,14 @@ flowchart LR
 
 ## Giai đoạn 2 — Building with AI ✓
 
-[Sáu trang]({{< relref "/building" >}}) lắp ráp các mảnh ghép:
+[Chín trang]({{< relref "/building" >}}) lắp ráp các mảnh ghép:
 [AI system design]({{< relref "/building/ai-system-design" >}}) ·
+[scaling to production]({{< relref "/building/scaling-to-production" >}}) ·
 [building RAG]({{< relref "/building/building-rag" >}}) ·
 [agentic RAG]({{< relref "/building/agentic-rag" >}}) ·
 [the agent harness]({{< relref "/building/agent-harness" >}}) ·
+[loop engineering]({{< relref "/building/loop-engineering" >}}) ·
+[from prompts to graphs]({{< relref "/building/engineering-disciplines" >}}) ·
 [AI code structure]({{< relref "/building/ai-code-structure" >}}) ·
 [tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}).
 
@@ -90,4 +93,4 @@ Mỗi hàng là một mạch kiến thức xuyên các giai đoạn — cách đ
 | **Prompts** | [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}}) · [Context engineering]({{< relref "/foundations/context-engineering" >}}) | [Prompt patterns]({{< relref "/deep-dives/prompt-patterns" >}}) | — | — |
 | **Data & RAG** | [Embeddings]({{< relref "/foundations/embeddings" >}}) · [RAG]({{< relref "/foundations/rag" >}}) | [Vector databases]({{< relref "/deep-dives/vector-databases" >}}) · [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) · [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) | [Building RAG]({{< relref "/building/building-rag" >}}) · [Agentic RAG]({{< relref "/building/agentic-rag" >}}) | [Lab RAG chatbot ✓]({{< relref "/hands-on/lab-rag-chatbot" >}}) |
 | **Agents** | [Tool calling]({{< relref "/foundations/tool-function-calling" >}}) · [Agents]({{< relref "/foundations/agents" >}}) · [Agentic AI]({{< relref "/foundations/agentic-ai" >}}) · [MCP]({{< relref "/foundations/mcp" >}}) | [Agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) · [Agent memory]({{< relref "/deep-dives/agent-memory" >}}) | [Agent harness]({{< relref "/building/agent-harness" >}}) · [Loop engineering]({{< relref "/building/loop-engineering" >}}) · [AI code structure]({{< relref "/building/ai-code-structure" >}}) | ○ Lab agent + MCP |
-| **Operate** | [Guardrails]({{< relref "/foundations/guardrails" >}}) · [AI security]({{< relref "/foundations/ai-security" >}}) · [Đánh giá]({{< relref "/foundations/model-evaluation" >}}) · [Observability]({{< relref "/foundations/observability" >}}) · [Responsible AI]({{< relref "/foundations/responsible-ai" >}}) | [Adaptation]({{< relref "/deep-dives/adaptation" >}}) · [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) | [AI system design]({{< relref "/building/ai-system-design" >}}) · [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) | ○ Lab evals + ship |
+| **Operate** | [Guardrails]({{< relref "/foundations/guardrails" >}}) · [AI security]({{< relref "/foundations/ai-security" >}}) · [Đánh giá]({{< relref "/foundations/model-evaluation" >}}) · [Observability]({{< relref "/foundations/observability" >}}) · [Responsible AI]({{< relref "/foundations/responsible-ai" >}}) | [Adaptation]({{< relref "/deep-dives/adaptation" >}}) · [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) | [AI system design]({{< relref "/building/ai-system-design" >}}) · [Scaling to production]({{< relref "/building/scaling-to-production" >}}) · [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) | ○ Lab evals + ship |

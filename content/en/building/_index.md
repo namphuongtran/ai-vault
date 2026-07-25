@@ -19,20 +19,21 @@ real systems — with diagrams for the architecture.
 
 ```mermaid
 flowchart LR
-    A[AI system design] --> B[Building a RAG system] --> C[Agentic RAG]
+    A[AI system design] --> S[Scaling to production] --> B[Building a RAG system] --> C[Agentic RAG]
     C --> D[The agent harness] --> E[Loop engineering] --> F[From prompts to graphs] --> G[AI code structure] --> H[Tooling and frameworks]
 ```
 
 ## In this section
 
 1. [AI system design]({{< relref "/building/ai-system-design" >}}) — the standard shape of an AI app.
-2. [Building a RAG system]({{< relref "/building/building-rag" >}}) — end-to-end reference architecture.
-3. [Agentic RAG]({{< relref "/building/agentic-rag" >}}) — retrieval driven by an agent, not a fixed pipeline.
-4. [The agent harness]({{< relref "/building/agent-harness" >}}) — the loop, context, tools, memory, guardrails.
-5. [Loop engineering]({{< relref "/building/loop-engineering" >}}) — designing the loops themselves: closed loops, validators, orchestration.
-6. [From prompts to graphs]({{< relref "/building/engineering-disciplines" >}}) — the five engineering disciplines as one evolution.
-7. [AI code structure]({{< relref "/building/ai-code-structure" >}}) — how to organize an AI app codebase.
-8. [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) — SDKs, frameworks, MCP, deployment.
+2. [Scaling to production]({{< relref "/building/scaling-to-production" >}}) — gateway, caching, serving, queues, reliability, cost at scale.
+3. [Building a RAG system]({{< relref "/building/building-rag" >}}) — end-to-end reference architecture.
+4. [Agentic RAG]({{< relref "/building/agentic-rag" >}}) — retrieval driven by an agent, not a fixed pipeline.
+5. [The agent harness]({{< relref "/building/agent-harness" >}}) — the loop, context, tools, memory, guardrails.
+6. [Loop engineering]({{< relref "/building/loop-engineering" >}}) — designing the loops themselves: closed loops, validators, orchestration.
+7. [From prompts to graphs]({{< relref "/building/engineering-disciplines" >}}) — the five engineering disciplines as one evolution.
+8. [AI code structure]({{< relref "/building/ai-code-structure" >}}) — how to organize an AI app codebase.
+9. [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) — SDKs, frameworks, MCP, deployment.
 
 ## Prerequisites
 

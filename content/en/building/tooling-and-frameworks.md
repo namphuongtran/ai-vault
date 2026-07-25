@@ -1,6 +1,6 @@
 ---
 title: "Tooling & Frameworks"
-weight: 8
+weight: 9
 description: The ladder from writing your own agent loop to a fully managed one — SDKs, frameworks, MCP, and deployment.
 ---
 

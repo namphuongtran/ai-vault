@@ -1,7 +1,7 @@
 ---
 title: "Building a RAG System"
 linkTitle: "Building a RAG System"
-weight: 2
+weight: 3
 description: An end-to-end reference architecture — the ingest pipeline and the query pipeline.
 ---
 

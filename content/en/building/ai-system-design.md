@@ -61,6 +61,10 @@ The **orchestrator (harness)** is the brain you build: it assembles the prompt, 
   only when the problem demands them; the strongest systems use the fewest components that
   solve the task, because every extra one is latency, cost, and attack surface.
 
+This page is the *shape* of an AI app. Making that shape survive real traffic — gateways,
+caching, serving, queues, reliability, and cost at scale — is
+[Scaling to production]({{< relref "/building/scaling-to-production" >}}).
+
 ## Sources
 
 - [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)

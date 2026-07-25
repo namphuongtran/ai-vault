@@ -1,6 +1,6 @@
 ---
 title: "Loop Engineering"
-weight: 5
+weight: 6
 description: Designing the loop as a system — what it is, its parts, its types, and when you need an SDK at all.
 ---
 
