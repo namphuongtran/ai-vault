@@ -20,7 +20,7 @@ thành hệ thống thật — kèm sơ đồ cho phần kiến trúc.
 ```mermaid
 flowchart LR
     A[AI system design] --> B[Building a RAG system] --> C[Agentic RAG]
-    C --> D[The agent harness] --> E[AI code structure] --> F[Tooling and frameworks]
+    C --> D[The agent harness] --> E[Loop engineering] --> F[AI code structure] --> G[Tooling and frameworks]
 ```
 
 ## Trong phần này
@@ -29,8 +29,9 @@ flowchart LR
 2. [Building a RAG system]({{< relref "/building/building-rag" >}}) — kiến trúc tham chiếu end-to-end.
 3. [Agentic RAG]({{< relref "/building/agentic-rag" >}}) — truy xuất do agent dẫn dắt, không phải pipeline cố định.
 4. [The agent harness]({{< relref "/building/agent-harness" >}}) — vòng lặp, context, tools, memory, guardrail.
-5. [AI code structure]({{< relref "/building/ai-code-structure" >}}) — cách tổ chức codebase app AI.
-6. [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) — SDK, framework, MCP, deployment.
+5. [Loop engineering]({{< relref "/building/loop-engineering" >}}) — thiết kế chính các vòng lặp: closed loop, validator, orchestration.
+6. [AI code structure]({{< relref "/building/ai-code-structure" >}}) — cách tổ chức codebase app AI.
+7. [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) — SDK, framework, MCP, deployment.
 
 ## Yêu cầu trước
 

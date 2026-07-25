@@ -1,6 +1,6 @@
 ---
 title: "AI Code Structure"
-weight: 5
+weight: 6
 description: How to organize an AI application codebase — prompts, tools, retrieval, evals, and a thin orchestrator.
 ---
 

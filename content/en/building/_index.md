@@ -20,7 +20,7 @@ real systems — with diagrams for the architecture.
 ```mermaid
 flowchart LR
     A[AI system design] --> B[Building a RAG system] --> C[Agentic RAG]
-    C --> D[The agent harness] --> E[AI code structure] --> F[Tooling and frameworks]
+    C --> D[The agent harness] --> E[Loop engineering] --> F[AI code structure] --> G[Tooling and frameworks]
 ```
 
 ## In this section
@@ -29,8 +29,9 @@ flowchart LR
 2. [Building a RAG system]({{< relref "/building/building-rag" >}}) — end-to-end reference architecture.
 3. [Agentic RAG]({{< relref "/building/agentic-rag" >}}) — retrieval driven by an agent, not a fixed pipeline.
 4. [The agent harness]({{< relref "/building/agent-harness" >}}) — the loop, context, tools, memory, guardrails.
-5. [AI code structure]({{< relref "/building/ai-code-structure" >}}) — how to organize an AI app codebase.
-6. [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) — SDKs, frameworks, MCP, deployment.
+5. [Loop engineering]({{< relref "/building/loop-engineering" >}}) — designing the loops themselves: closed loops, validators, orchestration.
+6. [AI code structure]({{< relref "/building/ai-code-structure" >}}) — how to organize an AI app codebase.
+7. [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) — SDKs, frameworks, MCP, deployment.
 
 ## Prerequisites
 
