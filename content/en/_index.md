@@ -45,4 +45,6 @@ flowchart LR
   real systems: AI system design, building RAG, agentic RAG, the agent harness, code
   structure, and tooling & frameworks.
 
-New here? Start at **[Stage 0 — Foundations]({{< relref "/foundations" >}})**.
+New here? Start at **[Stage 0 — Foundations]({{< relref "/foundations" >}})**. The full
+agenda — including the planned hands-on stages — lives on the
+**[Roadmap]({{< relref "/roadmap" >}})**.

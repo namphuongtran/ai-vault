@@ -1,12 +1,12 @@
 ---
 title: "Building with AI (Stage 2)"
 linkTitle: "Building with AI"
-weight: 3
+weight: 4
 type: docs
 no_list: true
 menu:
   main:
-    weight: 3
+    weight: 4
 description: >
   Hands-on architecture for building AI systems.
 ---

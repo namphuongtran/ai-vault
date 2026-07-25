@@ -44,4 +44,6 @@ flowchart LR
   thành hệ thống thật: AI system design, building RAG, agentic RAG, agent harness, code
   structure, và tooling & frameworks.
 
-Mới bắt đầu? Hãy vào **[Giai đoạn 0 — Nền tảng]({{< relref "/foundations" >}})**.
+Mới bắt đầu? Hãy vào **[Giai đoạn 0 — Nền tảng]({{< relref "/foundations" >}})**. Agenda đầy
+đủ — kể cả các giai đoạn hands-on dự định — nằm ở trang
+**[Roadmap]({{< relref "/roadmap" >}})**.

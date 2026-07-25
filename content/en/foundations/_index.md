@@ -1,12 +1,12 @@
 ---
 title: "Foundations (Stage 0)"
 linkTitle: "Foundations"
-weight: 1
+weight: 2
 type: docs
 no_list: true
 menu:
   main:
-    weight: 1
+    weight: 2
 description: >
   The core building blocks of modern AI systems — from foundation models to
   responsible AI.
