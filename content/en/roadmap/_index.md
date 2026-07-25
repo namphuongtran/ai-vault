@@ -21,7 +21,7 @@ marked ✓; planned ones ○ — they get filled in as I learn.
 ```mermaid
 flowchart LR
     S0[Stage 0 - Foundations ✓] --> S1[Stage 1 - Deep Dives ✓] --> S2[Stage 2 - Building ✓]
-    S2 --> S3[Stage 3 - Hands-on ○] --> S4[Stage 4 - Create ○]
+    S2 --> S3[Stage 3 - Hands-on 1 of 6] --> S4[Stage 4 - Create ○]
 ```
 
 Read **across** to progress stage by stage, or pick a row in the
@@ -62,13 +62,13 @@ to *operating them in production*:
 [AI code structure]({{< relref "/building/ai-code-structure" >}}) ·
 [tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}).
 
-## Stage 3 — Hands-on ○ (planned)
+## Stage 3 — Hands-on (in progress)
 
-Real projects, built incrementally:
+[Real projects]({{< relref "/hands-on" >}}), built incrementally:
 
-1. ○ **Lab: a RAG chatbot over my own documents** — in seven steps: infrastructure →
-   ingestion → keyword search (BM25) → hybrid search → full RAG → monitoring + caching →
-   agentic upgrade.
+1. ✓ **[Lab: a RAG chatbot over my own documents]({{< relref "/hands-on/lab-rag-chatbot" >}})**
+   — in seven steps: infrastructure → ingestion → keyword search → hybrid search → full RAG →
+   monitoring + caching → agentic upgrade.
 2. ○ **Lab: an agent with tools + a hand-written MCP server.**
 3. ○ **Lab: an eval harness + observability** for labs 1–2.
 4. ○ **Practical fine-tuning (LoRA)** — adapt a small model for tone and schema.
@@ -88,6 +88,6 @@ Each row is one thread through all stages — the vertical way to read the vault
 | Thread | Stage 0 | Stage 1 | Stage 2 | Stage 3 ○ |
 | ------ | ------ | ------ | ------ | ------ |
 | **Prompts** | [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}}) · [Context engineering]({{< relref "/foundations/context-engineering" >}}) | [Prompt patterns]({{< relref "/deep-dives/prompt-patterns" >}}) | — | — |
-| **Data & RAG** | [Embeddings]({{< relref "/foundations/embeddings" >}}) · [RAG]({{< relref "/foundations/rag" >}}) | [Vector databases]({{< relref "/deep-dives/vector-databases" >}}) · [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) · [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) | [Building RAG]({{< relref "/building/building-rag" >}}) · [Agentic RAG]({{< relref "/building/agentic-rag" >}}) | ○ RAG chatbot lab |
+| **Data & RAG** | [Embeddings]({{< relref "/foundations/embeddings" >}}) · [RAG]({{< relref "/foundations/rag" >}}) | [Vector databases]({{< relref "/deep-dives/vector-databases" >}}) · [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) · [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) | [Building RAG]({{< relref "/building/building-rag" >}}) · [Agentic RAG]({{< relref "/building/agentic-rag" >}}) | [RAG chatbot lab ✓]({{< relref "/hands-on/lab-rag-chatbot" >}}) |
 | **Agents** | [Tool calling]({{< relref "/foundations/tool-function-calling" >}}) · [Agents]({{< relref "/foundations/agents" >}}) · [Agentic AI]({{< relref "/foundations/agentic-ai" >}}) · [MCP]({{< relref "/foundations/mcp" >}}) | [Agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) · [Agent memory]({{< relref "/deep-dives/agent-memory" >}}) | [Agent harness]({{< relref "/building/agent-harness" >}}) · [AI code structure]({{< relref "/building/ai-code-structure" >}}) | ○ Agent + MCP lab |
 | **Operate** | [Guardrails]({{< relref "/foundations/guardrails" >}}) · [AI security]({{< relref "/foundations/ai-security" >}}) · [Evaluation]({{< relref "/foundations/model-evaluation" >}}) · [Observability]({{< relref "/foundations/observability" >}}) · [Responsible AI]({{< relref "/foundations/responsible-ai" >}}) | [Adaptation]({{< relref "/deep-dives/adaptation" >}}) · [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) | [AI system design]({{< relref "/building/ai-system-design" >}}) · [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) | ○ Evals + ship lab |
