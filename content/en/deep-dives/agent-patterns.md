@@ -43,6 +43,8 @@ Split work across specialized agents when one context can't hold it all:
 - **Review/critique** — one agent produces, another checks.
 
 More agents means more coordination cost — use it only when a single agent genuinely struggles.
+See [Multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}) for topologies and shared
+knowledge-graph memory.
 
 ## Reflection
 

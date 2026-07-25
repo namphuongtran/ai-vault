@@ -1,6 +1,6 @@
 ---
 title: "Evaluation in Practice"
-weight: 8
+weight: 9
 description: Eval sets, LLM-as-judge, offline vs online, and regression testing.
 ---
 
