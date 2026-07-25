@@ -39,6 +39,21 @@ Retrieve a wide set (e.g. top 50), then re-score with a **cross-encoder** re-ran
 reads query and passage together, and keep the top few. More accurate than embedding
 similarity alone, at extra cost — so apply it only to the shortlist.
 
+## Context compression
+
+Retrieved chunks carry a lot of text that doesn't answer the question — it wastes tokens and
+dilutes the model's attention. **Context compression** trims each chunk to just the relevant
+part before it reaches the model:
+
+- **Extractive** — keep only the sentences that match the query (a small model or filter
+  scores each sentence).
+- **Abstractive** — summarize the chunk down to its query-relevant facts.
+
+Example: a 1,200-token policy chunk retrieved for *"what's the refund window?"* compresses to
+the two sentences stating the 30-day window — cheaper, and *more* faithful, because the model
+isn't distracted by the surrounding text. Apply it after re-ranking, on the final shortlist;
+skip it when chunks are already tight.
+
 ## Query transformation
 
 The user's question is often not the best search query.
@@ -67,5 +82,7 @@ See [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}
 ## Sources
 
 - Gao et al., *Precise Zero-Shot Dense Retrieval without Relevance Labels (HyDE)* (2022) — [arXiv:2212.10496](https://arxiv.org/abs/2212.10496)
+- Jiang et al., *LLMLingua: Compressing Prompts for Accelerated Inference* (2023) — [arXiv:2310.06839](https://arxiv.org/abs/2310.06839)
+- Reimers & Gurevych, *Sentence-BERT* (2019, cross-encoders for re-ranking) — [arXiv:1908.10084](https://arxiv.org/abs/1908.10084)
 - Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)
 - Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (2020) — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)
