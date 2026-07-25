@@ -1,7 +1,7 @@
 ---
 title: "AI Code Structure"
 linkTitle: "AI Code Structure"
-weight: 5
+weight: 6
 description: Cách tổ chức codebase app AI — prompts, tools, retrieval, evals, và một orchestrator mỏng.
 ---
 

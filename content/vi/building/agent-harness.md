@@ -57,6 +57,10 @@ quả, và lặp — đến khi model trả lời hoặc chạm điều kiện d
 - **Guardrail** — áp [kiểm tra đầu vào/đầu ra]({{< relref "/foundations/guardrails" >}}) và
   [security]({{< relref "/foundations/ai-security" >}}) ở *mỗi* lượt, không chỉ lượt đầu.
 
+Một harness chạy vòng lặp của một agent. Còn thiết kế chính các vòng lặp — validator, closed
+loop, orchestration nhiều worker — là trang kế tiếp:
+[Loop engineering]({{< relref "/building/loop-engineering" >}}).
+
 ## Skills — quy trình đóng gói
 
 Ngoài tool, các harness trưởng thành còn hỗ trợ **skills**: chỉ dẫn đóng gói cho một loại tác

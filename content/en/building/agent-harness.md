@@ -58,6 +58,10 @@ append the result, and loop — until the model answers or a stop condition fire
 - **Guardrails** — apply [input/output checks]({{< relref "/foundations/guardrails" >}}) and
   [security]({{< relref "/foundations/ai-security" >}}) on *every* turn, not just the first.
 
+One harness runs one agent's loop. Designing the loops themselves — validators, closed
+loops, orchestration of many workers — is the next page:
+[Loop engineering]({{< relref "/building/loop-engineering" >}}).
+
 ## Skills — packaged procedures
 
 Beyond tools, mature harnesses support **skills**: packaged instructions for a specific kind
