@@ -39,6 +39,18 @@ Truy xuất một tập rộng (ví dụ top 50), rồi chấm lại bằng **cr
 đoạn văn cùng lúc, giữ lại vài kết quả tốt nhất. Chính xác hơn chỉ dùng tương đồng embedding,
 nhưng tốn kém hơn — nên chỉ áp dụng cho danh sách rút gọn.
 
+## Context compression
+
+Chunk lấy về chứa nhiều câu không trả lời câu hỏi — tốn token và làm loãng sự chú ý của model.
+**Context compression** cắt mỗi chunk còn đúng phần liên quan trước khi tới model:
+
+- **Extractive** — chỉ giữ các câu khớp truy vấn (một model nhỏ hoặc filter chấm điểm từng câu).
+- **Abstractive** — tóm tắt chunk còn các dữ kiện liên quan tới truy vấn.
+
+Ví dụ: một chunk chính sách 1.200 token lấy về cho *"refund window bao lâu?"* nén còn hai câu
+nêu mốc 30 ngày — rẻ hơn, và faithfulness *cao hơn*, vì model không bị phần văn bản xung quanh
+làm phân tâm. Áp dụng sau re-ranking, trên danh sách rút gọn cuối; bỏ qua khi chunk đã gọn.
+
 ## Query transformation
 
 Câu hỏi của người dùng thường không phải là truy vấn tìm kiếm tốt nhất.
@@ -67,5 +79,7 @@ Xem [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}
 ## Nguồn
 
 - Gao et al., *Precise Zero-Shot Dense Retrieval without Relevance Labels (HyDE)* (2022) — [arXiv:2212.10496](https://arxiv.org/abs/2212.10496)
+- Jiang et al., *LLMLingua: Compressing Prompts for Accelerated Inference* (2023) — [arXiv:2310.06839](https://arxiv.org/abs/2310.06839)
+- Reimers & Gurevych, *Sentence-BERT* (2019, cross-encoder cho re-ranking) — [arXiv:1908.10084](https://arxiv.org/abs/1908.10084)
 - Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)
 - Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (2020) — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)
