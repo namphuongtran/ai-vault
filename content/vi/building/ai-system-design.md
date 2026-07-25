@@ -35,10 +35,10 @@ flowchart LR
 ```
 
 **Orchestrator (harness)** là "bộ não" bạn xây: nó lắp ráp prompt, quản lý
-[context window]({{< relref "/foundations/context-engineering" >}}), chạy
-[agent loop]({{< relref "/foundations/agentic-ai" >}}), gọi
-[tool]({{< relref "/foundations/tool-function-calling" >}}), và áp
-[guardrail]({{< relref "/foundations/guardrails" >}}).
+[context window]({{< relref "context-engineering.md" >}}), chạy
+[agent loop]({{< relref "agentic-ai.md" >}}), gọi
+[tool]({{< relref "tool-function-calling.md" >}}), và áp
+[guardrail]({{< relref "guardrails.md" >}}).
 
 ## Mỗi khái niệm nền tảng nằm ở đâu
 

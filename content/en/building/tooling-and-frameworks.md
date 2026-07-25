@@ -39,7 +39,7 @@ agent.
 
 ## MCP servers
 
-Whatever you build on, [MCP]({{< relref "/foundations/mcp" >}}) lets it connect to tools and
+Whatever you build on, [MCP]({{< relref "mcp.md" >}}) lets it connect to tools and
 data through a standard interface — connect to an existing MCP server instead of hand-wiring
 each integration. Most SDKs and managed services can use MCP servers.
 

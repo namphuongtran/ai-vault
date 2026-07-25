@@ -1,0 +1,57 @@
+---
+aliases: ["/foundations/embeddings/"]
+title: "Embeddings"
+weight: 17
+description: Turning text into vectors that capture meaning — the mechanism behind RAG and semantic search.
+---
+
+An **embedding** turns text (or an image, or audio) into a list of numbers — a **vector** —
+that captures its *meaning*. It's the mechanism behind
+[RAG]({{< relref "rag.md" >}}), but it's useful far beyond that.
+
+## The core idea
+
+Text with similar meaning maps to **nearby** vectors; unrelated text maps far apart. "cat"
+and "kitten" land close together; "car" lands elsewhere. That's the whole trick — meaning
+becomes distance you can measure.
+
+```mermaid
+flowchart LR
+    Txt[Text] --> M[Embedding model]
+    M --> Vec[Vector of numbers]
+    Vec --> Space[Vector space - similar meaning is nearby]
+```
+
+## How you use them
+
+- Use the **same embedding model** for everything you compare — vectors from different models
+  aren't comparable.
+- Measure closeness with **cosine similarity** (angle between vectors).
+- Store and search them in a **vector database** (see [RAG]({{< relref "rag.md" >}})).
+
+## Uses beyond RAG
+
+- **Semantic search** — find by meaning, not keywords.
+- **Clustering** — group similar items automatically.
+- **Classification** — label text by nearest known examples.
+- **Deduplication** — spot near-duplicate content.
+- **Recommendations** — "more like this".
+
+## Practical notes
+
+- **Dimensions** — vectors have a fixed length (e.g. hundreds to thousands of numbers); more
+  isn't always better.
+- **Model choice** matters — pick one suited to your language and domain.
+- Embeddings are **cheap** compared to generation; embedding a large corpus is routine.
+
+## Strengths & limitations
+
+- **Strengths** — turns meaning into measurable distance; cheap and reusable; powers search,
+  clustering, and classification.
+- **Limitations** — quality depends on the model and domain; fixed at embed time (re-embed when
+  data changes); misses exact keywords — pair with keyword / hybrid search.
+
+## Sources
+
+- Reimers & Gurevych, *Sentence-BERT* (2019) — [arXiv:1908.10084](https://arxiv.org/abs/1908.10084)
+- [OpenAI — Embeddings](https://platform.openai.com/docs/guides/embeddings)

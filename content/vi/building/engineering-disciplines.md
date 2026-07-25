@@ -40,8 +40,8 @@ flowchart LR
 
 | Thời kỳ | Discipline | Thêm được gì | Lỗi nó sửa |
 | ------ | ------ | ------ | ------ |
-| 2022 | [Prompt]({{< relref "/foundations/prompt-engineering" >}}) | Định hình một lần trao đổi | — |
-| 2025 | [Context]({{< relref "/foundations/context-engineering" >}}) | Mọi thứ model biết ngoài prompt | Prompt hoàn hảo cũng không thêm được tri thức model chưa có |
+| 2022 | [Prompt]({{< relref "prompt-engineering.md" >}}) | Định hình một lần trao đổi | — |
+| 2025 | [Context]({{< relref "context-engineering.md" >}}) | Mọi thứ model biết ngoài prompt | Prompt hoàn hảo cũng không thêm được tri thức model chưa có |
 | 02/2026 | [Harness]({{< relref "/building/agent-harness" >}}) | Ràng buộc và cổng chặn quanh agent | Prompt tốt không ngăn agent `rm -rf` cả repo |
 | 06/2026 | [Loop]({{< relref "/building/loop-engineering" >}}) | Chu trình plan–execute–verify và định nghĩa "xong" | Một lần gọi không tự kiểm và sửa việc của chính nó |
 | 07/2026 | Graph | Nhiều loop nối qua node, edge, shared state | Một loop tuần tự nghẽn với việc cần vai chuyên biệt, chạy song song |
@@ -57,9 +57,9 @@ model chưa từng được cấp.
 
 ### Context engineering — quản lý những gì model biết
 
-Bạn lắp mọi thứ quanh prompt: tài liệu truy xuất ([RAG]({{< relref "/foundations/rag" >}})),
+Bạn lắp mọi thứ quanh prompt: tài liệu truy xuất ([RAG]({{< relref "rag.md" >}})),
 [memory]({{< relref "/deep-dives/agent-memory" >}}), định nghĩa tool, lịch sử phiên — và
-quan trọng không kém, bỏ gì ra ngoài để [context window]({{< relref "/foundations/context-engineering" >}})
+quan trọng không kém, bỏ gì ra ngoài để [context window]({{< relref "context-engineering.md" >}})
 gọn nhẹ. Ví dụ: một support bot trả lời về gói dịch vụ của *khách này* vì context engineering
 đã đặt bản ghi tài khoản và chính sách liên quan vào cửa sổ.
 

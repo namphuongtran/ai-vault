@@ -1,0 +1,50 @@
+---
+aliases: ["/foundations/training-lifecycle/"]
+title: "How Models Are Trained"
+linkTitle: "How Models Are Trained"
+weight: 6
+description: An awareness-level view of pre-training, fine-tuning, and alignment — and why it matters to a builder.
+---
+
+You won't train a foundation model, but knowing *how* one is made explains a lot of its
+behavior. This is awareness-level — no training techniques required.
+
+## The two big phases
+
+- **Pre-training** — the model learns language and world knowledge by predicting the next
+  token across a huge corpus. The result is a **base model**: knowledgeable but not good at
+  following instructions.
+- **Post-training** — the base model is shaped into something useful:
+  - **Instruction / fine-tuning** — taught to follow instructions and answer helpfully.
+  - **Alignment (e.g. RLHF)** — tuned with human feedback to be helpful, honest, and safe.
+
+## Why this matters to you as a builder
+
+- **Knowledge cutoff** — knowledge is frozen at pre-training time. For fresh or private facts
+  you need [RAG]({{< relref "rag.md" >}}), not a newer base model.
+- **Why it follows instructions (and refuses)** — that behavior comes from post-training, not
+  magic. It's why [prompting]({{< relref "prompt-engineering.md" >}}) works and why
+  models sometimes decline requests.
+- **What fine-tuning does** — it adjusts *behavior and style*, and reliably teaches narrow
+  skills; it does **not** reliably inject fresh knowledge. See
+  [Adaptation]({{< relref "/deep-dives/adaptation" >}}).
+
+## Example — base vs. instruction-tuned
+
+Prompt: *"Write a haiku about the sea."*
+
+- **Base model** — may reply: `Write a haiku about the mountains. Write a haiku about…` —
+  it *continues text*, because predicting the next token is all pre-training taught it.
+- **Instruction-tuned model** — returns an actual haiku.
+
+Same knowledge, different behavior. That difference *is* post-training.
+
+## What you don't need
+
+Datasets, GPUs, loss functions, gradient descent. Providers handle all of it; you consume the
+finished model.
+
+## Sources
+
+- Ouyang et al., *Training language models to follow instructions with human feedback* (2022) — [arXiv:2203.02155](https://arxiv.org/abs/2203.02155)
+- Bommasani et al., *On the Opportunities and Risks of Foundation Models* (2021) — [arXiv:2108.07258](https://arxiv.org/abs/2108.07258)

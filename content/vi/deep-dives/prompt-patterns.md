@@ -4,7 +4,7 @@ weight: 1
 description: Kỹ thuật suy luận, structured output, phân rã và tối ưu prompt.
 ---
 
-Tiếp nối [Prompt Engineering ở phần Nền tảng]({{< relref "/foundations/prompt-engineering" >}}).
+Tiếp nối [Prompt Engineering ở phần Nền tảng]({{< relref "prompt-engineering.md" >}}).
 Các mẫu cho những tác vụ khó hơn, khi một prompt đơn lẻ là chưa đủ.
 
 ## Kỹ thuật suy luận

@@ -40,9 +40,9 @@ flowchart TD
 ## Nguyên tắc
 
 - **Prompt là file, không phải string literal** — đánh version, diff, test được (xem
-  [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}})).
+  [Prompt engineering]({{< relref "prompt-engineering.md" >}})).
 - **Một tool = một module** — một định nghĩa + một handler test được độc lập (xem
-  [Tool & function calling]({{< relref "/foundations/tool-function-calling" >}})).
+  [Tool & function calling]({{< relref "tool-function-calling.md" >}})).
 - **Tách riêng retrieval** — [pipeline ingest và query]({{< relref "/building/building-rag" >}})
   là lớp riêng, không trộn vào orchestrator.
 - **Orchestrator mỏng** — [harness]({{< relref "/building/agent-harness" >}}) chỉ nối các phần

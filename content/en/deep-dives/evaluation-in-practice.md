@@ -4,7 +4,7 @@ weight: 8
 description: Eval sets, LLM-as-judge, offline vs online, and regression testing.
 ---
 
-Builds on [Model Evaluation in Foundations]({{< relref "/foundations/model-evaluation" >}}).
+Builds on [Model Evaluation in Foundations]({{< relref "model-evaluation.md" >}}).
 Metrics only help if you evaluate systematically. This is how to actually run evaluation.
 
 ## Build an eval set

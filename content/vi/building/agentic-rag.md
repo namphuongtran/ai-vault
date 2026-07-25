@@ -5,10 +5,10 @@ weight: 4
 description: Truy xuất do agent dẫn dắt — tự quyết khi nào, truy gì, bao nhiêu lần — không phải pipeline cố định.
 ---
 
-Tiếp nối [Agentic AI]({{< relref "/foundations/agentic-ai" >}}) và
+Tiếp nối [Agentic AI]({{< relref "agentic-ai.md" >}}) và
 [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}). Trong **standard RAG**, pipeline là
 cố định — luôn truy xuất một lần rồi sinh câu trả lời. **Agentic RAG** giao quyền đó cho một
-[agent]({{< relref "/foundations/agents" >}}): nó tự quyết *có truy xuất không*, *truy gì*, và
+[agent]({{< relref "agents.md" >}}): nó tự quyết *có truy xuất không*, *truy gì*, và
 *bao nhiêu lần*, dùng truy xuất như một tool.
 
 ## Standard vs agentic
@@ -39,7 +39,7 @@ flowchart TD
 - **Bao nhiêu vòng** — truy xuất, đọc, rồi truy tiếp cho một dữ kiện bổ sung (multi-hop).
 - **Context đã đủ chưa** — truy lại hoặc hỏi làm rõ nếu chưa.
 
-Truy xuất trở thành một [tool]({{< relref "/foundations/tool-function-calling" >}}) mà agent gọi,
+Truy xuất trở thành một [tool]({{< relref "tool-function-calling.md" >}}) mà agent gọi,
 không phải bước đầu tiên cố định.
 
 Một câu hỏi multi-hop cho thấy khác biệt: *"Chính sách lưu trữ của mình có cho phép xóa audit
@@ -59,7 +59,7 @@ khoản dành cho khách rời đi: ba lần tra cứu, mỗi lần được đ�
 ## Đánh đổi
 
 Mạnh hơn, nhưng nhiều độ trễ, chi phí và bộ phận chuyển động hơn — và khó làm cho đáng tin hơn
-(agent có thể lặp hoặc truy xuất kém). Thêm [guardrail]({{< relref "/foundations/guardrails" >}}),
+(agent có thể lặp hoặc truy xuất kém). Thêm [guardrail]({{< relref "guardrails.md" >}}),
 giới hạn số bước, và [đánh giá]({{< relref "/deep-dives/evaluation-in-practice" >}}) — đặc biệt là
 các kiểm tra chất lượng truy xuất trong [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}).
 Chỉ dùng agentic RAG khi standard hoặc advanced RAG thực sự không đủ.

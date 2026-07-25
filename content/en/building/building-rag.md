@@ -5,7 +5,7 @@ weight: 3
 description: An end-to-end reference architecture — the ingest pipeline and the query pipeline.
 ---
 
-Builds on [RAG in Foundations]({{< relref "/foundations/rag" >}}). A real RAG system is **two
+Builds on [RAG in Foundations]({{< relref "rag.md" >}}). A real RAG system is **two
 pipelines** that meet at the vector store: one runs *offline* to index your data, the other
 runs *online* per question.
 
@@ -30,7 +30,7 @@ Runs when data changes, not per request:
 
 1. **Parse** documents (PDF, HTML, Word) into clean text.
 2. **Chunk** into passages sized for retrieval.
-3. **Embed** each chunk with an [embedding model]({{< relref "/foundations/embeddings" >}}).
+3. **Embed** each chunk with an [embedding model]({{< relref "embeddings.md" >}}).
 4. **Store** the vectors (+ source metadata) in the vector store.
 
 Re-run it when documents change — no model retraining needed.

@@ -4,7 +4,7 @@ weight: 8
 description: Bộ eval, LLM-as-judge, offline vs online và regression testing.
 ---
 
-Tiếp nối [Model Evaluation ở phần Nền tảng]({{< relref "/foundations/model-evaluation" >}}).
+Tiếp nối [Model Evaluation ở phần Nền tảng]({{< relref "model-evaluation.md" >}}).
 Metric chỉ hữu ích khi bạn đánh giá một cách có hệ thống. Đây là cách thực sự chạy đánh giá.
 
 ## Xây bộ eval

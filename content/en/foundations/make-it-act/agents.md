@@ -1,0 +1,82 @@
+---
+aliases: ["/foundations/agents/"]
+title: "Agents"
+weight: 20
+description: Foundation models that plan and take actions using tools.
+---
+
+## What it is
+
+An **agent** is a foundation model that can plan and take actions to reach a goal, rather
+than just returning a single response. It decides what to do, calls **tools** (search, APIs,
+code, databases), observes the result, and repeats until the task is done.
+
+## Core components
+
+```mermaid
+flowchart TB
+    subgraph Agent
+      LLM[LLM core]
+      P[Planning]
+      Mem[Memory]
+    end
+    LLM --- P
+    LLM --- Mem
+    LLM -->|calls| Tools[Tools]
+    LLM -->|reads| Know[Knowledge and RAG]
+```
+
+- **Planning** — break a goal into steps and decide what to do next.
+- **Tool use** — call external functions/APIs to act or fetch data.
+- **Memory** — keep track of context across steps (short-term and long-term).
+- **Reflection** — evaluate results and adjust the approach.
+
+## The agent loop
+
+A plain chat call is one prompt in, one answer out. An agent instead runs a loop — *reason →
+act → observe* — until the goal is reached:
+
+```mermaid
+flowchart LR
+    G[Goal] --> R[Reason]
+    R --> A[Act - call a tool]
+    A --> O[Observe result]
+    O --> R
+    O --> D[Answer when done]
+```
+
+## Example — a tool-using turn
+
+Question: *"What's the weather in Paris?"*
+
+1. **Reason** — I need current weather; I have a `get_weather` tool.
+2. **Act** — call `get_weather("Paris")`.
+3. **Observe** — the tool returns `18°C, rainy`.
+4. **Answer** — "It's 18°C and rainy in Paris right now."
+
+A plain chat call can't do steps 2–3 — it would just guess.
+
+## When to use
+
+- The task needs several steps or external actions (not just text generation).
+- The model must fetch fresh data or operate on systems (search, code, APIs).
+- Outcomes depend on intermediate results the model can't know in advance.
+
+How much of the loop to hand over to the model — versus scripting the steps yourself — is
+its own decision: see [Agentic AI]({{< relref "agentic-ai.md" >}}).
+
+## Strengths & limitations
+
+- **Strengths** — handles tasks you can't fully script in advance; acts on fresh data and
+  real systems instead of guessing; composes with everything else in this vault (tools, RAG,
+  memory).
+- **Limitations** — each loop step is a model call, so cost and latency multiply; behavior is
+  less predictable than a fixed workflow, and errors compound across steps — which is why
+  [guardrails]({{< relref "guardrails.md" >}}), stop conditions, and
+  [evaluation]({{< relref "model-evaluation.md" >}}) matter more here than anywhere
+  else.
+
+## Sources
+
+- Yao et al., *ReAct: Synergizing Reasoning and Acting in Language Models* (2022) — [arXiv:2210.03629](https://arxiv.org/abs/2210.03629)
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)

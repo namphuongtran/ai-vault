@@ -38,7 +38,7 @@ bạn muốn orchestration di động qua nhiều model và tool thay vì agent 
 
 ## MCP servers
 
-Dù build trên nền nào, [MCP]({{< relref "/foundations/mcp" >}}) cho phép nó kết nối tới tool và
+Dù build trên nền nào, [MCP]({{< relref "mcp.md" >}}) cho phép nó kết nối tới tool và
 dữ liệu qua một giao diện chuẩn — kết nối tới một MCP server có sẵn thay vì đấu nối tay từng tích
 hợp. Đa số SDK và managed service đều dùng được MCP server.
 

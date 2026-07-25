@@ -6,7 +6,7 @@ description: The seven types of memory an agent can have — each explained, wit
 
 ## Goal
 
-Know the kinds of memory an [agent]({{< relref "/foundations/agents" >}}) can have, what each
+Know the kinds of memory an [agent]({{< relref "agents.md" >}}) can have, what each
 one *is*, and — most importantly — **when each one earns its place**. Memory is the most
 over-engineered part of agent design: every type you add is state to store, retrieve, secure,
 and keep fresh.
@@ -14,7 +14,7 @@ and keep fresh.
 ## Start from one fact
 
 The model itself remembers nothing between calls — its only "memory" is whatever the harness
-puts in the [context window]({{< relref "/foundations/context-engineering" >}}) this turn.
+puts in the [context window]({{< relref "context-engineering.md" >}}) this turn.
 **Working memory** *is* that window; the other six types are strategies for persisting things
 outside the model and loading them back in when relevant.
 
@@ -41,7 +41,7 @@ prompt, tool outputs, and reasoning steps. **When you need it** — always; it's
 managed by the [harness]({{< relref "/building/agent-harness" >}}) (often with a *checkpointer*
 keyed by a thread id so a conversation can resume). **Example** — ask *"what did I just say?"*
 and it answers by looking back in the window. The engineering here is
-[context management]({{< relref "/foundations/context-engineering" >}}): trim or summarize as
+[context management]({{< relref "context-engineering.md" >}}): trim or summarize as
 it fills, or the run breaks.
 
 ### 2. Semantic memory — knowledge that lasts
@@ -73,7 +73,7 @@ from scratch. Tools give an agent *capabilities*; procedural memory gives it *pr
 ### 5. External memory — bring outside knowledge in
 
 **What it is** — knowledge kept outside the model in a vector DB and fetched at inference by
-similarity search. This *is* [RAG]({{< relref "/foundations/rag" >}}). **When you need it** —
+similarity search. This *is* [RAG]({{< relref "rag.md" >}}). **When you need it** —
 the knowledge is too large for the context window and changes often. **Example** — a support
 agent embeds your docs, stores them, and retrieves the most relevant chunks when a user asks.
 
@@ -140,7 +140,7 @@ diagram had a box for it.
 - **Limitations** — stored memories go stale and confidently wrong (a moved customer, a
   changed policy); retrieval can surface the *wrong* memory, which poisons the turn; personal
   facts raise privacy and retention duties (see
-  [Responsible AI]({{< relref "/foundations/responsible-ai" >}})); every store is
+  [Responsible AI]({{< relref "responsible-ai.md" >}})); every store is
   infrastructure to run and sync.
 
 > Start with working memory only. Add one type at a time, when a real symptom appears — never

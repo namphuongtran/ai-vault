@@ -4,7 +4,7 @@ weight: 5
 description: The scaffolding that runs an agent — the loop, context management, tool execution, memory, and guardrails.
 ---
 
-Builds on [Agentic AI]({{< relref "/foundations/agentic-ai" >}}). The model is the engine; the
+Builds on [Agentic AI]({{< relref "agentic-ai.md" >}}). The model is the engine; the
 **harness** is everything around it that turns a single model call into a working agent. This
 page is how one is built.
 
@@ -39,13 +39,13 @@ flowchart TD
     Up --> Ctx
 ```
 
-Each turn: assemble the context, call the [model]({{< relref "/foundations/the-ai-api" >}}), and
-if it returns a [tool call]({{< relref "/foundations/tool-function-calling" >}}), execute it,
+Each turn: assemble the context, call the [model]({{< relref "the-ai-api.md" >}}), and
+if it returns a [tool call]({{< relref "tool-function-calling.md" >}}), execute it,
 append the result, and loop — until the model answers or a stop condition fires.
 
 ## The hard parts
 
-- **Context management** — the [window]({{< relref "/foundations/context-engineering" >}}) is
+- **Context management** — the [window]({{< relref "context-engineering.md" >}}) is
   finite; as the loop grows you must summarize or trim old tool results, or the run breaks.
 - **Tool execution** — validate arguments, gate risky actions behind approval, run parallel
   calls, and return errors as results the model can recover from.
@@ -55,8 +55,8 @@ append the result, and loop — until the model answers or a stop condition fire
   ends gracefully instead of spinning. A real-world set: *stop after 20 steps or 100k tokens;
   stop if the same tool is called with the same arguments twice in a row; on stop, summarize
   progress instead of failing silently.*
-- **Guardrails** — apply [input/output checks]({{< relref "/foundations/guardrails" >}}) and
-  [security]({{< relref "/foundations/ai-security" >}}) on *every* turn, not just the first.
+- **Guardrails** — apply [input/output checks]({{< relref "guardrails.md" >}}) and
+  [security]({{< relref "ai-security.md" >}}) on *every* turn, not just the first.
 
 One harness runs one agent's loop. Designing the loops themselves — validators, closed
 loops, orchestration of many workers — is the next page:

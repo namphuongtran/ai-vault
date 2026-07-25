@@ -4,7 +4,7 @@ weight: 4
 description: Chunking, hybrid retrieval, re-ranking, query transforms, and RAG evaluation.
 ---
 
-Builds on [RAG in Foundations]({{< relref "/foundations/rag" >}}). Basic RAG often
+Builds on [RAG in Foundations]({{< relref "rag.md" >}}). Basic RAG often
 under-performs because of *retrieval* quality, not the model. These techniques target that.
 
 ## Chunking strategies

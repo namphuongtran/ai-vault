@@ -50,7 +50,7 @@ Hai tầng, khác key:
 
 - **Exact cache** — cùng chuỗi input → trả câu trả lời đã lưu. Đơn giản và miễn phí; chỉ trúng
   khi lặp y hệt.
-- **Semantic cache** — [embed]({{< relref "/foundations/embeddings" >}}) truy vấn và tái dùng
+- **Semantic cache** — [embed]({{< relref "embeddings.md" >}}) truy vấn và tái dùng
   câu trả lời cũ khi câu hỏi mới *đủ gần* về nghĩa ("chính sách hoàn tiền bao lâu?" ≈ "mình có
   bao lâu để trả hàng?"). Bắt được các câu diễn đạt khác mà exact cache trượt.
 - **Prompt cache** — tính năng nhà cung cấp: tái dùng *phần đầu* prompt lặp lại (system prompt,
@@ -58,7 +58,7 @@ Hai tầng, khác key:
   một request path, không phải giữa các user.
 
 Cache cái ổn định (tài liệu, FAQ). Đừng cache cái phải tươi hoặc theo từng user (dữ liệu tài
-khoản, bất cứ thứ gì có quyết định [guardrail]({{< relref "/foundations/guardrails" >}})) —
+khoản, bất cứ thứ gì có quyết định [guardrail]({{< relref "guardrails.md" >}})) —
 một câu trả lời cache cũ trả nhầm user còn tệ hơn một câu trả lời chậm.
 
 ## Model serving
@@ -94,10 +94,10 @@ Model sẽ lỗi, timeout, và rate-limit — hãy thiết kế cho điều đó
 
 ## Chi phí và capacity ở quy mô
 
-[Chi phí mỗi lời gọi]({{< relref "/foundations/cost-and-tokens" >}}) là chủ đề Giai đoạn 0; ở
+[Chi phí mỗi lời gọi]({{< relref "cost-and-tokens.md" >}}) là chủ đề Giai đoạn 0; ở
 quy mô nó thành mối lo *hệ thống*: định tuyến request dễ tới model rẻ, cache mạnh tay, chặn
 kích thước context, và batch ở chỗ độ trễ cho phép. Theo dõi chi phí mỗi request trong
-[observability]({{< relref "/foundations/observability" >}}) để một thay đổi prompt làm gấp
+[observability]({{< relref "observability.md" >}}) để một thay đổi prompt làm gấp
 đôi token hiện ra thành một hóa đơn, không phải một bất ngờ. Đặt trần ngân sách theo từng user
 và toàn cục — một [agent loop]({{< relref "/building/loop-engineering" >}}) không có trần chi
 phí là một cái ví mở toang.

@@ -1,0 +1,71 @@
+---
+aliases: ["/foundations/model-evaluation/"]
+title: "Model Evaluation"
+weight: 26
+description: Cách đo chất lượng mô hình — chọn metric phù hợp với tác vụ.
+---
+
+## Là gì
+
+Một mô hình có thể hoạt động tốt ở tác vụ này nhưng chưa phù hợp với tác vụ khác, nên **model
+evaluation** rất quan trọng. Khi lựa chọn metric, cần dựa trên mục tiêu thực tế của bài toán.
+
+## Metric cho sinh văn bản
+
+- **ROUGE** — thường dùng để đánh giá chất lượng **tóm tắt văn bản**, so sánh mức độ trùng khớp
+  giữa nội dung do mô hình tạo ra và nội dung tham chiếu. Nói về tóm tắt → nghĩ tới ROUGE.
+- **BLEU** — thường dùng trong **machine translation**; so sánh các chuỗi từ hoặc cụm từ giữa
+  bản dịch của mô hình và bản dịch tham chiếu. Nói về dịch máy → nghĩ tới BLEU.
+
+## Metric cho phân loại
+
+- **Precision** — trong số kết quả được dự đoán là positive, có bao nhiêu thực sự đúng. Quan
+  trọng khi chi phí của **false positive** cao (ví dụ hệ thống phát hiện gian lận gắn cờ nhầm
+  giao dịch hợp lệ).
+- **Recall** — trong số các trường hợp positive thực tế, mô hình phát hiện được bao nhiêu. Quan
+  trọng khi chi phí của **false negative** cao (ví dụ hệ thống sàng lọc bệnh bỏ sót ca thật).
+- **F1 score** — cân bằng giữa precision và recall; hữu ích khi cả hai loại lỗi đều quan trọng
+  hoặc khi dữ liệu giữa các lớp không cân bằng.
+
+## Ví dụ — precision vs recall bằng số
+
+Một bộ lọc gian lận gắn cờ 100 giao dịch là gian lận; 90 đúng là gian lận, 10 là bình thường.
+Nó cũng bỏ sót 30 ca gian lận thật mà không gắn cờ:
+
+| | Gắn cờ gian lận | Không gắn cờ |
+| -- | ----------------- | -------------- |
+| Thực sự gian lận | 90 (TP) | 30 (FN) |
+| Thực sự bình thường | 10 (FP) | còn lại (TN) |
+
+- **Precision** = 90 / (90 + 10) = **0.90** — trong số gắn cờ, 90% đúng.
+- **Recall** = 90 / (90 + 30) = **0.75** — bắt được 75% tổng gian lận thật.
+
+Đẩy cái này lên thì cái kia thường tụt — đó là đánh đổi mà F1 cân bằng.
+
+## Metric riêng cho RAG
+
+- **Faithfulness** — câu trả lời có bám sát context được cung cấp hay không. Một câu trả lời có
+  thể nghe rất tự nhiên nhưng vẫn chứa thông tin không tồn tại trong tài liệu truy xuất.
+- **Context relevance** — tài liệu/đoạn văn được truy xuất có thực sự liên quan đến câu hỏi không.
+  Nếu truy xuất sai, mô hình có thể tạo câu trả lời kém chính xác dù bản thân nó hoạt động tốt.
+
+## Metric nào cho việc gì
+
+| Tác vụ | Dùng |
+| ------ | ------ |
+| Tóm tắt | **ROUGE** |
+| Dịch máy | **BLEU** |
+| Phân loại mà false positive gây hại | **Precision** |
+| Phân loại mà false negative gây hại | **Recall** |
+| Cả hai đều hại, hoặc lớp mất cân bằng | **F1** |
+| Câu trả lời RAG | **Faithfulness + context relevance** (RAGAS) |
+| Sinh nội dung mở, không có đáp án tham chiếu | **Human review hoặc LLM-as-judge** — xem [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) |
+
+Quy luật đằng sau bảng: chọn metric theo **cái giá của lỗi**, không theo thói quen — hãy quyết
+định trước xem false positive hay false negative đau hơn.
+
+## Nguồn
+
+- Papineni et al., *BLEU: a Method for Automatic Evaluation of Machine Translation* (2002) — [ACL P02-1040](https://aclanthology.org/P02-1040/)
+- Lin, *ROUGE: A Package for Automatic Evaluation of Summaries* (2004) — [ACL W04-1013](https://aclanthology.org/W04-1013/)
+- Es et al., *RAGAS: Automated Evaluation of Retrieval Augmented Generation* (2023) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)

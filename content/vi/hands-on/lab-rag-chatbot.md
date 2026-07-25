@@ -168,7 +168,7 @@ trích [n] và dữ kiện tồn tại trong đúng các chunk đó. Hỏi đi�
 ## Bước 6 — Monitoring và caching
 
 Không thấy thì không cải thiện được — ghi một
-[trace]({{< relref "/foundations/observability" >}}) mỗi request, và đừng trả tiền hai lần
+[trace]({{< relref "observability.md" >}}) mỗi request, và đừng trả tiền hai lần
 cho cùng một câu hỏi.
 
 ```python

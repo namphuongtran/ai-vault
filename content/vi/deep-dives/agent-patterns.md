@@ -4,7 +4,7 @@ weight: 5
 description: Vòng lặp ReAct, thiết kế tool, memory, multi-agent và reflection.
 ---
 
-Tiếp nối [Agent ở phần Nền tảng]({{< relref "/foundations/agents" >}}). Các mẫu giúp agent
+Tiếp nối [Agent ở phần Nền tảng]({{< relref "agents.md" >}}). Các mẫu giúp agent
 đáng tin cậy chứ không chỉ mạnh.
 
 ## Vòng lặp ReAct
@@ -21,7 +21,7 @@ Tool là API của agent tới thế giới — hãy thiết kế như một API
 - Mô tả rõ ràng và tham số có kiểu; mô hình chọn tool dựa trên các mô tả này.
 - Trả về kết quả ngắn gọn, có cấu trúc; cắt nhiễu trước khi nó quay lại context.
 - Ưu tiên tool **idempotent** và validate đầu vào (xem
-  [Guardrail]({{< relref "/foundations/guardrails" >}})).
+  [Guardrail]({{< relref "guardrails.md" >}})).
 
 ## Planning
 

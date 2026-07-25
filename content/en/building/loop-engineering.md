@@ -8,12 +8,12 @@ description: Designing the loop as a system — what it is, its parts, its types
 
 Answer the questions a builder actually asks about loops: what *is* loop engineering, what
 are its parts, how many kinds are there, why is it needed — and do you have to code one on an
-SDK, or can [Claude Code / Codex]({{< relref "/foundations/ai-coding-assistants" >}}) do it?
+SDK, or can [Claude Code / Codex]({{< relref "ai-coding-assistants.md" >}}) do it?
 
 ## What it is
 
 **Loop engineering is designing the iteration itself, instead of doing the iterating.**
-[Prompt engineering]({{< relref "/foundations/prompt-engineering" >}}) shapes *one model
+[Prompt engineering]({{< relref "prompt-engineering.md" >}}) shapes *one model
 call*; the [harness]({{< relref "/building/agent-harness" >}}) runs *one agent's loop*; loop
 engineering designs the **system of loops**: what repeats, who checks the result, what counts
 as "done", and what stops it. In one line: you stop being the person who prompts the agent —
@@ -68,8 +68,8 @@ flowchart LR
 - **Discovery / automations** — finds work without a human trigger: a schedule, a webhook, a
   scanner.
 - **Decomposition** — an orchestrator breaks the goal into tasks workers can own.
-- **Worker** — an agent with [tools]({{< relref "/foundations/tool-function-calling" >}}) and
-  [MCP connectors]({{< relref "/foundations/mcp" >}}); parallel workers get **git worktrees**
+- **Worker** — an agent with [tools]({{< relref "tool-function-calling.md" >}}) and
+  [MCP connectors]({{< relref "mcp.md" >}}); parallel workers get **git worktrees**
   so they don't overwrite each other.
 - **Validator** — a second judgment ([LLM-as-judge]({{< relref "/deep-dives/evaluation-in-practice" >}}),
   a test suite, or both) that decides pass/fail — never the worker grading itself.
@@ -86,7 +86,7 @@ Any loop you meet is a point on three independent axes:
 | Axis | Options | The trade |
 | ------ | ------ | ------ |
 | **Architecture** | **Open loop** — agent free to explore, decide next steps · **Closed loop** — predefined goal, criteria, and thresholds | Open suits unknown problems but burns tokens and resists prediction; closed is cheaper, repeatable, improvable — the full comparison is in the [next section](#open-vs-closed-loop) |
-| **Oversight** | **Human in the loop** — approves each step · **on the loop** — monitors, intervenes on exception · **out of the loop** — reviews outcomes only | The same ladder as [responsible-ai's placements]({{< relref "/foundations/responsible-ai" >}}), applied to loops: you graduate from sitting inside one loop to designing loops that watch other loops |
+| **Oversight** | **Human in the loop** — approves each step · **on the loop** — monitors, intervenes on exception · **out of the loop** — reviews outcomes only | The same ladder as [responsible-ai's placements]({{< relref "responsible-ai.md" >}}), applied to loops: you graduate from sitting inside one loop to designing loops that watch other loops |
 | **Topology** | **Single loop** — one worker · **Orchestrated** — supervisor + specialized workers | Single is simpler and usually enough; orchestrate when tasks parallelize or need separate maker and checker roles |
 
 ## Open vs. closed loop

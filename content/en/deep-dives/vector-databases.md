@@ -7,13 +7,13 @@ description: From storing an embedding to similarity search at scale — the nin
 ## Goal
 
 Understand what happens inside the "vector store" box of every
-[RAG]({{< relref "/foundations/rag" >}}) diagram — from what a single record holds, to how a
+[RAG]({{< relref "rag.md" >}}) diagram — from what a single record holds, to how a
 query finds its nearest matches, to how that stays fast across millions of
-[embeddings]({{< relref "/foundations/embeddings" >}}), and which store to pick.
+[embeddings]({{< relref "embeddings.md" >}}), and which store to pick.
 
 ## What's in a record
 
-An [embedding]({{< relref "/foundations/embeddings" >}}) turns text into a vector — a list of
+An [embedding]({{< relref "embeddings.md" >}}) turns text into a vector — a list of
 numbers that captures meaning. A vector database stores one **record** per chunk:
 
 | Field | Example | Used for |
@@ -86,7 +86,7 @@ all fail the filter, leaving you with nothing.
 
 ## In a RAG pipeline
 
-The vector database is the retrieval half of [RAG]({{< relref "/foundations/rag" >}}):
+The vector database is the retrieval half of [RAG]({{< relref "rag.md" >}}):
 
 - **Offline** — chunk documents, embed each chunk, store `id + vector + metadata + content`.
 - **Online** — embed the question, Top-K search (with metadata filters), hand the returned

@@ -7,7 +7,7 @@ description: Bảy loại bộ nhớ một agent có thể có — giải thích
 
 ## Mục tiêu
 
-Biết các loại bộ nhớ một [agent]({{< relref "/foundations/agents" >}}) có thể có, mỗi loại
+Biết các loại bộ nhớ một [agent]({{< relref "agents.md" >}}) có thể có, mỗi loại
 *là gì*, và — quan trọng nhất — **khi nào mỗi loại xứng đáng có mặt**. Memory là phần bị
 over-engineer nhất trong thiết kế agent: mỗi loại thêm vào là thêm state phải lưu, truy xuất,
 bảo mật và giữ tươi.
@@ -15,7 +15,7 @@ bảo mật và giữ tươi.
 ## Xuất phát từ một sự thật
 
 Bản thân model không nhớ gì giữa các lần gọi — "bộ nhớ" duy nhất của nó là những gì harness
-đặt vào [context window]({{< relref "/foundations/context-engineering" >}}) ở lượt này.
+đặt vào [context window]({{< relref "context-engineering.md" >}}) ở lượt này.
 **Working memory** *chính là* cửa sổ đó; sáu loại kia là các chiến lược lưu thứ gì đó bên
 ngoài model và nạp lại vào khi cần.
 
@@ -42,7 +42,7 @@ của tool, và các bước suy luận. **Khi nào cần** — luôn luôn; đ�
 [harness]({{< relref "/building/agent-harness" >}}) quản lý (thường có *checkpointer* gắn với
 một thread id để cuộc hội thoại resume được). **Ví dụ** — hỏi *"vừa nãy tôi nói gì?"* và nó
 trả lời bằng cách nhìn lại trong cửa sổ. Phần engineering ở đây là
-[quản lý context]({{< relref "/foundations/context-engineering" >}}): trim hoặc tóm tắt khi
+[quản lý context]({{< relref "context-engineering.md" >}}): trim hoặc tóm tắt khi
 đầy, nếu không run sẽ vỡ.
 
 ### 2. Semantic memory — kiến thức bền lâu
@@ -74,7 +74,7 @@ lực*; procedural memory cho nó *quy trình*.
 ### 5. External memory — mang tri thức ngoài vào
 
 **Là gì** — tri thức giữ bên ngoài model trong một vector DB, lấy về lúc inference bằng
-similarity search. Đây *chính là* [RAG]({{< relref "/foundations/rag" >}}). **Khi nào cần** —
+similarity search. Đây *chính là* [RAG]({{< relref "rag.md" >}}). **Khi nào cần** —
 tri thức quá lớn cho context window và thay đổi thường xuyên. **Ví dụ** — một support agent
 embed tài liệu của bạn, lưu lại, và truy xuất các chunk liên quan nhất khi user hỏi.
 
@@ -140,7 +140,7 @@ sơ đồ có sẵn ô đó.
 - **Hạn chế** — memory đã lưu sẽ cũ đi và sai một cách tự tin (khách đã chuyển đi, chính sách
   đã đổi); truy xuất có thể lôi lên *nhầm* memory và đầu độc cả lượt; dữ kiện cá nhân kéo theo
   nghĩa vụ riêng tư và thời hạn lưu (xem
-  [Responsible AI]({{< relref "/foundations/responsible-ai" >}})); mỗi kho chứa là hạ tầng
+  [Responsible AI]({{< relref "responsible-ai.md" >}})); mỗi kho chứa là hạ tầng
   phải vận hành và đồng bộ.
 
 > Bắt đầu chỉ với working memory. Thêm từng loại một, khi một triệu chứng thật xuất hiện —
