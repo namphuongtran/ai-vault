@@ -32,7 +32,10 @@ flowchart LR
     subgraph S2["Stage 2 · Building with AI ✓"]
       A2[System design · RAG · agentic RAG · harness · code structure]
     end
-    S0 --> S1 --> S2
+    subgraph S3["Stage 3 · Hands-on ◐"]
+      A3[Lab 1 RAG chatbot ✓ + 5 planned]
+    end
+    S0 --> S1 --> S2 --> S3
 ```
 
 - **[Stage 0 — Foundations]({{< relref "/foundations" >}})** ✓ — the core building blocks, for
@@ -44,6 +47,8 @@ flowchart LR
 - **[Stage 2 — Building with AI]({{< relref "/building" >}})** ✓ — assembling the pieces into
   real systems: AI system design, building RAG, agentic RAG, the agent harness, code
   structure, and tooling & frameworks.
+- **[Stage 3 — Hands-on]({{< relref "/hands-on" >}})** — *in progress* — real labs, starting
+  with a RAG chatbot built in seven verifiable steps.
 
 New here? Start at **[Stage 0 — Foundations]({{< relref "/foundations" >}})**. The full
 agenda — including the planned hands-on stages — lives on the

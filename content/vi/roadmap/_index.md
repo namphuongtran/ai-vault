@@ -21,7 +21,7 @@ Trang đã viết đánh dấu ✓; trang dự định ○ — học tới đâu
 ```mermaid
 flowchart LR
     S0[Stage 0 - Foundations ✓] --> S1[Stage 1 - Deep Dives ✓] --> S2[Stage 2 - Building ✓]
-    S2 --> S3[Stage 3 - Hands-on ○] --> S4[Stage 4 - Create ○]
+    S2 --> S3[Stage 3 - Hands-on 1 of 6] --> S4[Stage 4 - Create ○]
 ```
 
 Đọc **theo hàng ngang** để tiến từng giai đoạn, hoặc chọn một hàng trong
@@ -62,13 +62,13 @@ flowchart LR
 [AI code structure]({{< relref "/building/ai-code-structure" >}}) ·
 [tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}).
 
-## Giai đoạn 3 — Hands-on ○ (dự định)
+## Giai đoạn 3 — Hands-on (đang tiến hành)
 
-Dự án thật, xây tăng dần:
+[Dự án thật]({{< relref "/hands-on" >}}), xây tăng dần:
 
-1. ○ **Lab: RAG chatbot trên tài liệu của chính mình** — theo bảy bước: hạ tầng →
-   ingestion → keyword search (BM25) → hybrid search → RAG hoàn chỉnh → monitoring +
-   caching → nâng cấp agentic.
+1. ✓ **[Lab: RAG chatbot trên tài liệu của chính mình]({{< relref "/hands-on/lab-rag-chatbot" >}})**
+   — theo bảy bước: hạ tầng → ingestion → keyword search → hybrid search → RAG hoàn chỉnh →
+   monitoring + caching → nâng cấp agentic.
 2. ○ **Lab: agent với tools + tự viết một MCP server.**
 3. ○ **Lab: eval harness + observability** cho lab 1–2.
 4. ○ **Fine-tuning thực hành (LoRA)** — tinh chỉnh một model nhỏ cho giọng và schema.
@@ -88,6 +88,6 @@ Mỗi hàng là một mạch kiến thức xuyên các giai đoạn — cách đ
 | Chủ đề | Giai đoạn 0 | Giai đoạn 1 | Giai đoạn 2 | Giai đoạn 3 ○ |
 | ------ | ------ | ------ | ------ | ------ |
 | **Prompts** | [Prompt engineering]({{< relref "/foundations/prompt-engineering" >}}) · [Context engineering]({{< relref "/foundations/context-engineering" >}}) | [Prompt patterns]({{< relref "/deep-dives/prompt-patterns" >}}) | — | — |
-| **Data & RAG** | [Embeddings]({{< relref "/foundations/embeddings" >}}) · [RAG]({{< relref "/foundations/rag" >}}) | [Vector databases]({{< relref "/deep-dives/vector-databases" >}}) · [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) · [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) | [Building RAG]({{< relref "/building/building-rag" >}}) · [Agentic RAG]({{< relref "/building/agentic-rag" >}}) | ○ Lab RAG chatbot |
+| **Data & RAG** | [Embeddings]({{< relref "/foundations/embeddings" >}}) · [RAG]({{< relref "/foundations/rag" >}}) | [Vector databases]({{< relref "/deep-dives/vector-databases" >}}) · [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) · [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) | [Building RAG]({{< relref "/building/building-rag" >}}) · [Agentic RAG]({{< relref "/building/agentic-rag" >}}) | [Lab RAG chatbot ✓]({{< relref "/hands-on/lab-rag-chatbot" >}}) |
 | **Agents** | [Tool calling]({{< relref "/foundations/tool-function-calling" >}}) · [Agents]({{< relref "/foundations/agents" >}}) · [Agentic AI]({{< relref "/foundations/agentic-ai" >}}) · [MCP]({{< relref "/foundations/mcp" >}}) | [Agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) · [Agent memory]({{< relref "/deep-dives/agent-memory" >}}) | [Agent harness]({{< relref "/building/agent-harness" >}}) · [AI code structure]({{< relref "/building/ai-code-structure" >}}) | ○ Lab agent + MCP |
 | **Operate** | [Guardrails]({{< relref "/foundations/guardrails" >}}) · [AI security]({{< relref "/foundations/ai-security" >}}) · [Đánh giá]({{< relref "/foundations/model-evaluation" >}}) · [Observability]({{< relref "/foundations/observability" >}}) · [Responsible AI]({{< relref "/foundations/responsible-ai" >}}) | [Adaptation]({{< relref "/deep-dives/adaptation" >}}) · [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) | [AI system design]({{< relref "/building/ai-system-design" >}}) · [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) | ○ Lab evals + ship |

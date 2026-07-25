@@ -31,7 +31,10 @@ flowchart LR
     subgraph S2["Stage 2 · Building with AI ✓"]
       A2[System design · RAG · agentic RAG · harness · code structure]
     end
-    S0 --> S1 --> S2
+    subgraph S3["Stage 3 · Hands-on ◐"]
+      A3[Lab 1 RAG chatbot ✓ + 5 planned]
+    end
+    S0 --> S1 --> S2 --> S3
 ```
 
 - **[Giai đoạn 0 — Nền tảng]({{< relref "/foundations" >}})** ✓ — các khối kiến thức cốt lõi,
@@ -43,6 +46,8 @@ flowchart LR
 - **[Giai đoạn 2 — Building with AI]({{< relref "/building" >}})** ✓ — lắp ráp các mảnh ghép
   thành hệ thống thật: AI system design, building RAG, agentic RAG, agent harness, code
   structure, và tooling & frameworks.
+- **[Giai đoạn 3 — Hands-on]({{< relref "/hands-on" >}})** — *đang tiến hành* — lab thật, mở
+  đầu bằng một RAG chatbot xây qua bảy bước kiểm chứng được.
 
 Mới bắt đầu? Hãy vào **[Giai đoạn 0 — Nền tảng]({{< relref "/foundations" >}})**. Agenda đầy
 đủ — kể cả các giai đoạn hands-on dự định — nằm ở trang
