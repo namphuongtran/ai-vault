@@ -1,7 +1,7 @@
 ---
 title: "Building a RAG System"
 linkTitle: "Building a RAG System"
-weight: 2
+weight: 3
 description: Kiến trúc tham chiếu end-to-end — pipeline ingest và pipeline query.
 ---
 

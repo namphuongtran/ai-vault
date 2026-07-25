@@ -1,7 +1,7 @@
 ---
 title: "From Prompts to Graphs"
 linkTitle: "Engineering disciplines"
-weight: 6
+weight: 7
 description: Five "engineering" disciplines in five years — what each one added, and why the names keep changing.
 ---
 

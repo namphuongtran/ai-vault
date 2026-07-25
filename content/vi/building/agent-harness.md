@@ -1,7 +1,7 @@
 ---
 title: "The Agent Harness"
 linkTitle: "The Agent Harness"
-weight: 4
+weight: 5
 description: Phần scaffolding chạy một agent — vòng lặp, quản lý context, thực thi tool, memory và guardrail.
 ---
 

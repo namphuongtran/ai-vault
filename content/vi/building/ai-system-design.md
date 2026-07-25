@@ -62,6 +62,10 @@ flowchart LR
   khi bài toán đòi hỏi; hệ thống mạnh nhất dùng ít thành phần nhất mà vẫn giải được việc, vì
   mỗi thành phần thêm vào là thêm độ trễ, chi phí và bề mặt tấn công.
 
+Trang này là *hình hài* của một app AI. Làm cho hình hài đó sống sót khi chạm traffic thật —
+gateway, caching, serving, queue, reliability, và chi phí ở quy mô — là
+[Scaling to production]({{< relref "/building/scaling-to-production" >}}).
+
 ## Nguồn
 
 - [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
