@@ -4,7 +4,7 @@ linkTitle: "Types of RAG"
 weight: 3
 type: docs
 no_list: true
-description: Họ RAG — standard, advanced, self-correcting, graph, multimodal, agentic — và cái nào là kiến trúc vs kỹ thuật.
+description: Họ RAG — standard, advanced, self-correcting, graph, multimodal, agentic — và cái nào là kiến trúc, vòng lặp điều khiển, hay kỹ thuật.
 ---
 
 ## Mục tiêu
@@ -51,7 +51,7 @@ Ba biến thể chưa trang nào trong vault sở hữu thì có trang riêng:
 | [Multimodal RAG]({{< relref "multimodal-rag.md" >}}) | Truy xuất ảnh, bảng, audio, không chỉ văn xuôi | Ý nghĩa nằm trong media |
 | [Self-correcting RAG]({{< relref "self-correcting.md" >}}) | CRAG và Self-RAG chấm điểm rồi thử lại | Trả lời sai đắt hơn trả lời chậm |
 
-## Chọn loại nào
+## So sánh để chọn
 
 Các mức là so với standard RAG trên cùng corpus. Chúng cố ý để định tính: con số của bạn phụ
 thuộc vào dữ liệu của bạn.

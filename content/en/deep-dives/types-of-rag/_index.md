@@ -4,7 +4,7 @@ linkTitle: "Types of RAG"
 weight: 3
 type: docs
 no_list: true
-description: The RAG family — standard, advanced, self-correcting, graph, multimodal, agentic — and which is an architecture vs a technique.
+description: The RAG family — standard, advanced, self-correcting, graph, multimodal, agentic — and which is an architecture, a control loop, or a technique.
 ---
 
 ## Goal
