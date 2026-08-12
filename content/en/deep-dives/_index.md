@@ -34,8 +34,8 @@ flowchart LR
    structured output, decomposition, optimization.
 2. [Vector databases]({{< relref "/deep-dives/vector-databases" >}}) — ANN indexes (HNSW,
    IVF, PQ), metadata filtering, choosing a store.
-3. [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) — the RAG family; which is an
-   architecture vs a technique.
+3. [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) — the RAG family; architecture,
+   control loop, or technique, and how to choose.
 4. [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) — chunking, hybrid retrieval,
    re-ranking, query transforms.
 5. [Agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) — the ReAct loop, tool

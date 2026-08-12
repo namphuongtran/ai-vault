@@ -69,10 +69,10 @@ lever — is in [Adaptation]({{< relref "/deep-dives/adaptation" >}}).
 
 ## Variants
 
-"RAG" is a family, not one design — standard, advanced, agentic, graph, and multimodal. And
-some things you'll hear (hybrid search, re-ranking) are *techniques* used inside a variant, not
-separate types. See [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) to tell which is
-which.
+"RAG" is a family, not one design — standard, advanced, self-correcting, graph, multimodal, and
+agentic. And some things you'll hear (hybrid search, re-ranking) are *techniques* used inside a
+variant, not separate types. See [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) to
+tell an architecture from a control loop from a technique.
 
 ## Strengths & limitations
 

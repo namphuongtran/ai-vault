@@ -7,6 +7,9 @@ description: Chunking, hybrid retrieval, re-ranking, query transforms, and RAG e
 Builds on [RAG in Foundations]({{< relref "rag.md" >}}). Basic RAG often
 under-performs because of *retrieval* quality, not the model. These techniques target that.
 
+In the [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) family these are the
+*technique* axis: steps you add inside any architecture, not an architecture of their own.
+
 ## Chunking strategies
 
 How you split documents strongly affects retrieval quality.

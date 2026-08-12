@@ -35,8 +35,8 @@ flowchart LR
    structured output, phân rã, tối ưu prompt.
 2. [Vector databases]({{< relref "/deep-dives/vector-databases" >}}) — chỉ mục ANN (HNSW,
    IVF, PQ), lọc metadata, chọn store.
-3. [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) — họ RAG; cái nào là kiến trúc
-   vs kỹ thuật.
+3. [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) — họ RAG; kiến trúc, vòng lặp
+   điều khiển, hay kỹ thuật, và cách chọn.
 4. [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) — chunking, hybrid retrieval,
    re-ranking, query transform.
 5. [Agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) — vòng lặp ReAct, thiết kế
