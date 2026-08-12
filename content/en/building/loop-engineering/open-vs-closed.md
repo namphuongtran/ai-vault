@@ -1,7 +1,7 @@
 ---
 title: "Open vs. Closed Loops"
 linkTitle: "Open vs. closed"
-weight: 2
+weight: 3
 description: The architecture axis — explore freely, or measure against criteria defined upfront.
 ---
 

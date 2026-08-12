@@ -1,7 +1,7 @@
 ---
 title: "Building a Loop"
 linkTitle: "Building a loop"
-weight: 4
+weight: 5
 description: Off-the-shelf coding agent or your own SDK — and a real closed loop, taken apart.
 ---
 

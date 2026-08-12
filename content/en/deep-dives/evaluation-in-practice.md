@@ -13,6 +13,21 @@ Metrics only help if you evaluate systematically. This is how to actually run ev
 - Cover the **common cases and the edge cases** — the ones that break in production.
 - Start small (20–50 examples) and grow it as you find failures; every bug becomes a case.
 - Version it; treat it like test data.
+- **Mine your [traces]({{< relref "observability.md" >}}) for cases.** Real runs are the
+  cheapest source of realistic inputs, and the ones that already went wrong are the ones worth
+  keeping.
+
+Keep two kinds of case, and don't mix their purpose:
+
+- **Unit-style** — narrow, cheap, and expected to pass. These guard against regressions; a
+  failure here means something broke.
+- **Integration-style** — end-to-end and genuinely hard. These are the score you are trying to
+  climb; a failure here is the current frontier, not a bug.
+
+**When there is no right answer** — common for open-ended or research tasks — you can't collect
+known-good outputs, so build the rubric instead. Have a person label a small batch of real
+outputs as good or bad and say *why*; those reasons become the rubric a judge applies to
+everything after. The human labels also stay the yardstick you calibrate the judge against.
 
 ## LLM-as-judge
 
@@ -48,6 +63,10 @@ This isolates whether a bad answer came from retrieval or generation.
 ## Regression testing
 
 - Run the eval set in CI on every prompt, model, or pipeline change.
+- A **stored memory or skill is a change too**. An agent that
+  [rewrites its own prompts and memory]({{< relref "/deep-dives/self-improving-agents" >}})
+  edits its behaviour without touching the code, so it needs the same gate — that gate is what
+  makes self-improvement safe to merge.
 - Fail the build on a drop past a threshold.
 - Pin the model version; a provider update is itself a change to evaluate.
 

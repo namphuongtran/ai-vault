@@ -10,9 +10,10 @@ description: Designing the loop as a system — its parts, its shapes, and when 
 ## Goal
 
 Answer the questions a builder actually asks about loops: what *is* loop engineering, what
-are its parts, how many shapes are there, why is it needed — and do you have to code one on an
-SDK, or can [Claude Code / Codex]({{< relref "ai-coding-assistants.md" >}}) do it? Each
-question has its own page; this is the map.
+are its parts, how many loops do I need, how many shapes are there, why is it needed — and do
+you have to code one on an SDK, or can
+[Claude Code / Codex]({{< relref "ai-coding-assistants.md" >}}) do it? Each question has its
+own page; this is the map.
 
 ## What it is
 
@@ -61,16 +62,19 @@ flowchart LR
 | Early 2026 | **Productised loops** — a validator decides when work is done | "Done" must be *checked*, not self-declared |
 | Mid 2026 | **Orchestration** — a supervisor schedules and coordinates worker loops | One loop doesn't scale; teams of loops do |
 
-## The four pages
+## The five pages
 
 | Page | Question it answers |
 | ------ | ------ |
 | [The parts of a loop]({{< relref "anatomy.md" >}}) | What's inside a production loop |
+| [The four levels of loops]({{< relref "levels.md" >}}) | How many loops you need, and what each one buys |
 | [Open vs. closed loops]({{< relref "open-vs-closed.md" >}}) | Which shape to choose, and when |
 | [Fleet looping]({{< relref "fleet-looping.md" >}}) | How looping scales to teams of agents |
 | [Building a loop]({{< relref "building-a-loop.md" >}}) | Off-the-shelf tool or your own SDK |
 
-Any loop you meet is also a point on **three independent axes** — the pages above detail each:
+The two framings compose. [Levels]({{< relref "levels.md" >}}) tell you **how many loops to
+wrap** around the work; the axes below describe **each individual loop** you end up with — so
+any loop you meet is a point on three independent axes:
 
 | Axis | Options | Detailed in |
 | ------ | ------ | ------ |

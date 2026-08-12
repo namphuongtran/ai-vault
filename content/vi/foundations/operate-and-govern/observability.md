@@ -52,6 +52,9 @@ Khi câu trả lời sai, trace cho biết lỗi ở *retrieval* hay ở *model*
 - **Kiểm soát chi phí** — token là tiền; bạn không quản được thứ bạn không đo.
 - **Drift** — chất lượng có thể đổi khi dữ liệu, prompt, hoặc version mô hình đổi; online eval
   bắt được điều đó.
+- **Cải thiện** — trace còn là một *đầu vào*, không chỉ là bản ghi: đó là thứ mà một
+  [self-improving agent]({{< relref "/deep-dives/self-improving-agents" >}}) đọc để tìm ra lỗi
+  nó cứ lặp đi lặp lại.
 
 ## Offline vs online
 

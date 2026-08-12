@@ -1,7 +1,7 @@
 ---
 title: "Open vs closed loop"
 linkTitle: "Open vs closed"
-weight: 2
+weight: 3
 description: Trục kiến trúc — khám phá tự do, hay đo theo tiêu chí định trước.
 ---
 

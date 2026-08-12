@@ -27,7 +27,8 @@ flowchart LR
 ## The six parts
 
 - **Discovery / automations** — finds work without a human trigger: a schedule, a webhook, a
-  scanner. This is what lets a loop run *unattended*.
+  scanner. This is what lets a loop run *unattended*; see
+  [the four levels]({{< relref "levels.md" >}}) for the trigger types and where to put them.
 - **Decomposition** — an orchestrator breaks the goal into tasks a worker can own. See
   [fleet looping]({{< relref "fleet-looping.md" >}}) when this goes multi-level.
 - **Worker** — an agent with [tools]({{< relref "tool-function-calling.md" >}}) and

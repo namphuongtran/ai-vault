@@ -35,7 +35,9 @@ distracts the model and costs money. The goal is the **right** information, not 
 ## Techniques
 
 - **Retrieval** — fetch only the passages relevant to *this* request (RAG).
-- **Summarization / compaction** — condense old turns when a conversation grows long.
+- **Summarization / compaction** — condense old turns when a conversation grows long. In a
+  retry loop, compact each *failed attempt* down to what it taught, and keep the current
+  artifact plus the criteria in full.
 - **Pruning** — drop stale tool results and history the model no longer needs.
 - **Ordering & caching** — put stable content first so it can be cached and reused cheaply.
 

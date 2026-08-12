@@ -10,9 +10,10 @@ description: Thiết kế vòng lặp như một hệ thống — cấu tạo, c
 ## Mục tiêu
 
 Trả lời đúng chuỗi câu hỏi một builder sẽ hỏi về loop: loop engineering *là gì*, cấu tạo gồm
-những phần nào, có bao nhiêu hình dạng, vì sao cần — và có bắt buộc code trên SDK không, hay
-dùng được luôn [Claude Code / Codex]({{< relref "ai-coding-assistants.md" >}}) có sẵn? Mỗi câu
-hỏi có một trang riêng; đây là bản đồ.
+những phần nào, cần bao nhiêu loop, có bao nhiêu hình dạng, vì sao cần — và có bắt buộc code
+trên SDK không, hay dùng được luôn
+[Claude Code / Codex]({{< relref "ai-coding-assistants.md" >}}) có sẵn? Mỗi câu hỏi có một
+trang riêng; đây là bản đồ.
 
 ## Là gì
 
@@ -61,16 +62,19 @@ flowchart LR
 | Đầu 2026 | **Productised loop** — validator quyết định khi nào việc xong | "Xong" phải được *kiểm*, không phải tự tuyên bố |
 | Giữa 2026 | **Orchestration** — supervisor lập lịch, điều phối các worker loop | Một vòng lặp không scale; đội các vòng lặp thì có |
 
-## Bốn trang
+## Năm trang
 
 | Trang | Câu hỏi nó trả lời |
 | ------ | ------ |
 | [Cấu tạo của loop]({{< relref "anatomy.md" >}}) | Bên trong một loop production có gì |
+| [Bốn cấp độ loop]({{< relref "levels.md" >}}) | Cần bao nhiêu loop, và mỗi loop mua về cái gì |
 | [Open vs closed loop]({{< relref "open-vs-closed.md" >}}) | Chọn hình dạng nào, khi nào |
 | [Fleet looping]({{< relref "fleet-looping.md" >}}) | Looping scale lên đội agent ra sao |
 | [Tự xây một loop]({{< relref "building-a-loop.md" >}}) | Dùng tool có sẵn hay SDK riêng |
 
-Mọi loop bạn gặp cũng là một điểm trên **ba trục độc lập** — các trang trên chi tiết từng trục:
+Hai cách nhìn này bổ sung cho nhau. [Cấp độ]({{< relref "levels.md" >}}) cho biết **cần bọc bao
+nhiêu loop** quanh công việc; các trục bên dưới mô tả **từng loop riêng lẻ** bạn có — nên mọi
+loop bạn gặp đều là một điểm trên ba trục độc lập:
 
 | Trục | Lựa chọn | Chi tiết ở |
 | ------ | ------ | ------ |

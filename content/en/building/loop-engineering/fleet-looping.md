@@ -1,7 +1,7 @@
 ---
 title: "Fleet Looping"
 linkTitle: "Fleet looping"
-weight: 3
+weight: 4
 description: How looping scales from one self-correcting agent to a coordinated team — and who watches it.
 ---
 

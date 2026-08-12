@@ -55,6 +55,55 @@ deploy sequence as a procedural skill. Next week, faced with a new service, it r
 lesson and reuses the skill — succeeding first try. The model never changed; the *system
 around it* learned.
 
+## Learning from traces
+
+The three mechanisms work *inside* one task. Improving the agent across *many* tasks needs a
+different input, because it needs a different source of truth. In ordinary software the truth
+about behaviour is the code. In an agent it isn't — the same code produces a different run
+every time, so what actually happened only exists in the
+[trace]({{< relref "observability.md" >}}): the context it was given, the tools it called, the
+results that came back, and the verdict on the output.
+
+A second agent, running after the fact over a batch of traces, reads them for a failure that
+*repeats*:
+
+- a tool called with the wrong arguments, run after run;
+- a tool never called at all, because nothing in the context told the agent it existed;
+- a preference the user stated once and the agent keeps ignoring.
+
+It then proposes the fix, and the fix lands in one of two places:
+
+- **Procedural** — the prompt, tool descriptions, and skills: *how* the work gets done.
+- **Semantic** — stored facts and preferences: an assistant that learns to write formally to
+  your manager and casually to your team.
+
+The semantic half only works if corrections have a **write path**. When a user blocks an
+over-casual draft to their manager, that correction has to be consolidated into a durable
+preference, not just applied to the one message — otherwise the same mistake comes back next
+week. See [semantic memory]({{< relref "/deep-dives/agent-memory/semantic-memory" >}}) for
+where it is stored.
+
+## What to change first
+
+When the analysis finds a repeating failure, resist rewriting the architecture. Most agent
+failures are not *the model wasn't smart enough*; they are *the model didn't have the right
+information*. Work down this list, and stop as soon as the failure stops:
+
+1. **Memory and skills** — it lacked a fact or a procedure it should have had.
+2. **Prompts and tool descriptions** — it had what it needed and used it wrong.
+3. **Tools** — it needed a capability nothing gave it.
+4. **Architecture** — only when the agent keeps failing something that is *not allowed* to
+   fail, such as a compliance step. Then take the decision away from the model and make it a
+   deterministic step in code.
+
+Each rung costs more to change and more to live with. The top two cover most of it.
+
+None of this merges safely without evals. A new prompt or a newly stored preference can fix
+one case and quietly break five others, so every proposed change runs against an
+[eval set]({{< relref "/deep-dives/evaluation-in-practice" >}}) first. Until that set is
+trustworthy, a human approves the merge — the level 4 placement in
+[the four levels of loops]({{< relref "/building/loop-engineering/levels" >}}).
+
 ## Where it fits
 
 Self-improvement is the payoff of the memory types working together, applied in a
@@ -77,3 +126,4 @@ the learning *collective* — one agent's lesson helps the whole team.
 - Shinn et al., *Reflexion: Language Agents with Verbal Reinforcement Learning* (2023) — [arXiv:2303.11366](https://arxiv.org/abs/2303.11366)
 - Wang et al., *Voyager: An Open-Ended Embodied Agent with Large Language Models* (2023) — [arXiv:2305.16291](https://arxiv.org/abs/2305.16291)
 - Huang et al., *Large Language Models Can Self-Improve* (2022) — [arXiv:2210.11610](https://arxiv.org/abs/2210.11610)
+- Runkle, *The Art of Loop Engineering* (2026) — [langchain.com](https://www.langchain.com/blog/the-art-of-loop-engineering)
