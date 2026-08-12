@@ -48,7 +48,9 @@ Nên "bọn mình dùng hybrid search" và "bọn mình dùng agentic RAG" khôn
 đầu gọi tên một bước, cái sau gọi tên cả một hệ thống.
 
 Các danh sách kiểu "sáu kiến trúc RAG" thường ép cả ba trục thành một hàng sáu mục, nên không
-danh sách nào khớp danh sách nào.
+danh sách nào khớp danh sách nào. Hybrid search là ví dụ rõ nhất: kết hợp dense và keyword chỉ
+là một bước trên trục kỹ thuật, nên nó nằm *bên trong* một kiến trúc. Danh sách nào xếp nó cạnh
+Graph RAG là đang so một bước với cả một hệ thống.
 
 ## Trong phần này
 

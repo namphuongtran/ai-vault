@@ -48,7 +48,9 @@ So "we use hybrid search" and "we use agentic RAG" are not the same kind of stat
 first names a step, the second names a whole system.
 
 Lists of "six RAG architectures" usually flatten all three axes into one row of six, which is
-why no two of them agree.
+why no two of them agree. Hybrid search is the clearest case: combining dense and keyword
+retrieval is one step on the technique axis, so it lives *inside* an architecture. A list that
+puts it beside Graph RAG is comparing a step to a system.
 
 ## In this section
 
