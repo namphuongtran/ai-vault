@@ -12,7 +12,8 @@
 
 - This repo has no unit tests. The test cycle is `npm run lint:md` and `npm run build`.
 - **A broken `relref` fails the Hugo build.** `refLinksErrorLevel` is not set in `hugo.yaml`, so Hugo uses its default of `ERROR`. This is the link test. Do not add a link check script.
-- Baseline measured on 2026-08-12 before any change: build reports **EN 104 pages, VI 102 pages**. After this plan the counts must be **EN 107, VI 105**.
+- **The gates are `lint 0 issues` and a successful build. Page counts are a sanity signal, not a gate.** Report the number, and do not treat a mismatch as failure on its own.
+- Page counts measured on 2026-08-12: **EN 104, VI 102** before any change, and **EN 106, VI 104** after Task 1. Turning a flat page into a Hugo section is *not* net-zero in Hugo's `Pages` metric, so the running expectation is EN 107 / VI 105 after Task 2, EN 108 / VI 106 after Task 3, EN 109 / VI 107 after Task 4, and unchanged after Task 5. The authoritative check is that `content/{en,vi}/deep-dives/types-of-rag/` holds exactly the intended files and that `/deep-dives/types-of-rag/` still resolves.
 - Every English page has a Vietnamese mirror with the same headings and the same structure.
 - Mermaid blocks are **identical in EN and VI, with English labels**. Use `flowchart` only. Do not use `<br/>`, parentheses, or colons inside `[]` labels.
 - Vietnamese pages carry a `linkTitle` in the front matter so the sidebar keeps the English label. English pages do not need one, except on `_index.md` which already has it.
@@ -114,7 +115,7 @@ Replace it with:
 
 Run: `npm run lint:md:fix && npm run lint:md && npm run build 2>&1 | tail -12`
 
-Expected: markdownlint reports `0 issues`. The build succeeds and still reports `EN 104` and `VI 102`, because a page moved rather than being added.
+Expected: markdownlint reports `0 issues`. The build succeeds. Record the page counts and report them; as of 2026-08-12 this step produced `EN 106`, `VI 104`. A flat page becoming a section is not net-zero, so do not treat a change from the pre-task 104/102 as a failure.
 
 - [ ] **Step 8: Confirm the URL did not move**
 
@@ -326,7 +327,7 @@ chunk, và đó là lý do chỉ chọn Graph RAG khi giá trị thật sự n�
 
 Run: `npm run lint:md:fix && npm run lint:md && npm run build 2>&1 | tail -12`
 
-Expected: markdownlint reports `0 issues`. The build succeeds and reports `EN 105`, `VI 103`.
+Expected: markdownlint reports `0 issues`. The build succeeds. Expected page counts `EN 107`, `VI 105`. Report the actual numbers; they are a sanity signal, not a gate.
 
 - [ ] **Step 4: Commit**
 
@@ -523,7 +524,7 @@ nhận ra. Hãy kiểm tra tay các mô tả cho những tài liệu giá trị 
 
 Run: `npm run lint:md:fix && npm run lint:md && npm run build 2>&1 | tail -12`
 
-Expected: markdownlint reports `0 issues`. The build succeeds and reports `EN 106`, `VI 104`.
+Expected: markdownlint reports `0 issues`. The build succeeds. Expected page counts `EN 108`, `VI 106`. Report the actual numbers; they are a sanity signal, not a gate.
 
 The relref target was verified on 2026-08-12: `content/en/foundations/understand/multimodality.md`
 and `content/vi/foundations/understand/multimodality.md` exist, and the filename is unique within
@@ -741,7 +742,7 @@ scoring và escalation trong
 
 Run: `npm run lint:md:fix && npm run lint:md && npm run build 2>&1 | tail -12`
 
-Expected: markdownlint reports `0 issues`. The build succeeds and reports `EN 107`, `VI 105`.
+Expected: markdownlint reports `0 issues`. The build succeeds. Expected page counts `EN 109`, `VI 107`. Report the actual numbers; they are a sanity signal, not a gate.
 
 - [ ] **Step 4: Commit**
 
@@ -1034,7 +1035,7 @@ the next line. Replace the whole item with:
 
 Run: `npm run lint:md:fix && npm run lint:md && npm run build 2>&1 | tail -12`
 
-Expected: markdownlint reports `0 issues`. The build succeeds and reports `EN 107`, `VI 105`.
+Expected: markdownlint reports `0 issues`. The build succeeds. Expected page counts `EN 109`, `VI 107`. Report the actual numbers; they are a sanity signal, not a gate.
 A broken nav link would fail this build, so a clean build is the link test.
 
 - [ ] **Step 6: Confirm every inbound link still resolves**
