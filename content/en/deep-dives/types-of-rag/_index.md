@@ -1,7 +1,10 @@
 ---
 title: "Types of RAG"
+linkTitle: "Types of RAG"
 weight: 3
-description: The RAG family — standard, advanced, agentic, graph, multimodal — and which is an architecture vs a technique.
+type: docs
+no_list: true
+description: The RAG family — standard, advanced, self-correcting, graph, multimodal, agentic — and which is an architecture vs a technique.
 ---
 
 "RAG" has grown into a family of variants. The confusion is that some are distinct
@@ -50,7 +53,7 @@ flowchart TD
 
 - Improve retrieval → [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}).
 - Build the standard pipeline → [Building a RAG system]({{< relref "/building/building-rag" >}}).
-- Agent-driven retrieval → Agentic RAG (Stage 2, coming soon).
+- Agent-driven retrieval → [Agentic RAG]({{< relref "/building/agentic-rag" >}}).
 
 Start simple. Move to advanced when retrieval is the bottleneck, and to agentic only when the
 question genuinely needs multi-step reasoning.

@@ -2,7 +2,9 @@
 title: "Types of RAG"
 linkTitle: "Types of RAG"
 weight: 3
-description: Họ RAG — standard, advanced, agentic, graph, multimodal — và cái nào là kiến trúc vs kỹ thuật.
+type: docs
+no_list: true
+description: Họ RAG — standard, advanced, self-correcting, graph, multimodal, agentic — và cái nào là kiến trúc vs kỹ thuật.
 ---
 
 "RAG" đã phát triển thành một họ biến thể. Điều gây nhầm là: có cái là **kiến trúc** riêng, có
@@ -51,7 +53,7 @@ flowchart TD
 
 - Cải thiện truy xuất → [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}).
 - Dựng pipeline chuẩn → [Building a RAG system]({{< relref "/building/building-rag" >}}).
-- Truy xuất do agent dẫn dắt → Agentic RAG (Giai đoạn 2, sắp có).
+- Truy xuất do agent dẫn dắt → [Agentic RAG]({{< relref "/building/agentic-rag" >}}).
 
 Bắt đầu đơn giản. Lên advanced khi truy xuất là nút thắt, và lên agentic chỉ khi câu hỏi thực sự
 cần suy luận nhiều bước.
