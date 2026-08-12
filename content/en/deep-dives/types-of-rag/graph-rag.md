@@ -42,8 +42,8 @@ summaries rather than from raw chunks.
 
 The same structure is used elsewhere in this vault for a different job. See
 [Multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}) for the knowledge graph as
-*shared memory between agents*. Here it is a *retrieval index*, and the build steps are the
-same.
+*shared memory between agents*. Here it is a *retrieval index*. The extract and
+resolve steps are the same; that page adds the steps an agent team needs on top.
 
 ## When to use it
 

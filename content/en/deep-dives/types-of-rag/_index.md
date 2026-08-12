@@ -26,21 +26,29 @@ thing. This section separates them.
 
 ## Architecture, loop, or technique
 
-This is the distinction that clears up the confusion. The family above holds three different
-kinds of thing:
+This is the distinction that clears up the confusion. The family above mixes three different
+kinds of thing, and they are **three axes, not three bins**. Every RAG system has a shape and
+a flow, so one variant can sit on more than one axis.
 
-| Kind | What it changes | Members |
+| Axis | What it changes | Members |
 | ------ | ------ | ------ |
-| **Architecture** | the *shape*: what you retrieve from | Standard, Graph, Multimodal, Agentic |
+| **Architecture** | the *shape*: what you retrieve from | Standard, Graph, Multimodal |
 | **Control loop** | the *flow*: retrieve once, or grade and retry | CRAG, Self-RAG |
 | **Technique** | one *step* inside any of the above | hybrid search, re-ranking, query transforms |
 
-So "we use hybrid search" and "we use agentic RAG" are not the same kind of statement. The
-first names a step, the second names a shape.
+**Advanced RAG** is not a fourth kind. It is the technique row, bundled: a standard
+architecture with better retrieval steps inside it. See
+[Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}).
 
-Lists of "six RAG architectures" usually mix all three kinds together, which is why no two of
-them agree. Hybrid search is the clearest case: it is a retrieval step, and it belongs inside
-[Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}), not beside it.
+**Agentic RAG** moves on two axes at once. The agent chooses *what to retrieve from*, which is
+shape, and it decides *when to stop*, which is flow. That is exactly why published lists
+disagree about where to put it.
+
+So "we use hybrid search" and "we use agentic RAG" are not the same kind of statement. The
+first names a step, the second names a whole system.
+
+Lists of "six RAG architectures" usually flatten all three axes into one row of six, which is
+why no two of them agree.
 
 ## In this section
 
@@ -79,7 +87,10 @@ flowchart TD
     Shape -->|plain text| R{Is retrieval good enough}
     R -->|yes| Naive[Standard RAG]
     R -->|no| Adv[Advanced RAG - hybrid and rerank]
-    Adv --> Cost{Is a wrong answer expensive}
+    Graph --> Cost{Is a wrong answer expensive}
+    MM --> Cost
+    Naive --> Cost
+    Adv --> Cost
     Cost -->|yes| SC[Add a self-correcting loop]
     Cost -->|no| Multi{Needs multi-step reasoning}
     SC --> Multi

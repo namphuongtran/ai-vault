@@ -30,6 +30,11 @@ flowchart TD
     S -->|yes| OUT[Answer with citations]
 ```
 
+That diagram simplifies both papers in one way each. In CRAG the refine pass also runs on the
+*correct* branch, not only on ambiguous. And the Self-RAG retry edge is how agent frameworks
+commonly implement it; in the paper the model generates from several retrieved passages in
+parallel, and the reflection tokens pick the best-supported one.
+
 ## How they differ
 
 | | CRAG | Self-RAG |

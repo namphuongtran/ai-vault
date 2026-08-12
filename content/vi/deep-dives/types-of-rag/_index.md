@@ -26,20 +26,29 @@ Phần này tách bạch chúng.
 
 ## Kiến trúc, vòng lặp, hay kỹ thuật
 
-Đây là phân biệt gỡ được sự nhầm lẫn. Cả họ ở trên chứa ba loại thứ khác nhau:
+Đây là phân biệt gỡ được sự nhầm lẫn. Cả họ ở trên trộn ba loại thứ khác nhau, và chúng là **ba
+trục, không phải ba ngăn**. Mọi hệ RAG đều có một hình hài và một dòng chảy, nên một biến thể có
+thể nằm trên nhiều trục.
 
-| Loại | Thay đổi cái gì | Thành viên |
+| Trục | Thay đổi cái gì | Thành viên |
 | ------ | ------ | ------ |
-| **Kiến trúc** | *hình hài*: bạn truy xuất từ đâu | Standard, Graph, Multimodal, Agentic |
+| **Kiến trúc** | *hình hài*: bạn truy xuất từ đâu | Standard, Graph, Multimodal |
 | **Vòng lặp điều khiển** | *dòng chảy*: truy xuất một lần, hay chấm rồi thử lại | CRAG, Self-RAG |
 | **Kỹ thuật** | một *bước* bên trong bất kỳ loại nào ở trên | hybrid search, re-ranking, query transform |
 
-Nên "bọn mình dùng hybrid search" và "bọn mình dùng agentic RAG" không cùng loại phát biểu. Cái
-đầu gọi tên một bước, cái sau gọi tên một hình hài.
+**Advanced RAG** không phải loại thứ tư. Nó chính là dòng kỹ thuật, gói lại: một kiến trúc
+standard với các bước truy xuất tốt hơn bên trong. Xem
+[Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}).
 
-Các danh sách kiểu "sáu kiến trúc RAG" thường trộn cả ba loại vào nhau, nên không danh sách nào
-khớp danh sách nào. Hybrid search là ví dụ rõ nhất: nó là một bước truy xuất, và nó thuộc về
-bên trong [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}), không phải đứng cạnh.
+**Agentic RAG** dịch chuyển trên hai trục cùng lúc. Agent chọn *truy xuất từ đâu*, đó là hình
+hài, và nó quyết định *khi nào dừng*, đó là dòng chảy. Đúng vì vậy mà các danh sách công bố
+không thống nhất được nên xếp nó vào đâu.
+
+Nên "bọn mình dùng hybrid search" và "bọn mình dùng agentic RAG" không cùng loại phát biểu. Cái
+đầu gọi tên một bước, cái sau gọi tên cả một hệ thống.
+
+Các danh sách kiểu "sáu kiến trúc RAG" thường ép cả ba trục thành một hàng sáu mục, nên không
+danh sách nào khớp danh sách nào.
 
 ## Trong phần này
 
@@ -78,7 +87,10 @@ flowchart TD
     Shape -->|plain text| R{Is retrieval good enough}
     R -->|yes| Naive[Standard RAG]
     R -->|no| Adv[Advanced RAG - hybrid and rerank]
-    Adv --> Cost{Is a wrong answer expensive}
+    Graph --> Cost{Is a wrong answer expensive}
+    MM --> Cost
+    Naive --> Cost
+    Adv --> Cost
     Cost -->|yes| SC[Add a self-correcting loop]
     Cost -->|no| Multi{Needs multi-step reasoning}
     SC --> Multi

@@ -71,10 +71,10 @@ So sánh đầy đủ — gồm cả prompting là đòn bẩy thứ ba — nằ
 
 ## Các biến thể
 
-"RAG" là một họ, không phải một thiết kế duy nhất — standard, advanced, agentic, graph và
-multimodal. Và vài thứ bạn hay nghe (hybrid search, re-ranking) là *kỹ thuật* dùng bên trong
-một biến thể, không phải loại riêng. Xem [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}})
-để phân biệt cái nào với cái nào.
+"RAG" là một họ, không phải một thiết kế duy nhất — standard, advanced, self-correcting, graph,
+multimodal và agentic. Và vài thứ bạn hay nghe (hybrid search, re-ranking) là *kỹ thuật* dùng
+bên trong một biến thể, không phải loại riêng. Xem [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}})
+để phân biệt kiến trúc, vòng lặp điều khiển, và kỹ thuật.
 
 ## Điểm mạnh & hạn chế
 

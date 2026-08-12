@@ -31,6 +31,11 @@ flowchart TD
     S -->|yes| OUT[Answer with citations]
 ```
 
+Sơ đồ trên rút gọn mỗi bài một chỗ. Trong CRAG, bước refine cũng chạy trên nhánh *correct*,
+không chỉ trên nhánh ambiguous. Còn cạnh thử lại của Self-RAG là cách các framework agent hay
+cài đặt; trong bài gốc, model sinh song song từ nhiều đoạn truy xuất được, rồi các reflection
+token chọn ra đoạn được chống lưng tốt nhất.
+
 ## Khác nhau ở đâu
 
 | | CRAG | Self-RAG |
@@ -64,7 +69,7 @@ Standard RAG trả lời dựa trên chính sách nhân viên và sai một các
   dụng cho nhân viên, và chạy lần tìm thứ hai giới hạn trong các hợp đồng contractor.
 - **Self-RAG** viết nháp trước, phát hiện khẳng định "contractor được đặt hạng thương gia"
   không có đoạn nào chống lưng, và truy xuất lại trước khi trả lời. Nếu lượt thứ hai vẫn không
-  thấy gì, nó nói rằng chính sách chưa bao trường hợp này.
+  thấy gì, nó nói rằng chính sách chưa bao quát trường hợp này.
 
 Cả hai tới cùng một chỗ. CRAG tới bằng cách nghi ngờ đầu vào, Self-RAG bằng cách nghi ngờ chính
 mình.

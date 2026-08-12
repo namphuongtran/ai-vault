@@ -42,8 +42,8 @@ thô.
 
 Cùng cấu trúc này được dùng ở nơi khác trong vault cho một việc khác. Xem
 [Multi-agent systems]({{< relref "/deep-dives/multi-agent" >}}) cho knowledge graph với vai
-trò *bộ nhớ dùng chung giữa các agent*. Ở đây nó là *index truy xuất*, và các bước dựng là như
-nhau.
+trò *bộ nhớ dùng chung giữa các agent*. Ở đây nó là *index truy xuất*. Bước extract và
+resolve là như nhau; trang kia bổ sung các bước mà một nhóm agent cần thêm.
 
 ## Khi nào dùng
 
