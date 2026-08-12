@@ -36,7 +36,9 @@ không liên quan làm mô hình phân tâm và tốn tiền. Mục tiêu là th
 ## Kỹ thuật
 
 - **Retrieval** — chỉ lấy các đoạn liên quan đến *request này* (RAG).
-- **Summarization / compaction** — cô đọng các lượt cũ khi hội thoại dài ra.
+- **Summarization / compaction** — cô đọng các lượt cũ khi hội thoại dài ra. Trong vòng lặp
+  thử lại, hãy nén *mỗi lần fail* xuống còn bài học nó để lại, và giữ nguyên tạo tác hiện tại
+  cùng bộ tiêu chí.
 - **Pruning** — bỏ các kết quả tool và lịch sử mô hình không còn cần.
 - **Ordering & caching** — đặt nội dung ổn định lên trước để cache và tái dùng rẻ hơn.
 

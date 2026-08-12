@@ -50,6 +50,9 @@ When an answer is wrong, the trace shows whether the fault was in *retrieval* or
 - **Cost control** — tokens are money; you can't manage what you don't measure.
 - **Drift** — quality can change when data, prompts, or the model version change; online evals
   catch it.
+- **Improvement** — traces are also an *input*, not just a record: they are what a
+  [self-improving agent]({{< relref "/deep-dives/self-improving-agents" >}}) reads to find the
+  failure it keeps repeating.
 
 ## Offline vs. online
 

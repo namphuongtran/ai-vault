@@ -47,6 +47,9 @@ append the result, and loop — until the model answers or a stop condition fire
 
 - **Context management** — the [window]({{< relref "context-engineering.md" >}}) is
   finite; as the loop grows you must summarize or trim old tool results, or the run breaks.
+  This matters most on a **retry**: carrying the whole failed transcript forward wastes the
+  window and re-anchors the model on its own dead ends. Keep the lesson, the current state of
+  the artifact, and the criteria it has to meet — drop the rest.
 - **Tool execution** — validate arguments, gate risky actions behind approval, run parallel
   calls, and return errors as results the model can recover from.
 - **Memory** — carry facts across turns (and sessions) without stuffing everything into the

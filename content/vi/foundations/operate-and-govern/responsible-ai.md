@@ -43,6 +43,22 @@ flowchart LR
   độ tin cậy thấp. Cho khối lượng lớn: bot support, kiểm duyệt nội dung. Rẻ nhất trong ba
   cách, nhưng chỉ tốt bằng đúng cái trigger của nó.
 
+## Khi người duyệt thành nút cổ chai
+
+Các cổng kiểm chạy tốt cho tới khi khối lượng tăng. Lúc đó một người duyệt chặn mọi thứ, và
+chính hàng đợi trở thành rủi ro: công việc đứng lại, còn những lần duyệt có diễn ra thì bị ký
+cho có. Ba lối ra, xếp theo mức hiệu quả:
+
+- **Trao quyền duyệt cho chính người hưởng lợi từ kết quả.** Người nhận bản nháp email đánh giá
+  nó nhanh và chuẩn hơn một người duyệt tập trung, vì họ vốn đang chú ý tới việc đó.
+- **Để model quyết định khi nào cần hỏi.** Một classifier rẻ chạy trên từng hành động đề xuất —
+  việc này có đảo ngược được không, có đụng tới tiền hay khách hàng không, độ tin cậy có thấp
+  không — biến một cổng chặn toàn bộ thành một ngoại lệ. Đây chính là mẫu escalation, áp theo
+  từng hành động thay vì theo cả hệ thống.
+- **Đặt yêu cầu duyệt ngay chỗ người duyệt đang làm việc.** Bấm duyệt trong công cụ chat họ mở
+  sẵn tốn vài giây; duyệt trong một console riêng tốn một lần chuyển ngữ cảnh, và đó là khác
+  biệt giữa một lần review thật với một cú bấm phản xạ.
+
 ## Ví dụ — sàng lọc tuyển dụng làm đúng cách
 
 AI xếp hạng 500 hồ sơ ứng tuyển. Phiên bản có trách nhiệm trông thế này:
@@ -88,7 +104,7 @@ Hallucination, toxicity và prompt injection được xử lý ở đúng nơi c
 - **Hạn chế** — tốn độ trễ và throughput; reviewer duyệt cho có khi khối lượng lớn
   (**automation bias**) — hãy đo tần suất họ bác model, vì tỷ lệ override 0% nghĩa là review
   không có thật; giám sát đặt khắp nơi làm cùn sự chú ý ở chỗ quan trọng — đặt cổng theo tác
-  động, đừng đặt mặc định.
+  động, đừng đặt mặc định, và những cổng giữ lại thì dời tới đúng chỗ người duyệt đang ngồi.
 
 ## Nguồn
 

@@ -26,7 +26,8 @@ flowchart LR
 ## Sáu thành phần
 
 - **Discovery / automations** — tự tìm việc không cần con người kích hoạt: lịch chạy,
-  webhook, scanner. Đây là cái cho loop chạy *không người canh*.
+  webhook, scanner. Đây là cái cho loop chạy *không người canh*; xem
+  [bốn cấp độ loop]({{< relref "levels.md" >}}) cho các loại trigger và chỗ nên đặt chúng.
 - **Decomposition** — orchestrator chia mục tiêu thành các task worker nhận được. Xem
   [fleet looping]({{< relref "fleet-looping.md" >}}) khi việc này thành nhiều tầng.
 - **Worker** — một agent với [tools]({{< relref "tool-function-calling.md" >}}) và

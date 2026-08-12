@@ -47,6 +47,9 @@ quả, và lặp — đến khi model trả lời hoặc chạm điều kiện d
 
 - **Quản lý context** — [window]({{< relref "context-engineering.md" >}}) là hữu hạn;
   khi vòng lặp dài ra, bạn phải tóm tắt hoặc cắt bớt kết quả tool cũ, nếu không run sẽ hỏng.
+  Điều này quan trọng nhất lúc **thử lại**: mang nguyên transcript của lần fail đi tiếp vừa phí
+  window vừa neo model lại vào chính các ngõ cụt của nó. Hãy giữ bài học, trạng thái hiện tại
+  của tạo tác, và tiêu chí nó phải đạt — bỏ phần còn lại.
 - **Thực thi tool** — validate tham số, chặn hành động rủi ro sau phê duyệt, chạy gọi song song,
   và trả lỗi dưới dạng kết quả để model phục hồi được.
 - **Memory** — mang dữ kiện qua các lượt (và các phiên) mà không nhồi mọi thứ vào window.

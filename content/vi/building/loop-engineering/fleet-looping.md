@@ -1,7 +1,7 @@
 ---
 title: "Fleet looping"
 linkTitle: "Fleet looping"
-weight: 3
+weight: 4
 description: Looping scale từ một agent tự sửa lên một đội phối hợp — và ai giám sát nó.
 ---
 

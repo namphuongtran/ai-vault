@@ -1,7 +1,7 @@
 ---
 title: "Tự xây một loop"
 linkTitle: "Tự xây một loop"
-weight: 4
+weight: 5
 description: Coding agent có sẵn hay SDK riêng — và một closed loop thật, mổ xẻ ra.
 ---
 

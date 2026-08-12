@@ -42,6 +42,22 @@ flowchart LR
   confidence is low. For high volume: support bots, content moderation. Cheapest of the
   three, but only as good as its trigger.
 
+## When the reviewer becomes the bottleneck
+
+Gates work until volume grows. Then one reviewer holds up everything, and the queue itself
+becomes the risk: work stalls, and the approvals that do happen get rubber-stamped. Three ways
+out, in order of how much they buy you:
+
+- **Give the approval to whoever benefits from the result.** The end user of a drafted email
+  is a better and faster judge of it than a central reviewer, and they are already paying
+  attention.
+- **Let the model decide when to ask.** A cheap classifier on each proposed action — is this
+  reversible, does it touch money or a customer, is confidence low — turns a blanket gate into
+  an exception. This is the escalation pattern, applied per action rather than per system.
+- **Put the request where the reviewer already works.** Approving in the chat tool they have
+  open costs seconds; approving in a separate console costs a context switch, and that is the
+  difference between a real review and a reflex click.
+
 ## Example — the hiring screen, done responsibly
 
 An AI ranks 500 job applications. A responsible version looks like this:
@@ -88,7 +104,8 @@ Hallucination, toxicity, and prompt injection are covered where they're fought:
 - **Limitations** — costs latency and throughput; reviewers rubber-stamp under volume
   (**automation bias**) — track how often they disagree with the model, because a 0% override
   rate means the review isn't real; oversight added everywhere dulls attention where it
-  matters — place gates by impact, not by default.
+  matters — place gates by impact, not by default, and move the ones you keep to where the
+  reviewer already is.
 
 ## Sources
 
