@@ -7,6 +7,9 @@ description: Chunking, hybrid retrieval, re-ranking, query transform và đánh 
 Tiếp nối [RAG ở phần Nền tảng]({{< relref "rag.md" >}}). RAG cơ bản thường kém hiệu
 quả vì chất lượng *truy xuất*, không phải do mô hình. Các kỹ thuật sau nhắm vào điều đó.
 
+Trong họ [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}), đây là trục *kỹ thuật*:
+các bước bạn thêm vào bên trong bất kỳ kiến trúc nào, không phải một kiến trúc riêng.
+
 ## Chiến lược chunking
 
 Cách chia tài liệu ảnh hưởng mạnh đến chất lượng truy xuất.
