@@ -26,7 +26,7 @@ rồi vận hành:
 flowchart LR
     A[Prompt patterns] --> B[Vector databases] --> C[Types of RAG] --> D[Advanced RAG]
     D --> E[Agent patterns] --> F[Agent memory] --> M[Multi-agent] --> SE[Self-improving] --> CU[Computer use]
-    CU --> G[Adaptation] --> H[Evaluation in practice]
+    CU --> G[Adaptation] --> H[Evaluation in practice] --> RE[RAG evaluation]
 ```
 
 ## Trong phần này
@@ -53,3 +53,5 @@ flowchart LR
     fine-tuning.
 11. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — bộ eval,
    LLM-as-judge, offline vs online, regression testing.
+12. [RAG evaluation]({{< relref "/deep-dives/rag-evaluation" >}}) — bốn chỉ số RAGAS, và tách
+   lỗi truy xuất khỏi lỗi sinh câu trả lời.

@@ -1,7 +1,7 @@
 ---
 title: "Loop Engineering"
 linkTitle: "Loop Engineering"
-weight: 6
+weight: 7
 type: docs
 no_list: true
 description: Thiết kế vòng lặp như một hệ thống — cấu tạo, các hình dạng, và khi nào mới cần tới SDK.

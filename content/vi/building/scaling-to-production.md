@@ -70,6 +70,9 @@ trong luồng. Self-host mua được sự kiểm soát và bắt bạn trả b�
 **batching** (gộp các request đồng thời qua GPU để tăng throughput), và autoscaling thành việc
 *của bạn*. Đa số team nên ở lại với API lâu hơn nhiều so với họ nghĩ.
 
+Toàn bộ tầng inference — quyết định tự host, quantize trọng số, và chọn engine — nằm ở
+[Serving models]({{< relref "/building/serving-models" >}}).
+
 ## Queue và async
 
 Một lời gọi model có thể mất vài giây tới vài phút — quá lâu để giữ một HTTP request mở ở quy
@@ -78,6 +81,9 @@ worker xử lý queue, client poll hoặc nhận webhook. Cách này hấp thụ
 lại thay vì app đổ), và cho bạn chặn concurrency ở mức quota nhà cung cấp cho phép. Thiết yếu
 cho [agent]({{< relref "/building/agent-harness" >}}) và workload batch; một chat một phát
 ngắn thì cứ để đồng bộ.
+
+Admission control, backpressure, và routing theo cache qua nhiều replica nằm ở
+[Load balancing & queuing]({{< relref "/building/serving-models/load-balancing-queuing" >}}).
 
 ## Reliability
 
@@ -91,6 +97,9 @@ Model sẽ lỗi, timeout, và rate-limit — hãy thiết kế cho điều đó
 - **Graceful degradation** — khi đường AI chết hẳn, trả về *một thứ gì đó* hữu ích: kết quả
   cache, keyword search thay cho RAG, hoặc một câu "thử lại sau" thành thật — đừng bao giờ để
   sập 100% chỉ vì một model không khả dụng.
+
+Mỗi kiểu hỏng cần một cách phản ứng khác nhau — xem
+[Routing & fallback]({{< relref "/building/serving-models/routing-and-fallback" >}}).
 
 ## Chi phí và capacity ở quy mô
 

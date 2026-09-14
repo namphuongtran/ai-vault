@@ -69,6 +69,9 @@ fine-tuned model in the loop. Self-hosting buys control and costs you ops: GPU c
 **batching** (group concurrent requests through the GPU for throughput), and autoscaling
 become *your* problem. Most teams should stay on the API far longer than they think.
 
+The whole inference layer — deciding to self-host, quantizing the weights, and picking an
+engine — is [Serving models]({{< relref "/building/serving-models" >}}).
+
 ## Queues and async
 
 A model call can take seconds to minutes — too long to hold an HTTP request open at scale. Put
@@ -77,6 +80,9 @@ pool processes the queue, and the client polls or gets a webhook. This absorbs t
 (the queue buffers instead of the app falling over) and lets you cap concurrency to what your
 provider quota allows. Essential for [agent]({{< relref "/building/agent-harness" >}}) and
 batch workloads; a short single-shot chat can stay synchronous.
+
+Admission control, backpressure, and cache-aware routing across replicas are in
+[Load balancing & queuing]({{< relref "/building/serving-models/load-balancing-queuing" >}}).
 
 ## Reliability
 
@@ -90,6 +96,9 @@ Models fail, time out, and rate-limit — design for it:
 - **Graceful degradation** — when the AI path is fully down, return *something* useful:
   cached results, keyword search instead of RAG, or an honest "try again shortly" — never a
   100% outage because one model is unavailable.
+
+Each failure mode wants a different response — see
+[Routing & fallback]({{< relref "/building/serving-models/routing-and-fallback" >}}).
 
 ## Cost and capacity at scale
 

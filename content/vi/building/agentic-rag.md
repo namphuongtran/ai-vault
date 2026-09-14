@@ -1,7 +1,7 @@
 ---
 title: "Agentic RAG"
 linkTitle: "Agentic RAG"
-weight: 4
+weight: 5
 description: Truy xuất do agent dẫn dắt — tự quyết khi nào, truy gì, bao nhiêu lần — không phải pipeline cố định.
 ---
 

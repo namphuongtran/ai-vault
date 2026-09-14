@@ -1,6 +1,6 @@
 ---
 title: "Agentic RAG"
-weight: 4
+weight: 5
 description: Retrieval driven by an agent that decides when, what, and how often to retrieve — not a fixed pipeline.
 ---
 
