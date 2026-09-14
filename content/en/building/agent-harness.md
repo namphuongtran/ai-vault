@@ -1,6 +1,6 @@
 ---
 title: "The Agent Harness"
-weight: 5
+weight: 6
 description: The scaffolding that runs an agent — the loop, context management, tool execution, memory, and guardrails.
 ---
 

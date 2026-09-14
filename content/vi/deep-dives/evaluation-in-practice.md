@@ -51,13 +51,11 @@ Một rubric tối giản, cho cụ thể:
 
 ## Đánh giá RAG
 
-Đánh giá truy xuất và sinh câu trả lời tách biệt (kiểu RAGAS):
-
-- **Context precision / recall** — chất lượng truy xuất.
-- **Faithfulness** — câu trả lời bám sát context truy xuất.
-- **Answer relevance** — câu trả lời đúng trọng tâm câu hỏi.
-
-Việc này cô lập được câu trả lời tệ đến từ truy xuất hay từ sinh câu trả lời.
+Hãy đánh giá truy xuất và sinh câu trả lời **tách biệt** — context precision và recall cho truy
+xuất, faithfulness và answer relevance cho phần sinh. Chính phép tách đó cho bạn biết câu trả
+lời tệ đến từ truy xuất hay từ sinh, và đó là toàn bộ lý do RAG cần một phương pháp riêng. Các
+chỉ số, golden set, và RAGAS đầy đủ:
+[RAG evaluation]({{< relref "/deep-dives/rag-evaluation" >}}).
 
 ## Regression testing
 
