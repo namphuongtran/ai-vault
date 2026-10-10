@@ -1,0 +1,8 @@
+# Files the lab writes while it runs
+trace.jsonl
+audit.jsonl
+sessions/
+notes.md
+sandbox/.tool-results/
+sandbox/.pytest_cache/
+vault/

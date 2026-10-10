@@ -76,7 +76,8 @@ difference between handing someone a terminal and handing them the runbook.
 
 You rarely hand-write all of this:
 
-- **Write your own loop** — full control; the most work.
+- **Write your own loop** — full control; the most work. [Lab 2]({{< relref "/hands-on/lab-agent-harness" >}})
+  builds one from scratch in eight steps.
 - **Use a framework / SDK** — the loop, tool handling, and context management come built in.
 - **Managed service** — a provider hosts the loop and the tool sandbox for you.
 
