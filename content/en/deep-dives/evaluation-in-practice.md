@@ -52,13 +52,11 @@ A minimal rubric, to make it concrete:
 
 ## RAG evaluation
 
-Evaluate retrieval and generation separately (RAGAS-style):
-
-- **Context precision / recall** — retrieval quality.
-- **Faithfulness** — answer grounded in retrieved context.
-- **Answer relevance** — answer addresses the question.
-
-This isolates whether a bad answer came from retrieval or generation.
+Evaluate retrieval and generation **separately** — context precision and recall for retrieval,
+faithfulness and answer relevance for generation. That split is what tells you whether a bad
+answer came from retrieval or from generation, and it is the whole reason RAG needs its own
+method. The metrics, the golden set, and RAGAS in full:
+[RAG evaluation]({{< relref "/deep-dives/rag-evaluation" >}}).
 
 ## Regression testing
 
