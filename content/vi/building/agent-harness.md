@@ -75,7 +75,8 @@ vụ cụ thể (checklist deploy, quy trình review, format báo cáo) được
 
 Bạn hiếm khi tự viết tất cả:
 
-- **Tự viết vòng lặp** — toàn quyền; tốn công nhất.
+- **Tự viết vòng lặp** — toàn quyền; tốn công nhất. [Lab 2]({{< relref "/hands-on/lab-agent-harness" >}})
+  xây một cái từ con số 0 qua tám bước.
 - **Dùng framework / SDK** — vòng lặp, xử lý tool và quản lý context có sẵn.
 - **Dịch vụ managed** — nhà cung cấp host vòng lặp và sandbox tool cho bạn.
 
