@@ -1,7 +1,7 @@
 ---
 title: "Tooling & Frameworks"
 linkTitle: "Tooling & Frameworks"
-weight: 9
+weight: 10
 description: Cái thang từ tự viết vòng lặp agent đến một agent được managed hoàn toàn — SDK, framework, MCP, deployment.
 ---
 

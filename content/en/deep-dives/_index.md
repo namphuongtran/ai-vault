@@ -25,7 +25,7 @@ then operating:
 flowchart LR
     A[Prompt patterns] --> B[Vector databases] --> C[Types of RAG] --> D[Advanced RAG]
     D --> E[Agent patterns] --> F[Agent memory] --> M[Multi-agent] --> SE[Self-improving] --> CU[Computer use]
-    CU --> G[Adaptation] --> H[Evaluation in practice]
+    CU --> G[Adaptation] --> H[Evaluation in practice] --> RE[RAG evaluation]
 ```
 
 ## In this section
@@ -52,3 +52,5 @@ flowchart LR
     and fine-tuning.
 11. [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) — eval sets,
     LLM-as-judge, offline vs online, regression testing.
+12. [RAG evaluation]({{< relref "/deep-dives/rag-evaluation" >}}) — the four RAGAS metrics, and
+    splitting retrieval failures from generation failures.
