@@ -1,7 +1,7 @@
 ---
 title: "From Prompts to Graphs"
 linkTitle: "Engineering disciplines"
-weight: 7
+weight: 8
 description: Năm "engineering" trong năm năm — mỗi cái thêm được gì, và vì sao tên gọi cứ thay đổi.
 ---
 

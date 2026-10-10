@@ -1,7 +1,7 @@
 ---
 title: "Building a RAG System"
 linkTitle: "Building a RAG System"
-weight: 3
+weight: 4
 description: Pipeline production đầy đủ — từng stage, vì sao có nó, và một ví dụ cụ thể.
 ---
 
