@@ -1,7 +1,7 @@
 ---
 title: "Loop Engineering"
 linkTitle: "Loop Engineering"
-weight: 6
+weight: 7
 type: docs
 no_list: true
 description: Designing the loop as a system — its parts, its shapes, and when you need an SDK at all.

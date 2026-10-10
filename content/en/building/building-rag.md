@@ -1,7 +1,7 @@
 ---
 title: "Building a RAG System"
 linkTitle: "Building a RAG System"
-weight: 3
+weight: 4
 description: The full production pipeline — every stage, why it's there, and a concrete example.
 ---
 

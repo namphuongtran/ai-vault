@@ -42,7 +42,7 @@ to *operating them in production*:
 
 ## Stage 1 — Deep Dives ✓
 
-[Eleven dives]({{< relref "/deep-dives" >}}) along the same spine:
+[Twelve dives]({{< relref "/deep-dives" >}}) along the same spine:
 [prompt patterns]({{< relref "/deep-dives/prompt-patterns" >}}) ·
 [vector databases]({{< relref "/deep-dives/vector-databases" >}}) ·
 [types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) ·
@@ -53,13 +53,15 @@ to *operating them in production*:
 [self-improving agents]({{< relref "/deep-dives/self-improving-agents" >}}) ·
 [computer use]({{< relref "/deep-dives/computer-use" >}}) ·
 [adaptation]({{< relref "/deep-dives/adaptation" >}}) ·
-[evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}).
+[evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) ·
+[RAG evaluation]({{< relref "/deep-dives/rag-evaluation" >}}).
 
 ## Stage 2 — Building with AI ✓
 
-[Nine pages]({{< relref "/building" >}}) that assemble the pieces:
+[Ten entries]({{< relref "/building" >}}) that assemble the pieces:
 [AI system design]({{< relref "/building/ai-system-design" >}}) ·
 [scaling to production]({{< relref "/building/scaling-to-production" >}}) ·
+[serving models]({{< relref "/building/serving-models" >}}) ·
 [building RAG]({{< relref "/building/building-rag" >}}) ·
 [agentic RAG]({{< relref "/building/agentic-rag" >}}) ·
 [the agent harness]({{< relref "/building/agent-harness" >}}) ·
@@ -94,6 +96,7 @@ Each row is one thread through all stages — the vertical way to read the vault
 | Thread | Stage 0 | Stage 1 | Stage 2 | Stage 3 ○ |
 | ------ | ------ | ------ | ------ | ------ |
 | **Prompts** | [Prompt engineering]({{< relref "prompt-engineering.md" >}}) · [Context engineering]({{< relref "context-engineering.md" >}}) | [Prompt patterns]({{< relref "/deep-dives/prompt-patterns" >}}) | — | — |
-| **Data & RAG** | [Embeddings]({{< relref "embeddings.md" >}}) · [RAG]({{< relref "rag.md" >}}) | [Vector databases]({{< relref "/deep-dives/vector-databases" >}}) · [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) · [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) | [Building RAG]({{< relref "/building/building-rag" >}}) · [Agentic RAG]({{< relref "/building/agentic-rag" >}}) | [RAG chatbot lab ✓]({{< relref "/hands-on/lab-rag-chatbot" >}}) |
+| **Data & RAG** | [Embeddings]({{< relref "embeddings.md" >}}) · [RAG]({{< relref "rag.md" >}}) | [Vector databases]({{< relref "/deep-dives/vector-databases" >}}) · [Types of RAG]({{< relref "/deep-dives/types-of-rag" >}}) · [Advanced RAG]({{< relref "/deep-dives/advanced-rag" >}}) · [RAG evaluation]({{< relref "/deep-dives/rag-evaluation" >}}) | [Building RAG]({{< relref "/building/building-rag" >}}) · [Agentic RAG]({{< relref "/building/agentic-rag" >}}) | [RAG chatbot lab ✓]({{< relref "/hands-on/lab-rag-chatbot" >}}) |
 | **Agents** | [Tool calling]({{< relref "tool-function-calling.md" >}}) · [Agents]({{< relref "agents.md" >}}) · [Agentic AI]({{< relref "agentic-ai.md" >}}) · [MCP]({{< relref "mcp.md" >}}) | [Agent patterns]({{< relref "/deep-dives/agent-patterns" >}}) · [Agent memory]({{< relref "/deep-dives/agent-memory" >}}) · [Multi-agent]({{< relref "/deep-dives/multi-agent" >}}) · [Self-improving]({{< relref "/deep-dives/self-improving-agents" >}}) · [Computer use]({{< relref "/deep-dives/computer-use" >}}) | [Agent harness]({{< relref "/building/agent-harness" >}}) · [Loop engineering]({{< relref "/building/loop-engineering" >}}) · [AI code structure]({{< relref "/building/ai-code-structure" >}}) | ○ Agent + MCP lab |
-| **Operate** | [Guardrails]({{< relref "guardrails.md" >}}) · [AI security]({{< relref "ai-security.md" >}}) · [Evaluation]({{< relref "model-evaluation.md" >}}) · [Observability]({{< relref "observability.md" >}}) · [Responsible AI]({{< relref "responsible-ai.md" >}}) | [Adaptation]({{< relref "/deep-dives/adaptation" >}}) · [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) | [AI system design]({{< relref "/building/ai-system-design" >}}) · [Scaling to production]({{< relref "/building/scaling-to-production" >}}) · [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) | ○ Evals + ship lab |
+| **Operate** | [Guardrails]({{< relref "guardrails.md" >}}) · [AI security]({{< relref "ai-security.md" >}}) · [Evaluation]({{< relref "model-evaluation.md" >}}) · [Observability]({{< relref "observability.md" >}}) · [Responsible AI]({{< relref "responsible-ai.md" >}}) | [Adaptation]({{< relref "/deep-dives/adaptation" >}}) · [Evaluation in practice]({{< relref "/deep-dives/evaluation-in-practice" >}}) · [RAG evaluation]({{< relref "/deep-dives/rag-evaluation" >}}) | [AI system design]({{< relref "/building/ai-system-design" >}}) · [Scaling to production]({{< relref "/building/scaling-to-production" >}}) · [Tooling & frameworks]({{< relref "/building/tooling-and-frameworks" >}}) | ○ Evals + ship lab |
+| **Serving & inference** | [The AI API]({{< relref "the-ai-api.md" >}}) · [Cost & tokens]({{< relref "cost-and-tokens.md" >}}) · [Choosing a model]({{< relref "choosing-a-model.md" >}}) | [Adaptation]({{< relref "/deep-dives/adaptation" >}}) | [Scaling to production]({{< relref "/building/scaling-to-production" >}}) · [Serving models]({{< relref "/building/serving-models" >}}) | ○ Ship to production lab |
