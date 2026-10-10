@@ -61,7 +61,8 @@ async def main(task):
             agent.FUNCS[t.name] = call
         print(await asyncio.to_thread(agent.run, task))
 
-asyncio.run(main("Run the tests, save a one-line note with the result, then list all notes."))
+if __name__ == "__main__":
+    asyncio.run(main("Run the tests, save a one-line note with the result, then list all notes."))
 ```
 
 Giờ dựng lại toàn bộ agent trên **Claude Agent SDK**, tức chính harness của Claude Code được

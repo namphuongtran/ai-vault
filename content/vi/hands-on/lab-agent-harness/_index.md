@@ -33,6 +33,10 @@ Bạn xây một file Python duy nhất, `agent.py`, theo đúng thứ tự đó
 dòng. Sau mỗi bước, bạn xem **cùng cơ chế đó bên trong Claude Code**, qua chính trace của nó,
 để công cụ bạn dùng hằng ngày trở thành thứ bạn đọc hiểu được chứ không còn là hộp đen.
 
+Code hoàn chỉnh, kèm bộ test chạy offline, nằm ở [`labs/agent-harness/`](https://github.com/namphuongtran/ai-vault/tree/main/labs/agent-harness) trong repo
+của vault này (code viết hoàn toàn bằng tiếng Anh). Hãy đọc nó sau khi đã tự viết phiên bản
+của mình, đừng đọc trước.
+
 **Yêu cầu trước:**
 
 - Python 3.11+ và một Anthropic API key.

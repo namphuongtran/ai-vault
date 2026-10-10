@@ -33,6 +33,9 @@ You build one Python file, `agent.py`, in that order. It ends at about 200 lines
 step you look at **the same mechanism inside Claude Code**, using its own traces, so the tool you
 use daily becomes something you can read instead of a black box.
 
+The finished code, with offline tests, is in [`labs/agent-harness/`](https://github.com/namphuongtran/ai-vault/tree/main/labs/agent-harness) in this vault's
+repository. Read it after you have written your own version, not before.
+
 **Prerequisites:**
 
 - Python 3.11+ and an Anthropic API key.
